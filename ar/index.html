@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrapV5.min.css">
+    <!-- swiper  -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!--  Font Awesome CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/all.min.css"> -->
+    <!-- custom style -->
+    <link rel="stylesheet" href="../assets/css/styleRTL.css">
+    <link rel="stylesheet" href="../assets/css/fix.css">
+
+    <title>GAFT</title>
+</head>
+
+<body>
+
+
+    <!-- AO start layout -->
+    <section class="layoutWrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 paddingLeft">
+                    <aside class="asideClass">
+                        <div class="logo">
+                            <img src="../assets/images/shared/LogoGaft.svg" alt="">
+                        </div>
+                        <!-- end logo -->
+                        <div class="profile">
+                            <div class="empImg">
+                                <img class="img" src="../assets/images/shared/imgEmp.png" alt="">
+                                <!-- change class offline to online  -->
+                                <div class="offline" id="IdEndDele">
+                                    <img class="offlineImg" src="../assets/images/shared/offline.svg" alt="">
+                                    <img class="onlineImg" src="../assets/images/shared/online.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="EmpDetails">
+                                <h2 class="font20M">مرحبًا! عبد الله بن علي الأحمدي</h2>
+                                <p class="p16M">مدير مشروعات</p>
+                                <p class="p16L">إدارة تقنية المعلومات</p>
+                                <div class="linksEmpWrap">
+                                    <a href="#!" class="linksBox">
+                                        <img src="../assets/images/shared/profileIcon.svg" alt="">
+                                        <span class="font16R">ملفي الشخصي</span>
+                                    </a>
+                                    <a href="#!" class="linksBox">
+                                        <img src="../assets/images/shared/commonFile.svg" alt="">
+                                        <span class="font16R">طلباتي</span>
+                                        <span class="nums">
+                                            3
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end profile -->
+                        <div class="delegation">
+                            <div class="alertD">
+                                <img src="../assets/images/shared/DAlert.svg" alt="">
+                                <p class="p14M">تم تفويض أحمد بن محمد علي القحطاني على صلاحيات خدماتك</p>
+                            </div>
+                            <a href="#!" class="changeDelegation">
+                                <span class="p14M">إنهاء التفويض</span>
+                                <img src="../assets/images/shared/Turnoff.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- end delegation -->
+                        <!-- * adding showDetails beside attendance to show details when click on a.showAddend -->
+                        <div class="attendance">
+                            <div class="flexCenter">
+                                <h3 class="font20B">الإجازات والحضور</h3>
+                                <a href="#!" class="showAddend ">
+                                    <img class="show" src="../assets/images/shared/eye-close-line.svg" alt="">
+                                    <img class="hide" src="../assets/images/shared/eye-fill.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="LeaveBalance">
+                                <div class="attend">
+                                    <h3 class="font22 show">**</h3>
+                                    <h3 class="font22 hide">07:30 AM</h3>
+                                    <p class="p16L">وقت الحضور اليوم</p>
+                                </div>
+                                <div class="Leave">
+                                    <h3 class="font35 show">**</h3>
+                                    <h3 class="font35 hide">25</h3>
+                                    <p class="p16L">رصيد الإجازات</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end attendance -->
+                        <div class="favoriteLinks">
+                            <div class="flexCenter">
+                                <h3 class="font20B"> روابطي المفضلة</h3>
+                                <a href="#!" class="showMore withArrow">
+                                    عرض الكل
+                                </a>
+                            </div>
+                            <div class="sliderFav">
+                                <div class="swiper favLinks">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#!" class="favBox">
+                                                <img src="../assets/images/shared/favorite-like-stars.svg" alt="">
+                                                <span class="font16R">اسم الرابط</span>
+                                            </a>
+                                        </div>
+                                        <!-- end slide -->
+                                        <div class="swiper-slide">
+                                            <a href="#!" class="favBox">
+                                                <img src="../assets/images/shared/favorite-like-stars.svg" alt="">
+                                                <span class="font16R">اسم الرابط</span>
+                                            </a>
+                                        </div>
+                                        <!-- end slide -->
+                                        <div class="swiper-slide">
+                                            <a href="#!" class="favBox">
+                                                <img src="../assets/images/shared/favorite-like-stars.svg" alt="">
+                                                <span class="font16R">اسم الرابط</span>
+                                            </a>
+                                        </div>
+                                        <!-- end slide -->
+                                    </div>
+                                    <div class="flexSwiper">
+                                        <div class="right">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <div class="left">
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="socialMedia">
+                            <a href="#!">
+                                <img src="../assets/images/shared/IconCall.svg" alt="">
+                                <span>تواصل معنا</span>
+                            </a>
+                            <a href="#!">
+                                <img src="../assets/images/shared/IconX.svg" alt="">
+                                <span>منصة إكس</span>
+                            </a>
+                            <a href="#!">
+                                <img src="../assets/images/shared/IconIn.svg" alt="">
+                                <span>لينكد إن</span>
+                            </a>
+                            <a href="#!">
+                                <img src="../assets/images/shared/IconY.svg" alt="">
+                                <span>يوتيوب</span>
+                            </a>
+                        </div>
+                        <!-- end social media -->
+                    </aside>
+                </div>
+                <!-- end col 3 aside -->
+                <div class="col-md-9 paddingRight">
+                    <section class="contents">
+                        <header class="headerClass">
+                          <div class="right">
+                            <div class="customMenu">
+                              <a href="#!" class="openMenu">
+                                <i class="hamburger "></i>
+                              </a>
+                               <ul class="menu">
+                                <li><a href="#!">الرئيسية</a></li>
+                                <!-- end single link -->
+                                 <li class="subMenu">
+                                  <a class="toggleSub" href="#!" >مجتمع الهيئة</a>
+                                  <ul class="subUl">
+                                    <li><a href="">inner link</a></li>
+                                  </ul>
+                                 </li>
+                                 <!-- end sub menu -->
+                                 <li class="subMenu">
+                                  <a class="toggleSub" href="#!">الخدمات الإلكترونية</a>
+                                  <ul class="subUl">
+                                    <li><a href="">اسم الخدمة</a></li>
+                                    <li><a href="">اسم الخدمة</a></li>
+                                    <li><a href="">اسم الخدمة</a></li>
+                                  </ul>
+                                 </li>
+                                 <!-- end sub menu -->
+                                 <li class="subMenu">
+                                  <a class="toggleSub" href="#!"> الأنظمة الإلكترونية</a>
+                                  <ul class="subUl">
+                                    <li><a href="">اسم الخدمة</a></li>
+                                  </ul>
+                                 </li>
+                                 <!-- end sub menu -->
+                                 <li><a href="#!">مركز المعرفة</a></li>
+                                 <!-- end single link -->
+                                 <li><a href="#!">المركز الإعلامي</a></li>
+                                 <!-- end single link -->
+                               </ul>
+                            </div>
+                            <!-- end menu -->
+                             <div class="searchMn">
+                                <div class="inputGroup ">
+                                  <input type="text" placeholder="">
+                                  <a href="#!" class="searchBTN">
+                                    <img src="../assets/images/home/IconBtn.svg" alt="">
+                                  </a>
+                                </div>
+                             </div>
+                             <!-- end search -->
+                              <div class="notifications">
+                                <div class="dropdown">
+                                  <a href="#!" class="NTF">
+                                    <span>3</span>
+                                    <img src="../assets/images/home/notification.svg" alt="">
+                                  </a>
+                                  <div class="notificationMenu">
+                                    <ul class="scroller">
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <h3 class="font20B ellipsis">استبيان جديد للموظفين</h3>
+                                          <p class="p14M ellipsis"> أرسلت الهيئة العامة للتجارة الداخلية استبيان</p>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <h3 class="font20B"> مواعيد الحضور والانصراف لموظفي</h3>
+                                          <p class="p14M"> مواعيد الحضور والانصراف لموظفي الهيئة لشهر</p>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <h3 class="font20B">طلب إجازة مرضية</h3>
+                                          <p class="p14M"> الطلب المقدم رقم 25568 لطلب إجازة</p>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item visiedLink" href="#">
+                                          <h3 class="font20B">تهنئة عيد ميلاد</h3>
+                                          <p class="p14M"> أرسلت الهيئة العامة للتجارة الداخلية رسالة تهنئة</p>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item visiedLink" href="#">
+                                          <h3 class="font20B">طلب إجازة مرضية</h3>
+                                          <p class="p14M"> الطلب المقدم رقم 25568 لطلب إجازة</p>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item visiedLink" href="#">
+                                          <h3 class="font20B">طلب إجازة مرضية</h3>
+                                          <p class="p14M"> الطلب المقدم رقم 25568 لطلب إجازة</p>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                    <div class="text-center">
+                                      <a href="#!">عرض الكل</a>
+                                    </div>
+                                  </div>
+                                 
+                                </div>
+                              </div>
+                              <!-- end notifications -->
+                            <div class="darkDiv">
+                              <a href="javascript:;" class="dark-Mode">
+                                <span></span>
+                              </a>
+                            </div>
+                            <!-- end dart Mode -->
+
+                          </div>
+                           <!-- end right -->
+                            <div class="left">
+                              <div class="timeNav">
+                                <span>pm</span>
+                                <h3 class="font25">02:12:45</h3>
+                              </div>
+                              <!-- end time -->
+                               <div class="dayNav">
+                                <span class="p14M">الأحد 11 يونيو 2024</span>
+                                <span class="p14M">22 ذو القعدة 1444 هـ</span>
+                               </div>
+                               <!-- end day -->
+                               <div class="weatherNav">
+                                    <div class="flex">
+                                      <img src="../assets/images/home/IconWth.svg" alt="">
+                                    <span  class="font22">24 <span>o</span></span>
+                                    </div>
+                                    <span class="p14">غائم جزئيًا</span>
+                               </div>
+                               <!-- end weather -->
+                               <div class="prayer">
+                                  <div class="flex">
+                                    <img src="../assets/images/home/IconPr.svg" alt="">
+                                     <span  class="p14">الصلاة القادمة</span>
+                                  </div>
+                                  <span class="p14 fontBold">العصر 3:20</span>
+                               </div>
+                               <!-- end prayer -->
+                            </div>
+                             <!-- end left -->
+               
+                        </header>
+                        <!-- emd header -->
+                        <section class="mainBanner">
+                            <div class="swiper swiperBannerMain">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="boxBanner">
+                                            <img class="apsImg" src="../assets/images/shared/imgSlide.jpg" alt="">
+                                            <a href="#!" class="txtBNR">
+                                                <h2 class="font24B">التجارة الخارجية تعقد ورشة عمل الموائمة مع الملحقيات التجارية لدعم القطاعين
+                                                    العام والخاص</h2>
+                                                <p class="p18">
+                                                    عقدت الهيئة العامة للتجارة الخارجية، ورشة عمل "الموائمة مع الملحقيات" مع الملحقية التجارية في
+                                                    جنيف، اليوم الخميس الموافق 22 أغسطس 2024م، بمقر الهيئة في مدينة الرياض، بمشاركة سعادة سفير
+                                                    خادم الحرمين الشريفين لدى الاتحاد السويسري
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end slide -->
+                                    <div class="swiper-slide">
+                                        <div class="boxBanner">
+                                            <img class="apsImg" src="../assets/images/shared/imgSlide.jpg" alt="">
+                                            <a href="#!" class="txtBNR">
+                                                <h2 class="font24B">التجارة الخارجية تعقد ورشة عمل الموائمة مع الملحقيات التجارية لدعم القطاعين
+                                                    العام والخاص</h2>
+                                                <p class="p18">
+                                                    عقدت الهيئة العامة للتجارة الخارجية، ورشة عمل "الموائمة مع الملحقيات" مع الملحقية التجارية في
+                                                    جنيف، اليوم الخميس الموافق 22 أغسطس 2024م، بمقر الهيئة في مدينة الرياض، بمشاركة سعادة سفير
+                                                    خادم الحرمين الشريفين لدى الاتحاد السويسري
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end slide -->
+                                </div>
+                                <div class="textCenter">
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </section>
+                        <!-- emd banner -->
+                        <div class="layoutInnerContents">
+                            <div class="row">
+                                <div class="col-md-8 innerContent">
+                                    <div class="tabsCustom">
+                                        <ul class="nav nav-tabs customNavTabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#serv1-tab-pane" type="button" role="tab" aria-controls="serv1-tab-pane" aria-selected="true">الخدمات الإلكترونية</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#serv2-tab-pane" type="button" role="tab" aria-controls="serv2-tab-pane" aria-selected="false">الأنظمة
+                                                    الإلكترونية</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="serv1-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                                <div class="servWrapTap">
+                                                    <div class="showAll">
+                                                        <a href="#!" class="showMore withArrow">
+                                                            عرض الكل
+                                                        </a>
+                                                    </div>
+                                                    <div class="sliderWapperServ">
+                                                        <div class="swiper servSwiper">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                            </div>
+                                                            <div class="flexSwiper">
+                                                                <div class="right">
+                                                                    <div class="swiper-pagination"></div>
+                                                                </div>
+                                                                <div class="left">
+                                                                    <div class="swiper-button-next"></div>
+                                                                    <div class="swiper-button-prev"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end tab content 1 -->
+                                            <div class="tab-pane fade" id="serv2-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                                <div class="servWrapTap">
+                                                    <div class="showAll">
+                                                        <a href="#!" class="showMore withArrow">
+                                                            عرض الكل
+                                                        </a>
+                                                    </div>
+                                                    <div class="sliderWapperServ">
+                                                        <div class="swiper servSwiper2">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                                <div class="swiper-slide">
+                                                                    <a href="#!" class="servBox">
+                                                                        <img src="../assets/images/home/serviceIcon.svg" alt="">
+                                                                        <span class="font16R">اسم الخدمة</span>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- end slide -->
+                                                            </div>
+                                                            <div class="flexSwiper">
+                                                                <div class="right">
+                                                                    <div class="swiper-pagination"></div>
+                                                                </div>
+                                                                <div class="left">
+                                                                    <div class="swiper-button-next"></div>
+                                                                    <div class="swiper-button-prev"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end tab content 2 -->
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row customPadding">
+                                        <div class="col-md-6">
+                                            <div class="FlexSpaceBetween">
+                                                <h3 class="font20B"> روابطي المفضلة</h3>
+                                                <a href="#!" class="showMore withArrow">
+                                                    عرض الكل
+                                                </a>
+                                            </div>
+                                            <div class="homeOffers">
+                                                <div class="swiper offerSwiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <a href="#!" class="boxOffer">
+                                                                <div class="OfferImg">
+                                                                    <img src="../assets/images/home/ImageOffer.jpg" alt="">
+                                                                </div>
+                                                                <div class="offerTxt">
+                                                                    <h3 class="font16 fontBold ellipsis">خصم 45٪ بمناسبة اليوم الوطني للمملكة العربية السعودية</h3>
+                                                                    <span class="font15 ellipsis">العرض ساري حتى: 24 سبتمبر 2024</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end slide -->
+                                                        <div class="swiper-slide">
+                                                            <a href="#!" class="boxOffer">
+                                                                <div class="OfferImg">
+                                                                    <img src="../assets/images/home/ImageOffer.jpg" alt="">
+                                                                </div>
+                                                                <div class="offerTxt">
+                                                                    <h3 class="font16 fontBold">خصم 45٪ بمناسبة اليوم الوطني للمملكة العربية السعودية</h3>
+                                                                    <span class="font15">العرض ساري حتى: 24 سبتمبر 2024</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end slide -->
+                                                    </div>
+                                                    <div class="flexSwiper">
+                                                        <div class="left">
+                                                            <div class="swiper-button-next"></div>
+                                                            <div class="swiper-button-prev"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end slider -->
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="newsEmp">
+                                                <div class="FlexSpaceBetween">
+                                                    <h3 class="font20B"> روابطي المفضلة</h3>
+                                                    <a href="#!" class="showMore withArrow">
+                                                        عرض الكل
+                                                    </a>
+                                                </div>
+                                                <div class="parentEmpNews">
+                                                    <div class="swiper empNews">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="#!" class="empNewsBox">
+                                                                    <div class="logoNs">
+                                                                        <img src="../assets/images/home/IconEmpNew.svg" alt="">
+                                                                    </div>
+                                                                    <div class="txtNs">
+                                                                        <h3 class="font20B">موظف جديد</h3>
+                                                                        <h4 class="font18 fontMedium">
+                                                                            مُحمد بن عبد الله العزيزي
+                                                                        </h4>
+                                                                        <p class="p13">
+                                                                            تتقدم الهيئة العامة للتجارة الخارجية بتهنئة الزميل "محمد بن عبد الله العزيزي" بمناسبة إنضمامه للهيئة مُتمنية له مزيدًا من النجاح والتفوق في حياته العملية والشخصية
+                                                                        </p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <!-- end slide -->
+                                                            <div class="swiper-slide">
+                                                                <a href="#!" class="empNewsBox">
+                                                                    <div class="logoNs">
+                                                                        <img src="../assets/images/home/IconEmpNew.svg" alt="">
+                                                                    </div>
+                                                                    <div class="txtNs">
+                                                                        <h3 class="font20B">مولود جديد</h3>
+                                                                        <h4 class="font18 fontMedium">
+                                                                            مُحمد بن عبد الله العزيزي
+                                                                        </h4>
+                                                                        <p class="p13">
+                                                                            تتقدم الهيئة العامة للتجارة الخارجية بتهنئة الزميل "محمد بن عبد الله العزيزي" بمناسبة مولوده "عُبد الله" .. بُورك في الموهوب وشكرت الواهب
+                                                                        </p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <!-- end slide -->
+                                                            <div class="swiper-slide">
+                                                                <a href="#!" class="empNewsBox">
+                                                                    <div class="logoNs">
+                                                                        <img src="../assets/images/home/IconEmpNew.svg" alt="">
+                                                                    </div>
+                                                                    <div class="txtNs">
+                                                                        <h3 class="font20B">مولود جديد</h3>
+                                                                        <h4 class="font18 fontMedium">
+                                                                            مُحمد بن عبد الله العزيزي
+                                                                        </h4>
+                                                                        <p class="p13">
+                                                                            تتقدم الهيئة العامة للتجارة الخارجية بتهنئة الزميل "محمد بن عبد الله العزيزي" بمناسبة مولوده "عُبد الله" .. بُورك في الموهوب وشكرت الواهب
+                                                                        </p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <!-- end slide -->
+
+                                                        </div>
+                                                        <div class="flexSwiper">
+                                                            <div class="right">
+                                                                <div class="swiper-pagination"></div>
+                                                            </div>
+                                                            <div class="left">
+                                                                <div class="swiper-button-next"></div>
+                                                                <div class="swiper-button-prev"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end slider -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end row of news and offers emp -->
+                                    <div class="Questionnaires">
+                                        <div class="FlexSpaceBetween">
+                                            <h3 class="font20B">الاستبيانات</h3>
+                                            <a href="#!" class="showMore withArrow">
+                                                عرض الكل
+                                            </a>
+                                        </div>
+                                        <div class="QuestionSwiperParent">
+                                            <div class="swiper QuestionSwiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <a href="#!" class="QuestionnairesBox">
+                                                            <div class="logo">
+                                                                <img src="../assets/images/home/survey.svg" alt="">
+                                                            </div>
+                                                            <h3 class="font18 fontMedium">استبيان مدى رضا الموظفين عن الخدمات المقدمة من قبل الهيئة العامة للتجارة الخارجية لموظفيها</h3>
+                                                        </a>
+                                                    </div>
+                                                    <!-- end slide -->
+                                                    <div class="swiper-slide">
+                                                        <a href="#!" class="QuestionnairesBox">
+                                                            <div class="logo">
+                                                                <img src="../assets/images/home/survey.svg" alt="">
+                                                            </div>
+                                                            <h3 class="font18 fontMedium">استبيان مدى رضا الموظفين عن الخدمات المقدمة من قبل الهيئة العامة للتجارة الخارجية لموظفيها</h3>
+                                                        </a>
+                                                    </div>
+                                                    <!-- end slide -->
+
+                                                </div>
+                                                <div class="flexSwiper">
+                                                    <div class="right">
+                                                        <div class="swiper-pagination"></div>
+                                                    </div>
+                                                    <div class="left">
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Questions -->
+                                    <div class="row customPadding">
+                                        <div class="col-md-6">
+                                            <div class="FlexSpaceBetween">
+                                                <h3 class="font20B">أهم المستندات</h3>
+                                                <a href="#!" class="showMore withArrow">
+                                                    عرض الكل
+                                                </a>
+                                            </div>
+                                            <div class="impFiles">
+                                                <ul class="ul">
+                                                    <li>
+                                                        <a href="#!">
+                                                            <img src="../assets/images/shared/suppliesFile.svg" alt="">
+                                                            <p class="p16M">
+                                                                نماذج ومستندات الموارد البشرية
+                                                                <span class="subTitle">موارد بشرية - 25 ملف</span>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!">
+                                                            <img src="../assets/images/shared/suppliesFile.svg" alt="">
+                                                            <p class="p16M">
+                                                                نماذج ومستندات السياسات
+                                                                <span class="subTitle">السياسات - 50 ملف</span>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!">
+                                                            <img src="../assets/images/shared/suppliesFile.svg" alt="">
+                                                            <p class="p16M">
+                                                                نماذج ومستندات الأدلة
+                                                                <span class="subTitle">الأدلة - 35 ملف</span>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!">
+                                                            <img src="../assets/images/shared/suppliesFile.svg" alt="">
+                                                            <p class="p16M">
+                                                                نماذج ومستندات عامة
+                                                                <span class="subTitle">عامة - 85 ملف</span>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- end col 6 -->
+                                        <div class="col-md-6">
+                                            <div class="FlexSpaceBetween">
+                                                <h3 class="font20B">خدمات تفاعلية</h3>
+                                            </div>
+                                            <div class="interactiveServ">
+                                                <ul class="nav nav-tabs customTabsServ" id="myTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#emp-tab-pane" type="button" role="tab" aria-controls="emp-tab-pane" aria-selected="true">
+                                                            <img src="../assets/images/home/profileServ.svg" alt="">
+                                                            <h4 class="font18 fontMedium">دليل الموظفين</h4>
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#data-tab-pane" type="button" role="tab" aria-controls="data-tab-pane" aria-selected="false">
+                                                            <img src="../assets/images/home/IconConvert.svg" alt="">
+                                                            <h4 class="font18 fontMedium">مُحول التاريخ</h4>
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#exchange-tab-pane" type="button" role="tab" aria-controls="exchange-tab-pane" aria-selected="false">
+                                                            <img src="../assets/images/home/IconExch.svg" alt="">
+                                                            <h4 class="font18 fontMedium">مُحول العملات</h4>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content customContent" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="emp-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                                        <div class="empGuide">
+                                                            <p class="p16">  يمكنك البحث بإسم الموظف ,البريد الالكتروني ,التحويلة</p>
+                                                            <div class="inputGroup searchIcon">
+                                                                <input type="text" placeholder=" ادخل الإسم أو جزء منه">
+                                                            </div>
+                                                            <a href="#!" class="btnMain">بحث</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="data-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                                        <div class="convertDate">
+                                                            <div class="inputGroup radioBtn">
+                                                                <div>
+                                                                    <input type="radio" id="test1" name="radio-group" checked>
+                                                                    <label for="test1">ميلادي الى هجري</label>
+                                                                </div>
+                                                                <div>
+                                                                    <input type="radio" id="test2" name="radio-group">
+                                                                    <label for="test2">هجري الى ميلادي</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="inputGroup date">
+                                                                <input type="date" placeholder="asd">
+                                                            </div>
+                                                            <a href="#!" class="btnMain">
+                                                                تحويل
+                                                                <img src="../assets/images/home/switch-vertical.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="exchange-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                                        مُحول
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- end col 8 inner  layout -->
+                                <div class="col-md-4 innerAsideBG">
+                                    <div class="innerAside">
+                                      <div class="calenderWrap">
+                                          <div class="FlexSpaceBetween">
+                                            <h3 class="font20B">الورش والفعاليات</h3>
+                                            <a href="#!" class="showMore withArrow">
+                                                عرض الكل
+                                            </a>
+                                        </div>
+                                        <div class=" calender">
+                                          <div class="calender-indicator">
+                                            <div class="indic-0 indicator">
+                                              <span></span>
+                                              <p>
+                                                اليوم
+                                              </p>
+                                            </div>
+                                            <div class="indic-1 indicator">
+                                              <span></span>
+                                              <p>
+                                                فعاليات الهيئة
+                                              </p>
+                                            </div>
+                                            <div class="indic-2 indicator">
+                                              <span></span>
+                                              <p>
+                                                ورش العمل
+                                              </p>
+                                            </div>
+                                          
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- end calender -->
+                                       <div class="newsWrapper">
+                                          <div class="FlexSpaceBetween">
+                                            <h3 class="font20B">الأخبار والتنبيهات</h3>
+                                            <a href="#!" class="showMore withArrow">
+                                                عرض الكل
+                                            </a>
+                                          </div>
+                                          <div class="swiper newsHome">
+                                            <div class="swiper-wrapper">
+                                              <div class="swiper-slide">
+                                                <div class="newsBoxHom">
+                                                  <img class="apso" src="../assets/images/home/homeNewsimg.jpg" alt="">
+                                                  <a href="#!" class="txtNs">
+                                                    <div class="dateIcon">
+                                                      <img class="" src="../assets/images/home/calendar-2.svg" alt="">
+                                                      <span class="p16"> ذو القعدة 1444هـ </span>
+                                                    </div>
+                                                    <h3 class="font20B">
+                                                      التجارة الخارجية تشارك في الدورة العاشرة لمؤتمر رجال الأعمال العرب والصينيين 
+                                                    </h3>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                              <!-- end slide -->
+                                              <div class="swiper-slide">
+                                                <div class="newsBoxHom">
+                                                  <img class="apso" src="../assets/images/home/homeNewsimg.jpg" alt="">
+                                                  <a href="#!" class="txtNs">
+                                                    <div class="dateIcon">
+                                                      <img class="" src="../assets/images/home/calendar-2.svg" alt="">
+                                                      <span class="p16"> ذو القعدة 1444هـ </span>
+                                                    </div>
+                                                    <h3 class="font20B">
+                                                      التجارة الخارجية تشارك في الدورة العاشرة لمؤتمر رجال الأعمال العرب والصينيين 
+                                                    </h3>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                              <!-- end slide -->
+                                    
+                                            </div>
+                                            <div class="flexSwiper">
+                                              <div class="left">
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                       </div>
+                                       <!-- end  news home -->
+                                        <div class="XBoxGaft">
+                                          <img  src="../assets/images/home/Twitter.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end col 4 inner  layout -->
+                            </div>
+
+
+                        </div>
+                    </section>
+                    <footer>
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-6">
+                                  <div class="served">
+                                      <div class="linkR">
+                                          <a href="#!">
+                                              روابط هامة
+                                          </a>
+                                          <a href="#!">
+                                            خريطة الموقع     
+                                          </a>
+                                          <a href="#!">
+                                            سياسة الخصوصية
+                                          </a>
+  
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                  <div class="left-footer">
+                                      <p>
+                                        جميع الحقوق محفوظة للهيئة العامة للتجارة الخارجية ©2024 
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </footer>
+                </div>
+              
+
+            </div>
+            <!-- end col 9 content -->
+        </div>
+
+    </section>
+    <!-- end layout -->
+
+    <!--  start show modal when page load -->
+    <div class="modal fade GaftModal" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <img src="../assets/images/home/closeModal.svg" alt="">
+            </button>
+            <h5 class="modal-title" id="exampleModalLabel" style="background-image: url(../assets/images/home/bgHeadModal.jpg);">
+              <span>إعلانات هامة</span>
+              <img class="icon" src="../assets/images/home/horn-icon.svg" alt="">
+            </h5>
+          </div>
+          <div class="modal-body">
+            <div class="linksHome">
+              <div class="estBox">
+                <img class="iconEs" src="../assets/images/home/estp.svg" alt="">
+                <div class="txt">
+                  <h2 class="font22B">استبيان مدى رضا الموظفين عن الخدمات المقدمة من قبل الهيئة العامة للتجارة الخارجية</h2>
+                  <div class="goLink text-left">
+                    <div class="timeB">
+                      <img class="icon" src="../assets/images/home/clock.svg" alt="">
+                      <span class="p16">مدة الاستبيان 5 دقائق</span>
+                    </div>
+                    <a href="#!" class="ans">
+                      <span class="p16">أجب على الإستبيان</span>
+                      <img class="icon" src="../assets/images/home/estGo.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="estBox">
+                <img class="iconEs" src="../assets/images/home/estp.svg" alt="">
+                <div class="txt">
+                  <h2 class="font22B">مواعيد الحضور والانصراف لموظفي الهيئة لشهر سبتمبر: من 8:00 صباحاً حتى 4:00 عصراً</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btnSecondary" data-bs-dismiss="modal">تخطي</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  start show modal when page load -->
+
+
+
+
+    <script src="../assets/js/jQueryV3.5.js"></script>
+    <script src="../assets/js/bootstrap.bundle.minV5.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/home.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script>
+           document.addEventListener('DOMContentLoaded', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+                keyboard: false
+            });
+            myModal.show();
+        });
+
+
+    </script>
+
+</body>
+
+</html>
