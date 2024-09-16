@@ -23,7 +23,13 @@ $(document).ready(function () {
     $("#IdEndDele").attr('class', 'online');
     $(this).parent().hide()
   })
-
+    // play video
+    $('.videoClass').click(function(){
+      $(this).addClass('removeIcon')
+      var video = $(this).find('video');
+      video[0].play();
+      video.attr('controls', true); 
+    })
   let favLinks = new Swiper(".favLinks", {
     // slidesPerView: 9,
     spaceBetween: 20,

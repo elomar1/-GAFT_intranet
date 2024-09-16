@@ -80,8 +80,10 @@ $(document).ready(function () {
       
     });
   
-  
-  
+    if( $('.mainBanner').length ) {
+      $('.col-md-9.paddingRight').addClass('home')
+    }
+
   
   
   
