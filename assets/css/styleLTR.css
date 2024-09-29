@@ -1126,18 +1126,8 @@ input[type=text] {
           filter: brightness(0) invert(1);
 }
 
-.homeOffers {
-  background: #ffffff;
-  padding-bottom: 20px;
-  border-radius: 16px;
-}
-
-.homeOffers .flexSwiper {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
+.newsBox,
+.MainBox,
 .homeOffers .boxOffer {
   position: relative;
   text-decoration: unset;
@@ -1145,6 +1135,8 @@ input[type=text] {
   width: 100%;
 }
 
+.newsBox::after,
+.MainBox::after,
 .homeOffers .boxOffer::after {
   position: absolute;
   content: "";
@@ -1155,6 +1147,8 @@ input[type=text] {
   background: transparent url(../images/home/BadgeOffer.svg) no-repeat;
 }
 
+.newsBox .OfferImg,
+.MainBox .OfferImg,
 .homeOffers .boxOffer .OfferImg {
   height: 288px;
   overflow: hidden;
@@ -1163,23 +1157,76 @@ input[type=text] {
   margin-bottom: 15px;
 }
 
+.newsBox .OfferImg img,
+.MainBox .OfferImg img,
 .homeOffers .boxOffer .OfferImg img {
   width: 100%;
   height: 100%;
   border-radius: 16px;
 }
 
+.newsBox .offerTxt,
+.MainBox .offerTxt,
 .homeOffers .boxOffer .offerTxt {
   padding: 0 17px;
 }
 
+.newsBox .offerTxt .font16,
+.MainBox .offerTxt .font16,
 .homeOffers .boxOffer .offerTxt .font16 {
   color: #007066;
   margin-bottom: 12px;
 }
 
+.newsBox .offerTxt .font15,
+.MainBox .offerTxt .font15,
 .homeOffers .boxOffer .offerTxt .font15 {
   -webkit-line-clamp: 1;
+}
+
+.newsBox {
+  background: #fff;
+  border-radius: 16px;
+  padding-bottom: 15px;
+}
+
+.newsBox:hover .OfferImg img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.newsBox .OfferImg img {
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.newsBox .dateIcon .p16 {
+  color: #758D8B;
+}
+
+.newsBox .font16 {
+  font-size: 1.7rem;
+  padding-top: 15px;
+  margin: 0;
+  line-height: 27px;
+  height: calc(26px * 3);
+  -webkit-line-clamp: 3;
+}
+
+.newsBox::after {
+  display: none;
+}
+
+.homeOffers {
+  background: #ffffff;
+  padding-bottom: 20px;
+  border-radius: 16px;
+}
+
+.homeOffers .flexSwiper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .parentEmpNews {
@@ -2524,16 +2571,21 @@ footer .left-footer p {
   margin-left: 10px;
 }
 
-.servWrapper {
-  padding: 44px 0;
-}
-
-.servWrapper .col-md-3 {
+.customPaddingBox, .servWrapper .col-md-3, .wrapNews .col-md-4 {
   padding-bottom: 32px;
   padding-right: 12px;
   padding-left: 12px;
 }
 
+.servWrapper {
+  padding: 44px 0;
+}
+
+.wrapNews {
+  padding: 32px 0;
+}
+
+/* fix issue */
 .XBoxGaft {
   overflow-x: scroll;
 }

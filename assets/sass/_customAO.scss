@@ -783,7 +783,75 @@ input[type=text] {
         }
     }
 }
+.newsBox,
+.MainBox {
+    position: relative;
+    text-decoration: unset;
+    display: inline-block;
+    width: 100%;
+    &::after {
+        position: absolute;
+        content: "";
+        left: 20px;
+        top: -2px;
+        width: 21px;
+        height: 32px;
+        background: transparent url(../images/home/BadgeOffer.svg) no-repeat;
+    }
+    .OfferImg {
+        height: 288px;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 16px;
+        margin-bottom: 15px;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+        }
+    }
+    .offerTxt {
+        padding: 0 17px;
+        .font16  {
+            color: #007066;
+            margin-bottom: 12px;
+        }
+        .font15 {
 
+            -webkit-line-clamp: 1;
+        }
+
+    }
+
+}
+.newsBox {
+    background: #fff;
+    border-radius: 16px;
+    padding-bottom: 15px;
+    
+    &:hover {
+        .OfferImg img {
+            transform: scale(1.1);
+        }
+    }
+    .OfferImg img  {
+        transition: .25s;
+    }
+    .dateIcon .p16 {
+        color: #758D8B;
+    }
+    .font16  {
+        font-size: 1.7rem;
+        padding-top: 15px;
+        margin: 0;
+        line-height: 27px;
+        height: calc(26px * 3);
+        -webkit-line-clamp: 3;
+    }
+    &::after {
+        display: none;
+    }
+}
 .homeOffers {
     background: #ffffff;
     padding-bottom: 20px;
@@ -792,44 +860,7 @@ input[type=text] {
         justify-content: center;
     }
     .boxOffer {
-        position: relative;
-        text-decoration: unset;
-        display: inline-block;
-        width: 100%;
-        &::after {
-            position: absolute;
-            content: "";
-            left: 20px;
-            top: -2px;
-            width: 21px;
-            height: 32px;
-            background: transparent url(../images/home/BadgeOffer.svg) no-repeat;
-        }
-        .OfferImg {
-            height: 288px;
-            overflow: hidden;
-            width: 100%;
-            border-radius: 16px;
-            margin-bottom: 15px;
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 16px;
-            }
-        }
-        .offerTxt {
-            padding: 0 17px;
-            .font16  {
-                color: #007066;
-                margin-bottom: 12px;
-            }
-            .font15 {
-
-                -webkit-line-clamp: 1;
-            }
-
-        }
-
+        @extend .MainBox;
     }
 }
 
@@ -1952,13 +1983,31 @@ footer {
         }
     }
 }
+.customPaddingBox {
+    padding-bottom: 32px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
 .servWrapper {
     padding: 44px 0;
     .col-md-3 {
-        padding-bottom: 32px;
-        padding-right: 12px;
-        padding-left: 12px;
+        @extend .customPaddingBox;
     }
+
+}
+
+.wrapNews {
+    padding: 32px 0;
+    .col-md-4 {
+        @extend .customPaddingBox;
+    }
+}
+
+/* fix issue */
+.member-custom.table.table-striped.member-custom * {
+
+}
+.member-custom.table.table-striped.member-custom > tbody td:empty  {
 
 }
 .XBoxGaft {
