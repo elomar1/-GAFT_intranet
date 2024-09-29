@@ -186,6 +186,61 @@ img {
   background: #fff;
 }
 
+.btnGold2, .serBox .btnActins .download,
+.btnGold,
+.serBox .btnActins .showServ {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #CCA079;
+  padding: 10px;
+  border-radius: 50px;
+  min-height: 50px;
+  width: 120px;
+  border: 2px solid #CCA079;
+  text-decoration: none;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.btnGold2 span, .serBox .btnActins .download span,
+.btnGold span,
+.serBox .btnActins .showServ span {
+  color: #fff;
+  font-family: "DINNextRegular";
+}
+
+.btnGold2 img, .serBox .btnActins .download img,
+.btnGold img,
+.serBox .btnActins .showServ img {
+  margin-right: 10px;
+}
+
+.btnGold2, .serBox .btnActins .download {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #CCA079;
+}
+
+.btnGold2 span, .serBox .btnActins .download span {
+  color: #CCA079;
+}
+
+.btnGold:hover, .serBox .btnActins .showServ:hover {
+  background: #BF936D;
+}
+
+.btnGold2:hover, .serBox .btnActins .download:hover {
+  background: #fff;
+  border: 2px solid #fff;
+}
+
 .fixDir, .date input[type=date],
 input[type=text] {
   direction: ltr;
@@ -462,7 +517,7 @@ input[type=text] {
 }
 
 .ellipsis, .parentEmpNews .empNewsBox .txtNs .p13, .notifications .notificationMenu .scroller .dropdown-item .p14M,
-.notifications .notificationMenu .scroller .dropdown-item .font20B {
+.notifications .notificationMenu .scroller .dropdown-item .font20B, .serBox .SRContent .titleSer {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -470,18 +525,6 @@ input[type=text] {
   text-overflow: ellipsis;
   white-space: normal;
   word-break: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-strong {
-  direction: ltr;
 }
 
 /* end global */
@@ -2392,4 +2435,105 @@ footer .left-footer p {
   color: #000000;
   font-family: "DINNextBold";
   margin-bottom: 15px;
+}
+
+.tabsServ nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tabsServ .searchIcon input {
+  background-image: url(../images/service/IconSearchSer.svg);
+}
+
+.serBox {
+  height: 100%;
+  background: #ffffff;
+  padding: 10px;
+  text-align: center;
+  min-height: 260px;
+  border-radius: 16px;
+  padding-top: 80px;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.serBox:hover {
+  background: #007066;
+}
+
+.serBox:hover .btnActins {
+  visibility: visible;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.serBox:hover .SRContent {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.serBox:hover .titleSer {
+  color: #fff !important;
+}
+
+.serBox:hover .SRicon {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.serBox:hover .SRicon img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.serBox .SRicon {
+  -webkit-transition: .25s;
+  transition: .25s;
+  height: 60px;
+}
+
+.serBox .SRContent {
+  padding: 9px 10px 10px;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.serBox .SRContent .titleSer {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #007066;
+  font-family: "DINNextMedium";
+  height: calc(24px* 2);
+}
+
+.serBox .btnActins {
+  visibility: hidden;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.serBox .btnActins .showServ {
+  margin-left: 10px;
+}
+
+.servWrapper {
+  padding: 44px 0;
+}
+
+.servWrapper .col-md-3 {
+  padding-bottom: 32px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.XBoxGaft {
+  overflow-x: scroll;
 }

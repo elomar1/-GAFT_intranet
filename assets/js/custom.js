@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
   // show details of emp days off and time
-  $('.showAddend').click(function(){
-    $('.attendance').toggleClass('showDetails')
-  })
+  // $('.showAddend').click(function(){
+  //   $('.attendance').toggleClass('showDetails')
+  // })
     // open menu
     $('.openMenu').click(function(){
       $(this).children().toggleClass('menuOpen')
@@ -45,33 +45,6 @@ $(document).ready(function () {
   });
   // end slider
 
-$(".dark-Mode").on("click", function (e) {
-  if($('body').hasClass("Dark")) {
-  	setLightMode();
-  }else {
-  	setDarkMode();
-  }
-  e.stopPropagation();
-  function setLightMode(){
-    if($('body').hasClass("Dark")) {
-        $("body").toggleClass("Dark");
-        $(".dark-Mode").toggleClass("dark-here");
-        $('.circle').circleProgress({  emptyFill:"rgba(0, 112, 103, 0.99)", fill: { color: ' rgba(204, 160, 121, 0.99)' }});
-        $('.colorTwo').circleProgress({  emptyFill:"rgba(204, 160, 121, 0.99)", fill: { color: ' rgba(0, 112, 103, 0.99)' }});
-    }
-    document.cookie = "darkMode=0;path=/";
-  }
-  function setDarkMode(){
-    if($('body').hasClass("Dark") == false) {
-        $("body").toggleClass("Dark");
-        $(".dark-Mode").toggleClass("dark-here");
-        $('.circle').circleProgress({ emptyFill:"rgba(0, 154, 189, 0.99)", fill: { color: 'rgba(187, 187, 187, 0.99)' }});
-        $('.colorTwo').circleProgress({ emptyFill:"rgba(187, 187, 187, 0.99)", fill: { color: 'rgba(0, 112, 103, 0.99)' }});
-    }
-    document.cookie = "darkMode=1;path=/";
-  }
-  
-});
 
 
 

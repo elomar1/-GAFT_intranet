@@ -33,6 +33,45 @@ img {
     color: #CCA079;
     background: #fff;
 }
+.btnGold2,
+.btnGold {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CCA079;
+    padding: 10px;
+    border-radius: 50px;
+    min-height: 50px;
+    width: 120px;
+    border: 2px solid #CCA079;
+    text-decoration: none;
+    transition: .25s;
+    span {
+        color: #fff;
+        font-family: "DINNextRegular";
+    }
+    img {
+        margin-right: 10px;
+    }
+
+}
+.btnGold2 {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #CCA079;
+    span {
+        color: #CCA079;
+    }
+}
+.btnGold:hover {
+    background: #BF936D;
+}
+.btnGold2 {
+    &:hover {
+        background: #fff;
+        border: 2px solid #fff;
+    }
+}
 .fixDir {
     direction: ltr;
     text-align: end;
@@ -255,17 +294,7 @@ input[type=text] {
     white-space: normal;
     word-break: break-word;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-strong {
-    direction: ltr;
-}
+
 /* end global */
 /* width */
 ::-webkit-scrollbar {
@@ -1852,4 +1881,86 @@ footer {
         margin-bottom: 15px;
     }
     
+}
+
+
+.tabsServ {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .searchIcon input {
+        background-image: url(../images/service/IconSearchSer.svg);
+    }
+
+
+}
+.serBox {
+    height: 100%;
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+    min-height: 260px;
+    border-radius: 16px;
+    padding-top: 80px;
+    transition: .25s;
+    &:hover {
+        background: #007066;
+        .btnActins {
+            visibility: visible;
+            transform: translateY(-30px);
+        }
+        .SRContent {
+            transform: translateY(-30px);
+        }
+        .titleSer {
+            color: #fff !important;
+        }
+        .SRicon {
+            transform: translateY(-30px);
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .SRicon {
+        transition: .25s;
+        height: 60px;
+    }
+    .SRContent {
+        padding: 9px 10px 10px;
+        transition: .25s;
+        .titleSer {
+            margin: 0;
+            @extend .ellipsis;
+            font-size: 1.8rem;
+            color: #007066;
+            font-family: "DINNextMedium";
+            height: calc(24px* 2);
+        }
+    }
+    .btnActins {
+        visibility: hidden;
+        transition: .25s;
+        .showServ {
+            @extend .btnGold;
+            margin-left: 10px;
+        }
+        .download {
+            @extend .btnGold2;
+        }
+    }
+}
+.servWrapper {
+    padding: 44px 0;
+    .col-md-3 {
+        padding-bottom: 32px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+}
+.XBoxGaft {
+    overflow-x: scroll;
 }
