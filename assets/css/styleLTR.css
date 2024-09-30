@@ -175,6 +175,16 @@ img {
   transition: .25s;
 }
 
+.btnSecondary.withArrow,
+.btnMain.withArrow {
+  padding: 8px 27px 11px;
+}
+
+.btnSecondary.withArrow img,
+.btnMain.withArrow img {
+  margin-right: 10px;
+}
+
 .btnSecondary:hover,
 .btnMain:hover {
   opacity: .9;
@@ -241,7 +251,9 @@ img {
   border: 2px solid #fff;
 }
 
-.fixDir, .date input[type=date],
+.fixDir, select,
+textarea,
+.date input[type=date],
 input[type=text] {
   direction: ltr;
   text-align: end;
@@ -354,6 +366,23 @@ input[type=text]::placeholder {
   color: #758D8B;
 }
 
+.label1, .translate-dropdown label {
+  line-height: 20px;
+  display: inline-block;
+  color: #758D8B;
+  font-size: 16px;
+}
+
+.translate-dropdown label {
+  margin-bottom: 3px;
+}
+
+.translate-dropdown .form-select {
+  margin-bottom: 10px;
+}
+
+select,
+textarea,
 .date input[type=date],
 input[type=text] {
   height: 48px;
@@ -363,6 +392,27 @@ input[type=text] {
   width: 100%;
   padding: 10px 16px;
   border-radius: 6px;
+  background: #fff;
+}
+
+textarea {
+  height: 150px;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #fff url(../images/promotions/arrowSelect.svg) no-repeat;
+  background-position: 15px center;
+}
+
+/*
+select::-ms-expand {
+    display: none;
+}
+*/
+.translate-textarea {
+  height: 120px;
 }
 
 .searchIcon input {
@@ -376,6 +426,11 @@ input[type=text] {
 .potionAbsolute {
   position: absolute;
   content: "";
+}
+
+.font30 {
+  font-size: 3rem;
+  color: #007066;
 }
 
 .font35 {
@@ -455,8 +510,9 @@ input[type=text] {
   font-family: "DINNextLight";
 }
 
-.fontBold,
+.fontBold, .contentOffers .offerTitle,
 .font35,
+.font30,
 .font24B {
   font-family: "DINNextBold";
 }
@@ -1182,6 +1238,48 @@ input[type=text] {
 .MainBox .offerTxt .font15,
 .homeOffers .boxOffer .offerTxt .font15 {
   -webkit-line-clamp: 1;
+}
+
+.flagOffer {
+  background: #EEF6F6;
+  border: 1px solid #D5E1E0;
+  border-radius: 4px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 70px;
+  height: 26px;
+  color: #758D8B;
+  font-size: 15px;
+  padding: 0 3px;
+  margin: 14px 0;
+}
+
+.flagOffer img {
+  margin-left: 5px;
+}
+
+.filtring a {
+  background: #FFFFFF;
+  border: 1px solid #CFE1DE;
+  border-radius: 4px;
+  padding: 2px 13px 6px 13px;
+  font-size: 16px;
+  color: #758D8B;
+  text-decoration: unset;
+  margin-left: 8px;
+  margin-bottom: 5px;
+  font-family: "DINNextRegular";
+}
+
+.filtring a.activeFilter {
+  background: #7ED6CE;
+  color: #fff;
 }
 
 .newsBox {
@@ -2028,7 +2126,7 @@ footer .left-footer p {
   color: #758D8B;
 }
 
-.headerClass .left .prayer .p14.fontBold {
+.headerClass .left .prayer .p14.fontBold, .headerClass .left .prayer .contentOffers .p14.offerTitle, .contentOffers .headerClass .left .prayer .p14.offerTitle {
   color: #007066;
 }
 
@@ -2496,6 +2594,28 @@ footer .left-footer p {
           justify-content: space-between;
 }
 
+.tabsServ .nav {
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabsServ .nav .filtring {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabsServ .searchIcon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .tabsServ .searchIcon input {
   background-image: url(../images/service/IconSearchSer.svg);
 }
@@ -2547,6 +2667,10 @@ footer .left-footer p {
   height: 60px;
 }
 
+.serBox .SRicon img {
+  max-width: 66px;
+}
+
 .serBox .SRContent {
   padding: 9px 10px 10px;
   -webkit-transition: .25s;
@@ -2571,7 +2695,8 @@ footer .left-footer p {
   margin-left: 10px;
 }
 
-.customPaddingBox, .servWrapper .col-md-3, .wrapNews .col-md-4 {
+.customPaddingBox, .servWrapper .col-md-3, .wrapOffers .col-md-4,
+.wrapNews .col-md-4 {
   padding-bottom: 32px;
   padding-right: 12px;
   padding-left: 12px;
@@ -2581,11 +2706,111 @@ footer .left-footer p {
   padding: 44px 0;
 }
 
+.wrapOffers,
 .wrapNews {
   padding: 32px 0;
 }
 
+.fromTo .p18 {
+  color: #758D8B;
+}
+
+.fromTo img {
+  margin: 0 23px 0 15px;
+}
+
+.contentOffers {
+  padding-bottom: 140px;
+}
+
+.contentOffers .font30 {
+  margin-bottom: 13px;
+}
+
+.contentOffers .fromTo {
+  padding-bottom: 16px;
+}
+
+.contentOffers .offerTitle {
+  color: #007066;
+  padding: 13px 0;
+}
+
+.contentOffers .offerDesc {
+  color: #1A1A1A;
+  margin-bottom: 45px;
+}
+
+.contentOffers .text-right .btnMain.withArrow {
+  margin-bottom: 45px;
+}
+
+.contentOffers .imgsOffer img {
+  max-height: 720px;
+  width: 100%;
+}
+
 /* fix issue */
+.form-group #rbDate td {
+  padding-bottom: 35px;
+}
+
+.form-group #rbDate td:first-of-type {
+  padding-left: 27px;
+}
+
+.form-group .hasDatepicker {
+  width: 100% !important;
+  background: #ffffff url(../images/home/calendar.svg) no-repeat 0px center;
+}
+
+/*
+.eventActive1 {
+    background-color:unset ;
+}
+.eventActive1 .fc-day-number {
+    background: #007066;
+
+}
+*/
+.member-custom.table.table-striped.member-custom > tbody td:empty {
+  height: 0 !important;
+}
+
+.table.table-striped.table-custom.member-custom .fc-day-top .fc-day-number {
+  margin-bottom: 13px;
+}
+
+.calender .calender-indicator .indicator.indic-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calender .calender-indicator .indicator.indic-1 span {
+  background-color: #007066 !important;
+}
+
 .XBoxGaft {
   overflow-x: scroll;
+}
+
+.fc-toolbar .fc-center {
+  -webkit-transform: translateX(-108px);
+          transform: translateX(-108px);
+}
+
+.parentEmpNews .flexSwiper .swiper-button-next {
+  left: 10px;
+  right: auto;
+  bottom: 15px;
+}
+
+.parentEmpNews .flexSwiper .swiper-button-prev {
+  right: 10px;
+  left: auto;
+  bottom: 15px;
 }
