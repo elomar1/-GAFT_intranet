@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="42" viewBox="0 0 56 42">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_15620" data-name="Rectangle 15620" width="56" height="42" rx="4" transform="translate(9 9.433)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Switzerland" transform="translate(-9 -9.433)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_15619" data-name="Rectangle 15619" width="56" height="42" transform="translate(9 9.433)" fill="#fff"/>
+    <path id="Path_126171" data-name="Path 126171" d="M9,9V51.433H64.479V9Z" fill="#e31d1c" fill-rule="evenodd"/>
+    <g id="Group_125255" data-name="Group 125255" transform="translate(26.337 19.608)">
+      <path id="Path_126172" data-name="Path 126172" d="M32.87,15H25.935v7.072H19v7.072h6.935v7.072H32.87V29.144H39.8V22.072H32.87Z" transform="translate(-19 -15)" fill="#f1f9ff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

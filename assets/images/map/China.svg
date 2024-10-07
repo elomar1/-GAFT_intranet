@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="42" viewBox="0 0 56 42">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_15629" data-name="Rectangle 15629" width="56" height="42" rx="4" transform="translate(0 0.145)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="China" transform="translate(0 -0.145)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_15628" data-name="Rectangle 15628" width="56" height="42" transform="translate(0 0.145)" fill="#fff"/>
+    <path id="Path_126187" data-name="Path 126187" d="M0,0H56.193V42.145H0Z" fill="#e31d1c" fill-rule="evenodd"/>
+    <path id="Path_126188" data-name="Path 126188" d="M16.241,6.537,14.467,7.608l.4-2.09L13.395,3.954l2-.085.846-1.951.846,1.951h2L17.611,5.518l.444,2.09Z" transform="translate(10.127 1.45)" fill="#feca00" fill-rule="evenodd"/>
+    <path id="Path_126189" data-name="Path 126189" d="M10.512,14.664,5.454,17.388l1.154-5.315L2.395,8.1l5.7-.215,2.413-4.963,2.413,4.963H18.62l-4.2,4.193,1.265,5.315Z" transform="translate(1.81 2.206)" fill="#feca00" fill-rule="evenodd"/>
+    <path id="Path_126190" data-name="Path 126190" d="M18.241,10.537l-1.774,1.071.4-2.09L15.395,7.954l2-.085.846-1.951.846,1.951h2L19.611,9.518l.444,2.09Z" transform="translate(11.639 4.474)" fill="#feca00" fill-rule="evenodd"/>
+    <path id="Path_126191" data-name="Path 126191" d="M17.241,14.537l-1.774,1.071.4-2.09-1.477-1.564,2-.084.846-1.951.846,1.951h2l-1.474,1.649.444,2.09Z" transform="translate(10.883 7.498)" fill="#feca00" fill-rule="evenodd"/>
+    <path id="Path_126192" data-name="Path 126192" d="M14.241,17.537l-1.774,1.071.4-2.09-1.477-1.564,2-.084.846-1.951.846,1.951h2l-1.474,1.649.444,2.09Z" transform="translate(8.615 9.766)" fill="#feca00" fill-rule="evenodd"/>
+  </g>
+</svg>

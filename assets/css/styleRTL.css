@@ -196,8 +196,10 @@ img {
   background: #fff;
 }
 
-.btnGold2, .serBox .btnActins .download,
+.btnGold2, .policyBox .btnActins .download,
+.serBox .btnActins .download,
 .btnGold,
+.policyBox .btnActins .showServ,
 .serBox .btnActins .showServ {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -219,34 +221,39 @@ img {
   transition: .25s;
 }
 
-.btnGold2 span, .serBox .btnActins .download span,
+.btnGold2 span, .policyBox .btnActins .download span, .serBox .btnActins .download span,
 .btnGold span,
+.policyBox .btnActins .showServ span,
 .serBox .btnActins .showServ span {
   color: #fff;
   font-family: "DINNextRegular";
 }
 
-.btnGold2 img, .serBox .btnActins .download img,
+.btnGold2 img, .policyBox .btnActins .download img, .serBox .btnActins .download img,
 .btnGold img,
+.policyBox .btnActins .showServ img,
 .serBox .btnActins .showServ img {
   margin-right: 10px;
 }
 
-.btnGold2, .serBox .btnActins .download {
+.btnGold2, .policyBox .btnActins .download,
+.serBox .btnActins .download {
   border: 2px solid #fff;
   background: transparent;
   color: #CCA079;
 }
 
-.btnGold2 span, .serBox .btnActins .download span {
+.btnGold2 span, .policyBox .btnActins .download span, .serBox .btnActins .download span {
   color: #CCA079;
 }
 
-.btnGold:hover, .serBox .btnActins .showServ:hover {
+.btnGold:hover, .policyBox .btnActins .showServ:hover,
+.serBox .btnActins .showServ:hover {
   background: #BF936D;
 }
 
-.btnGold2:hover, .serBox .btnActins .download:hover {
+.btnGold2:hover, .policyBox .btnActins .download:hover,
+.serBox .btnActins .download:hover {
   background: #fff;
   border: 2px solid #fff;
 }
@@ -573,7 +580,8 @@ select::-ms-expand {
 }
 
 .ellipsis, .parentEmpNews .empNewsBox .txtNs .p13, .notifications .notificationMenu .scroller .dropdown-item .p14M,
-.notifications .notificationMenu .scroller .dropdown-item .font20B, .serBox .SRContent .titleSer {
+.notifications .notificationMenu .scroller .dropdown-item .font20B, .policyBox .SRContent .titleSer,
+.serBox .SRContent .titleSer {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -2383,7 +2391,6 @@ footer .left-footer p {
 }
 
 .breadcrumbBG {
-  background: #E4ECEB;
   min-height: 120px;
   padding: 15px 35px;
   width: calc(100% + 70px);
@@ -2620,6 +2627,7 @@ footer .left-footer p {
   background-image: url(../images/service/IconSearchSer.svg);
 }
 
+.policyBox,
 .serBox {
   height: 100%;
   background: #ffffff;
@@ -2632,51 +2640,61 @@ footer .left-footer p {
   transition: .25s;
 }
 
+.policyBox:hover,
 .serBox:hover {
   background: #007066;
 }
 
+.policyBox:hover .btnActins,
 .serBox:hover .btnActins {
   visibility: visible;
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
 
+.policyBox:hover .SRContent,
 .serBox:hover .SRContent {
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
 
+.policyBox:hover .titleSer,
 .serBox:hover .titleSer {
   color: #fff !important;
 }
 
+.policyBox:hover .SRicon,
 .serBox:hover .SRicon {
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
 
+.policyBox:hover .SRicon img,
 .serBox:hover .SRicon img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
 
+.policyBox .SRicon,
 .serBox .SRicon {
   -webkit-transition: .25s;
   transition: .25s;
   height: 60px;
 }
 
+.policyBox .SRicon img,
 .serBox .SRicon img {
   max-width: 66px;
 }
 
+.policyBox .SRContent,
 .serBox .SRContent {
   padding: 9px 10px 10px;
   -webkit-transition: .25s;
   transition: .25s;
 }
 
+.policyBox .SRContent .titleSer,
 .serBox .SRContent .titleSer {
   margin: 0;
   font-size: 1.8rem;
@@ -2685,14 +2703,61 @@ footer .left-footer p {
   height: calc(24px* 2);
 }
 
+.policyBox .btnActins,
 .serBox .btnActins {
   visibility: hidden;
   -webkit-transition: .25s;
   transition: .25s;
 }
 
+.policyBox .btnActins .showServ,
 .serBox .btnActins .showServ {
   margin-left: 10px;
+}
+
+.policyBox {
+  padding-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 290px;
+}
+
+.policyBox .btnActins {
+  display: none;
+}
+
+.policyBox:hover .btnActins {
+  display: block;
+}
+
+.policyBox:hover .dateP {
+  font-size: 16px;
+  color: #fff;
+  margin: 10px 0 0 0;
+}
+
+.policyBox:hover .btnActins {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.policyBox .SRContent .titleSer {
+  height: auto;
+  line-height: 24px;
+  -webkit-line-clamp: 3;
+}
+
+.policyBox .dateP {
+  font-size: 16px;
+  color: #444444;
 }
 
 .customPaddingBox, .servWrapper .col-md-3, .wrapOffers .col-md-4,
@@ -2748,6 +2813,152 @@ footer .left-footer p {
 .contentOffers .imgsOffer img {
   max-height: 720px;
   width: 100%;
+}
+
+.paginationCustom {
+  padding-top: 50px;
+}
+
+.paginationCustom .pagination {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paginationCustom .pagination > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paginationCustom .pagination a {
+  border: 1px solid #ECEFFF;
+  font-size: 18px;
+  color: #747474;
+  background-color: #fff;
+  width: 60px;
+  height: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paginationCustom .pagination a:hover {
+  color: #007066;
+}
+
+.paginationCustom .page-item.active a,
+.paginationCustom span.active {
+  border: 1px solid #007066;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007066;
+  width: 50px;
+  height: 44px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paginationCustom .pagination a.Previous {
+  position: relative;
+}
+
+.paginationCustom .pagination a.Previous:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 13px;
+  top: 18px;
+  right: 24px;
+  background-image: url("../images/promotions/ArrowRPag2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.paginationCustom .pagination a.Next {
+  position: relative;
+}
+
+.paginationCustom .pagination a.Next:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 13px;
+  top: 18px;
+  right: 24px;
+  background-image: url("../images/promotions/ArrowRPag.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.paginationCustom .pagination a.Last {
+  display: none;
+}
+
+.paginationCustom .pagination a.First {
+  display: none;
+}
+
+.paginationCustom a.aspNetDisabled.Previous:before,
+.paginationCustom a.aspNetDisabled.Next:before {
+  opacity: 0.5;
+}
+
+.mapDraggable img {
+  max-width: unset;
+  cursor: pointer;
+}
+
+.mapDraggable .post_tags,
+.mapDraggable .post_tags a {
+  color: #A7A7A7;
+}
+
+.mapDraggable .post_tags {
+  position: relative;
+  margin-top: 10px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mapDraggable .post_tags.draggable .post_tags_inner {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mapDraggable .post_tags_inner {
+  float: left;
+  position: relative;
+  padding: 0px 20px 0px 0;
 }
 
 /* fix issue */
@@ -2814,3 +3025,405 @@ footer .left-footer p {
   left: auto;
   bottom: 15px;
 }
+
+.locate {
+  position: absolute;
+  /*
+    left: 50%;
+    bottom: 50%;
+    */
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 45px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 18px;
+  max-width: 400px;
+  cursor: auto;
+  visibility: hidden;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  opacity: 0;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.locate .headLT {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 16px;
+}
+
+.locate .headLT .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.locate .headLT .location img {
+  max-width: 60px;
+  max-height: 45px;
+}
+
+.locate .headLT .location .titleLoct {
+  font-size: 18px;
+  color: #161616;
+  font-family: "DINNextBold";
+  margin: 0 18px;
+}
+
+.locate .bodyLT {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.locate .dataWrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-bottom: 6px;
+}
+
+.locate .dataWrap a {
+  text-decoration: unset;
+}
+
+.locate .dataWrap a .p16 {
+  text-decoration: underline;
+}
+
+.locate .dataWrap .icon {
+  margin-left: 8px;
+}
+
+.locate .dataWrap .p16 {
+  color: #1A1A1A;
+}
+
+.locate .dataWrap .p16 span.fontMedium {
+  display: block;
+  color: #007066;
+  margin-bottom: 2px;
+}
+
+.activeList {
+  visibility: visible;
+  -webkit-transform: unset;
+          transform: unset;
+  opacity: 1;
+}
+
+/*
+.pinsData {
+    [data-list="Path_125745"] {
+        bottom: 41%;
+        left: 58%;
+         
+    }
+    [data-list="Path_125621"] {
+        bottom: 10%;
+        left: 59%;
+         
+    }
+    [data-list="Path_125765"] {
+        bottom: 30%;
+        left: 56%;
+         
+    }
+    [data-list="Path_125723"] {
+        bottom: 28%;
+        left: 57%;
+         
+    }
+    [data-list="Path_125766"] {
+        bottom: 28%;
+        left: 59%;
+             
+    }
+    [data-list="Path_125672"] {
+        bottom: 50%;
+        left: 50%;
+         
+    }
+    [data-list="Path_125742"] {
+        bottom: 50%;
+        left: 58%;
+         
+    }
+    [data-list="Path_125737"] {
+        bottom: 61%;
+        left: 65%;
+         
+    }
+    [data-list="Path_125848"] {
+        bottom: 48%;
+        left: 53%;
+         
+    }
+    [data-list="Path_125703"] {
+        bottom: 48%;
+        left: 53%;
+         
+    }
+    [data-list="Path_125732"] {
+        bottom: 48%;
+        left: 49%;
+         
+    }
+    [data-list="Path_125681"] {
+        bottom: 60%;
+        left: 49%;
+         
+    }
+    [data-list="Path_125810"] {
+        bottom:  60%;
+        left: 49%;
+         
+    }
+    [data-list="Path_125695"] {
+        bottom:  60%;
+        left: 45%;
+         
+    }
+    [data-list="Path_125753"] {
+        bottom: 48%;
+        left: 45%;
+         
+    }
+    [data-list="Path_125800"] {
+        bottom: 45%;
+        left: 61%;
+         
+    }
+    [data-list="Path_125727"] {
+        bottom: 45%;
+        left: 61%;
+         
+    }
+    [data-list="Path_125745"] {
+        bottom: 45%;
+        left: 55%;
+         
+    }
+    [data-list="Path_125855"] {
+        bottom: 60%;
+        left: 26%;
+         
+    }
+    [data-list="Path_125859"] {
+        bottom: 66%;
+        left: 15%;
+         
+    }
+    [data-list="Path_125835"] {
+        bottom: 10%;
+        left: 54%;
+         
+    }
+    [data-list="Path_125688"] {
+         
+        bottom: 44%;
+        left: 55%;
+    }
+
+
+
+  
+}
+*/
+#Path_125688.activeArea,
+#Path_125835.activeArea,
+#Path_125859.activeArea,
+#Path_125855.activeArea,
+#Path_125745.activeArea,
+#Path_125727.activeArea,
+#Path_125800.activeArea,
+#Path_125753.activeArea,
+#Path_125695.activeArea,
+#Path_125810.activeArea,
+#Path_125681.activeArea,
+#Path_125732.activeArea,
+#Path_125703.activeArea,
+#Path_125848.activeArea,
+#Path_125737.activeArea,
+#Path_125742.activeArea,
+#Path_125672.activeArea,
+#Path_125766.activeArea,
+#Path_125723.activeArea,
+#Path_125765.activeArea,
+#Path_125621.activeArea,
+#Path_125745.activeArea {
+  fill: #54C08A;
+}
+
+.mapDraggable svg {
+  cursor: pointer;
+  padding: 40px 0;
+}
+
+.mapDraggable path[fill="#cca079"]:hover {
+  fill: #54C08A;
+}
+
+.mapDraggable .hoverPin {
+  fill: #54C08A;
+}
+
+.listCountries {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  max-height: 1090px;
+  width: 230px;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.05);
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.listCountries.expandListC {
+  width: 346px;
+}
+
+.listCountries .hideStateList {
+  display: none;
+}
+
+.listCountries .headerLc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 18px 12px 18px;
+  position: relative;
+}
+
+.listCountries .headerLc .toogleList {
+  width: 20px;
+  text-align: center;
+}
+
+.listCountries .headerLc .titleList {
+  font-family: "DINNextBold";
+  font-size: 16px;
+  color: #7D8A89;
+}
+
+.listCountries .headerLc .hideStateList {
+  position: absolute;
+  right: -32px;
+  background: #fff;
+  width: 37px;
+  top: 0;
+  height: 40px;
+}
+
+.listCountries .headerLc .justClose {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+  -webkit-box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.listCountries .countryUL {
+  height: 940px;
+  background: #fff;
+  overflow-x: auto;
+  padding: 18px;
+  list-style: none;
+  display: none;
+}
+
+.listCountries .countryUL li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #D7E8E8;
+}
+
+.listCountries .countryUL li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: unset;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.listCountries .countryUL li a:hover {
+  background: #D4F2EF;
+}
+
+.listCountries .countryUL li a img {
+  max-width: 53px;
+  margin-left: 10px;
+}
+
+.listCountries .countryUL li a .font16R {
+  margin: 0;
+  color: #454848;
+}
+
+.listCountries .countryUL li a .font16R strong {
+  display: block;
+  font-size: 16px;
+  color: #161616;
+  margin-bottom: 2px;
+}
+
+.mapDraggable {
+  position: relative;
+  margin-bottom: 300px;
+  background: #E7F2F2;
+  border-radius: 16px;
+}
+
+/* start for fixed pins */
+.pinsDataCountries .locate,
+.pinsData .locate {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+
+/* end for fixed pins */

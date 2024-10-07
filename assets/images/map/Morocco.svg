@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="42" viewBox="0 0 56 42">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_15622" data-name="Rectangle 15622" width="56" height="42" rx="4" transform="translate(83 95.371)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Morocco" transform="translate(-83 -95.371)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_15621" data-name="Rectangle 15621" width="56" height="42" transform="translate(83 95.371)" fill="#fff"/>
+    <path id="Path_126173" data-name="Path 126173" d="M83,95h56.5v38.84a3.53,3.53,0,0,1-3.531,3.531H86.531A3.53,3.53,0,0,1,83,133.84Z" fill="#c51918" fill-rule="evenodd"/>
+    <path id="Path_126174" data-name="Path 126174" d="M83,95h56.5v42.371H83Z" fill="#e31d1c" fill-rule="evenodd"/>
+    <path id="Path_126175" data-name="Path 126175" d="M115.193,127.582,104.042,97.7h-.484L92.8,127.582l11.178-6.718Zm-12.386-20.133,1.2-4.657,1.241,4.791,3.564,9.986L110.9,122.4l-4.518-3.183-2.411-1.444L101.6,119.2l-4.413,3.2,2.04-4.934Z" transform="translate(7.498 2.067)" fill="#579d20" fill-rule="evenodd"/>
+    <path id="Path_126176" data-name="Path 126176" d="M100.468,112.482l6.172,4.1,5.76-4.1,10.937-9.246H89.385Zm.128-3.529-4.2-2.569h19.815l-3.6,2.283-6,4.55Z" transform="translate(4.888 6.304)" fill="#579d20" fill-rule="evenodd"/>
+  </g>
+</svg>
