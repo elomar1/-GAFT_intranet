@@ -196,9 +196,11 @@ img {
   background: #fff;
 }
 
-.btnGold2, .policyBox .btnActins .download,
+.btnGold2, .surveyBox .btnActins .download,
+.policyBox .btnActins .download,
 .serBox .btnActins .download,
 .btnGold,
+.surveyBox .btnActins .showServ,
 .policyBox .btnActins .showServ,
 .serBox .btnActins .showServ {
   display: -webkit-inline-box;
@@ -221,38 +223,43 @@ img {
   transition: .25s;
 }
 
-.btnGold2 span, .policyBox .btnActins .download span, .serBox .btnActins .download span,
+.btnGold2 span, .surveyBox .btnActins .download span, .policyBox .btnActins .download span, .serBox .btnActins .download span,
 .btnGold span,
+.surveyBox .btnActins .showServ span,
 .policyBox .btnActins .showServ span,
 .serBox .btnActins .showServ span {
   color: #fff;
   font-family: "DINNextRegular";
 }
 
-.btnGold2 img, .policyBox .btnActins .download img, .serBox .btnActins .download img,
+.btnGold2 img, .surveyBox .btnActins .download img, .policyBox .btnActins .download img, .serBox .btnActins .download img,
 .btnGold img,
+.surveyBox .btnActins .showServ img,
 .policyBox .btnActins .showServ img,
 .serBox .btnActins .showServ img {
   margin-right: 10px;
 }
 
-.btnGold2, .policyBox .btnActins .download,
+.btnGold2, .surveyBox .btnActins .download,
+.policyBox .btnActins .download,
 .serBox .btnActins .download {
   border: 2px solid #fff;
   background: transparent;
   color: #CCA079;
 }
 
-.btnGold2 span, .policyBox .btnActins .download span, .serBox .btnActins .download span {
+.btnGold2 span, .surveyBox .btnActins .download span, .policyBox .btnActins .download span, .serBox .btnActins .download span {
   color: #CCA079;
 }
 
-.btnGold:hover, .policyBox .btnActins .showServ:hover,
+.btnGold:hover, .surveyBox .btnActins .showServ:hover,
+.policyBox .btnActins .showServ:hover,
 .serBox .btnActins .showServ:hover {
   background: #BF936D;
 }
 
-.btnGold2:hover, .policyBox .btnActins .download:hover,
+.btnGold2:hover, .surveyBox .btnActins .download:hover,
+.policyBox .btnActins .download:hover,
 .serBox .btnActins .download:hover {
   background: #fff;
   border: 2px solid #fff;
@@ -292,6 +299,51 @@ input[type=text] {
   left: 0;
 }
 
+input[type="checkbox"] {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  color: #1A1A1A;
+  margin-bottom: 8px;
+}
+
+[type="checkbox"] + label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid #E4ECEB;
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 7px;
+  margin-top: -4px;
+}
+
+[type="checkbox"]:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 6px;
+  height: 13px;
+  border: solid #007066;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
   position: absolute;
@@ -306,8 +358,9 @@ input[type=text] {
   cursor: pointer;
   line-height: 20px;
   display: inline-block;
-  color: #758D8B;
-  font-size: 16px;
+  color: #1A1A1A;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 [type="radio"]:checked + label:before,
@@ -318,7 +371,7 @@ input[type=text] {
   top: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid #758D8B;
+  border: 1px solid #E4ECEB;
   border-radius: 100%;
   background: #fff;
 }
@@ -328,7 +381,7 @@ input[type=text] {
   content: '';
   width: 12px;
   height: 12px;
-  background: #007066;
+  background: #CCA079;
   position: absolute;
   top: 3px;
   right: 4px;
@@ -404,6 +457,8 @@ input[type=text] {
 
 textarea {
   height: 150px;
+  border-radius: 10px;
+  resize: unset;
 }
 
 select {
@@ -486,7 +541,7 @@ select::-ms-expand {
   color: #444444;
 }
 
-.p18 {
+.p18, .boxEmpCm .empName {
   font-size: 1.8rem;
   color: #444444;
 }
@@ -509,6 +564,7 @@ select::-ms-expand {
 .p14M,
 .p16M,
 .fontMedium,
+.boxEmpCm .empName,
 .font20M {
   font-family: "DINNextMedium";
 }
@@ -580,8 +636,9 @@ select::-ms-expand {
 }
 
 .ellipsis, .parentEmpNews .empNewsBox .txtNs .p13, .notifications .notificationMenu .scroller .dropdown-item .p14M,
-.notifications .notificationMenu .scroller .dropdown-item .font20B, .policyBox .SRContent .titleSer,
-.serBox .SRContent .titleSer {
+.notifications .notificationMenu .scroller .dropdown-item .font20B, .surveyBox .SRContent .titleSer,
+.policyBox .SRContent .titleSer,
+.serBox .SRContent .titleSer, .surveyBox .dateP {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1122,7 +1179,7 @@ select::-ms-expand {
   color: #fff;
 }
 
-.mainBanner .boxBanner .txtBNR .p18 {
+.mainBanner .boxBanner .txtBNR .p18, .mainBanner .boxBanner .txtBNR .boxEmpCm .empName, .boxEmpCm .mainBanner .boxBanner .txtBNR .empName {
   margin-bottom: 0;
   color: #fff;
 }
@@ -1151,6 +1208,10 @@ select::-ms-expand {
 .customNavTabs .nav-link:focus,
 .customNavTabs .nav-link:hover {
   border-color: transparent;
+}
+
+.layoutInnerContents {
+  border-top: 1px solid #D7E8E8;
 }
 
 .layoutInnerContents .tabsCustom {
@@ -1571,6 +1632,19 @@ select::-ms-expand {
 
 .customContent .convertDate {
   padding-top: 27px;
+}
+
+.customContent .convertDate .radioBtn label {
+  color: #758D8B;
+  margin-bottom: 0px;
+}
+
+.customContent .convertDate .radioBtn label::before {
+  border: 1px solid #758D8B;
+}
+
+.customContent .convertDate .radioBtn label::after {
+  background: #007066;
 }
 
 .customContent .convertDate .radioBtn {
@@ -2580,7 +2654,7 @@ footer .left-footer p {
   margin-bottom: 50px;
 }
 
-.contentImgWithTxt .CONTxt .p18 {
+.contentImgWithTxt .CONTxt .p18, .contentImgWithTxt .CONTxt .boxEmpCm .empName, .boxEmpCm .contentImgWithTxt .CONTxt .empName {
   color: #1A1A1A;
   line-height: 30px;
   margin: 0;
@@ -2743,6 +2817,7 @@ footer .left-footer p {
   background-image: url(../images/service/IconSearchSer.svg);
 }
 
+.surveyBox,
 .policyBox,
 .serBox {
   height: 100%;
@@ -2756,11 +2831,13 @@ footer .left-footer p {
   transition: .25s;
 }
 
+.surveyBox:hover,
 .policyBox:hover,
 .serBox:hover {
   background: #007066;
 }
 
+.surveyBox:hover .btnActins,
 .policyBox:hover .btnActins,
 .serBox:hover .btnActins {
   visibility: visible;
@@ -2768,29 +2845,34 @@ footer .left-footer p {
           transform: translateY(-30px);
 }
 
+.surveyBox:hover .SRContent,
 .policyBox:hover .SRContent,
 .serBox:hover .SRContent {
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
 
+.surveyBox:hover .titleSer,
 .policyBox:hover .titleSer,
 .serBox:hover .titleSer {
   color: #fff !important;
 }
 
+.surveyBox:hover .SRicon,
 .policyBox:hover .SRicon,
 .serBox:hover .SRicon {
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
 
+.surveyBox:hover .SRicon img,
 .policyBox:hover .SRicon img,
 .serBox:hover .SRicon img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
 
+.surveyBox .SRicon,
 .policyBox .SRicon,
 .serBox .SRicon {
   -webkit-transition: .25s;
@@ -2798,11 +2880,13 @@ footer .left-footer p {
   height: 60px;
 }
 
+.surveyBox .SRicon img,
 .policyBox .SRicon img,
 .serBox .SRicon img {
   max-width: 66px;
 }
 
+.surveyBox .SRContent,
 .policyBox .SRContent,
 .serBox .SRContent {
   padding: 9px 10px 10px;
@@ -2810,6 +2894,7 @@ footer .left-footer p {
   transition: .25s;
 }
 
+.surveyBox .SRContent .titleSer,
 .policyBox .SRContent .titleSer,
 .serBox .SRContent .titleSer {
   margin: 0;
@@ -2819,6 +2904,7 @@ footer .left-footer p {
   height: calc(24px* 2);
 }
 
+.surveyBox .btnActins,
 .policyBox .btnActins,
 .serBox .btnActins {
   visibility: hidden;
@@ -2826,6 +2912,7 @@ footer .left-footer p {
   transition: .25s;
 }
 
+.surveyBox .btnActins .showServ,
 .policyBox .btnActins .showServ,
 .serBox .btnActins .showServ {
   margin-left: 10px;
@@ -2876,6 +2963,37 @@ footer .left-footer p {
   color: #444444;
 }
 
+.surveyBox {
+  height: 260px;
+  overflow: hidden;
+}
+
+.surveyBox .dateP {
+  -webkit-line-clamp: 3;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.surveyBox .btnActins .showServ {
+  width: 66%;
+}
+
+.surveyBox .btnActins .showServ span {
+  margin-top: -4px;
+}
+
+.surveyBox:hover {
+  padding-top: 55px;
+}
+
+.surveyBox:hover .SRicon {
+  display: none;
+}
+
+.surveyBox:hover .btnActins {
+  display: block;
+}
+
 .customPaddingBox, .servWrapper .col-md-3, .wrapOffers .col-md-4,
 .wrapNews .col-md-4 {
   padding-bottom: 32px;
@@ -2892,7 +3010,7 @@ footer .left-footer p {
   padding: 32px 0;
 }
 
-.fromTo .p18 {
+.fromTo .p18, .fromTo .boxEmpCm .empName, .boxEmpCm .fromTo .empName {
   color: #758D8B;
 }
 
@@ -3237,7 +3355,7 @@ footer .left-footer p {
   color: #1A1A1A;
 }
 
-.locate .dataWrap .p16 span.fontMedium {
+.locate .dataWrap .p16 span.fontMedium, .locate .dataWrap .p16 .boxEmpCm span.empName, .boxEmpCm .locate .dataWrap .p16 span.empName {
   display: block;
   color: #007066;
   margin-bottom: 2px;
@@ -3744,4 +3862,201 @@ footer .left-footer p {
 
 .accordion.sitemap-acc .accordion-item .accordion-body .acc-sec ul li:last-child {
   margin-bottom: 0;
+}
+
+.serveyWrapper textarea {
+  height: 200px;
+}
+
+.serveyWrapper .inputGroup {
+  border-bottom: 1px solid #E4ECEB;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.serveyWrapper .inputGroup p.p18, .serveyWrapper .inputGroup .boxEmpCm p.empName, .boxEmpCm .serveyWrapper .inputGroup p.empName {
+  font-family: "DINNextMedium";
+  margin-bottom: 15px;
+  color: #1A1A1A;
+}
+
+.Governor {
+  border-radius: 22px;
+  -webkit-box-shadow: 0 3px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 40px rgba(0, 0, 0, 0.05);
+  padding: 35px 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #58d5ca;
+  background: linear-gradient(306deg, #58d5ca 31%, #037268 100%);
+  margin-bottom: 30px;
+}
+
+.Governor .govImg {
+  margin-left: 40px;
+}
+
+.Governor .govImg img {
+  max-width: 130px;
+  max-height: 130px;
+  border-radius: 50%;
+}
+
+.Governor .govTxt {
+  text-align: center;
+}
+
+.Governor .govTxt .nameGov {
+  font-size: 23px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-family: "DINNextBold";
+}
+
+.Governor .govTxt .rollGov {
+  font-family: "DINNextMedium";
+  font-size: 2.1rem;
+  color: #fff;
+  margin: 0;
+}
+
+.editServ .btnActins .showServ {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.serBox .btnActins .showServ span {
+  margin-top: -4px;
+}
+
+.OrgStructureWrapper {
+  padding-top: 65px;
+  padding-bottom: 220px;
+}
+
+.boxEmpCm {
+  border-radius: 16px;
+  background: #fff;
+  padding: 25px 24px;
+  text-align: center;
+}
+
+.boxEmpCm .empImg {
+  margin-bottom: 6px;
+}
+
+.boxEmpCm .empImg img {
+  max-width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.boxEmpCm .empName {
+  color: #007066;
+  margin-bottom: 0;
+}
+
+.boxEmpCm .empToll {
+  color: #758D8B;
+  font-size: 14px;
+  display: block;
+}
+
+.boxEmpCm .empWeqala {
+  font-size: 11px;
+  color: #758D8B;
+  font-family: "DINNextLight";
+}
+
+.boxEmpCm .empLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.boxEmpCm .empLinks a {
+  text-decoration: unset;
+  margin: 0 10px;
+}
+
+.empContent {
+  position: relative;
+}
+
+.empContent #nav-emp {
+  padding-top: 30px;
+}
+
+.empContent #nav-emp .boxEmpCm {
+  height: 100%;
+}
+
+.empContent #nav-emp .col-md-3 {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-bottom: 30px;
+}
+
+.empContent .empFilter {
+  position: absolute;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  top: -46px;
+  width: 66%;
+}
+
+.empContent .inputSelect {
+  min-width: 170px;
+  margin-right: 10px;
+}
+
+.empContent .inputSelect select {
+  color: #A7B1B0;
+  border-radius: 8px;
+  border: unset;
+  background-image: url(../images/EmployeeDirectory/ArrowEmp.svg);
+}
+
+.empContent .inputGroup.searchIcon input {
+  min-width: 450px;
+  font-size: 16px;
+  border: unset;
+}
+
+.empContent .inputGroup.searchIcon input::-webkit-input-placeholder {
+  color: #A7B1B0;
+  font-size: 16px;
+}
+
+.empContent .inputGroup.searchIcon input:-ms-input-placeholder {
+  color: #A7B1B0;
+  font-size: 16px;
+}
+
+.empContent .inputGroup.searchIcon input::-ms-input-placeholder {
+  color: #A7B1B0;
+  font-size: 16px;
+}
+
+.empContent .inputGroup.searchIcon input::placeholder {
+  color: #A7B1B0;
+  font-size: 16px;
 }

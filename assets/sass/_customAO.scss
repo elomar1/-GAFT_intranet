@@ -124,6 +124,52 @@ img {
     }
 }
 
+
+input[type="checkbox"]  {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  [type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    color: #1A1A1A;
+    margin-bottom: 8px;
+  }
+  
+  [type="checkbox"] + label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #E4ECEB;
+    padding: 9px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 7px;
+    margin-top: -4px;
+  }
+  
+  [type="checkbox"]:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 6px;
+    height: 13px;
+    border: solid #007066;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
@@ -138,8 +184,10 @@ img {
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
-    color: #758D8B;
-    font-size: 16px;
+    color: #1A1A1A;
+    font-size: 18px;
+    margin-bottom: 15px;
+
 }
 
 [type="radio"]:checked+label:before,
@@ -150,7 +198,7 @@ img {
     top: 0;
     width: 20px;
     height: 20px;
-    border: 1px solid #758D8B;
+    border: 1px solid #E4ECEB;
     border-radius: 100%;
     background: #fff;
 }
@@ -160,7 +208,7 @@ img {
     content: '';
     width: 12px;
     height: 12px;
-    background: #007066;
+    background: #CCA079;
     position: absolute;
     top: 3px;
     right: 4px;
@@ -219,6 +267,8 @@ input[type=text] {
 
 textarea {
     height: 150px;
+    border-radius: 10px;
+    resize: unset;
 }
 
 select {
@@ -927,6 +977,7 @@ select::-ms-expand {
 }
 
 .layoutInnerContents {
+    border-top: 1px solid #D7E8E8;
     .tabsCustom {
         padding-top: 30px;
         position: relative;
@@ -1328,7 +1379,18 @@ select::-ms-expand {
 
     .convertDate {
         padding-top: 27px;
-
+        .radioBtn {
+            label {
+                color: #758D8B;
+                margin-bottom:0px;
+                &::before {
+                    border: 1px solid #758D8B;
+                }
+                &::after {
+                    background: #007066;
+                }
+            }
+        }
         .radioBtn {
             display: flex;
             padding-bottom: 35px;
@@ -2461,7 +2523,7 @@ footer {
 
 
 }
-
+.surveyBox,
 .policyBox,
 .serBox {
     height: 100%;
@@ -2574,7 +2636,32 @@ footer {
         color: #444444;
     }
 }
+.surveyBox {
+    height: 260px;
+    overflow: hidden;
+    .dateP {
+        @extend .ellipsis;
+        -webkit-line-clamp: 3;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .btnActins .showServ {
+        width: 66%;
+        span {
+            margin-top: -4px;
+        }
+    }
+    &:hover {
+        padding-top: 55px;
+        .SRicon {
+            display: none;
+        }
+        .btnActins {
+            display: block;
+        }
+    }
 
+}
 
 .customPaddingBox {
     padding-bottom: 32px;
@@ -3447,3 +3534,153 @@ footer {
         }
     }
 }
+
+.serveyWrapper {
+    textarea {
+        height: 200px;
+    }
+    .inputGroup  {
+        border-bottom: 1px solid #E4ECEB;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    
+        p.p18 {
+            font-family: "DINNextMedium";
+            margin-bottom: 15px;
+            color: #1A1A1A;
+        }
+    }
+}
+
+.Governor {
+    // width: max-content;
+    border-radius: 22px;
+    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.05);
+    padding: 35px 50px;
+    display: inline-flex;
+    align-items: center;
+    background: rgb(88, 213, 202);
+    background: linear-gradient(306deg, rgba(88, 213, 202, 1) 31%, rgba(3, 114, 104, 1) 100%);
+    margin-bottom: 30px;
+    .govImg {
+        margin-left: 40px;
+        img {
+            max-width: 130px;
+            max-height: 130px;
+            border-radius: 50%;
+        }
+    }
+    .govTxt {
+        text-align: center;
+        .nameGov {
+            font-size: 23px;
+            margin-bottom: 8px;
+            color: #fff;
+              font-family: "DINNextBold";
+        }
+        .rollGov {
+            font-family: "DINNextMedium";
+            font-size: 2.1rem;
+            color: #fff;
+            margin: 0;
+        }
+    }
+}
+.editServ .btnActins .showServ {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.serBox .btnActins .showServ span {
+    margin-top: -4px;
+}
+.OrgStructureWrapper {
+    padding-top: 65px;
+    padding-bottom: 220px;
+}
+
+.boxEmpCm {
+    border-radius: 16px;
+    background: #fff;
+    padding: 25px 24px;
+    text-align: center;
+    .empImg {
+        margin-bottom: 6px;
+        img {
+            max-width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .empName {
+        @extend .p18;
+        @extend .fontMedium;
+        color: #007066;
+        margin-bottom: 0;
+    }
+    .empToll {
+        color: #758D8B;
+        font-size: 14px;
+        display: block;
+    }
+    .empWeqala {
+        font-size: 11px;
+        color: #758D8B;
+        font-family: "DINNextLight";
+    }
+    .empLinks {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        a {
+            text-decoration: unset;
+            margin: 0 10px;
+        }
+    }
+}
+
+.empContent {
+    position: relative;
+    #nav-emp {
+        padding-top: 30px;
+        .boxEmpCm {
+            height: 100%;
+        }
+        .col-md-3 {
+            padding-right: 12px;
+            padding-left: 12px;
+            margin-bottom: 30px;
+        }
+    }
+    .empFilter {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        top: -46px;
+        width: 66%;
+    }
+    .inputSelect {
+        min-width: 170px;
+        margin-right: 10px;
+        select {
+            color: #A7B1B0;
+            border-radius: 8px;
+            border: unset;
+            background-image: url(../images/EmployeeDirectory/ArrowEmp.svg);
+        }
+    }
+    .inputGroup.searchIcon {
+        input {
+            min-width: 450px;
+            font-size: 16px;
+            border: unset;
+            &::placeholder {
+                color: #A7B1B0;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
