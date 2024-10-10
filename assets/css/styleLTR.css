@@ -160,7 +160,12 @@ img {
 }
 
 .btnSecondary,
-.btnMain {
+.btnMain,
+.surveyContainer .btnsdiv.Acenter input[type="submit"],
+.surveyResultRow .form-submit .voteNow,
+.surveyResultRow .form-submit .result,
+.servey.gaft-card .form-submit .voteNow,
+.servey.gaft-card .form-submit .result {
   display: inline-block;
   padding: 8px 20px 11px;
   background: #007066;
@@ -176,18 +181,34 @@ img {
 }
 
 .btnSecondary.withArrow,
-.btnMain.withArrow {
+.btnMain.withArrow,
+.surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"],
+.surveyResultRow .form-submit .withArrow.voteNow,
+.surveyResultRow .form-submit .withArrow.result,
+.servey.gaft-card .form-submit .withArrow.voteNow,
+.servey.gaft-card .form-submit .withArrow.result {
   padding: 8px 27px 11px;
 }
 
 .btnSecondary.withArrow img,
-.btnMain.withArrow img {
+.btnMain.withArrow img,
+.surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"] img,
+.surveyResultRow .form-submit .withArrow.voteNow img,
+.surveyResultRow .form-submit .withArrow.result img,
+.servey.gaft-card .form-submit .withArrow.voteNow img,
+.servey.gaft-card .form-submit .withArrow.result img {
   margin-right: 10px;
 }
 
 .btnSecondary:hover,
-.btnMain:hover {
-  opacity: .9;
+.btnMain:hover,
+.surveyContainer .btnsdiv.Acenter input:hover[type="submit"],
+.surveyResultRow .form-submit .voteNow:hover,
+.surveyResultRow .form-submit .result:hover,
+.servey.gaft-card .form-submit .voteNow:hover,
+.servey.gaft-card .form-submit .result:hover {
+  background: #53B7AE;
+  border-color: #53B7AE;
 }
 
 .btnSecondary {
@@ -196,9 +217,16 @@ img {
   background: #fff;
 }
 
+.btnSecondary:hover {
+  border: 1px solid #CCA079;
+  color: #fff;
+  background: #CCA079;
+}
+
 .btnGold2, .surveyBox .btnActins .download,
 .policyBox .btnActins .download,
-.serBox .btnActins .download,
+.serBox .btnActins .download, .surveyResultRow .pollbtns input[type="submit"],
+.servey.gaft-card .pollbtns input[type="submit"],
 .btnGold,
 .surveyBox .btnActins .showServ,
 .policyBox .btnActins .showServ,
@@ -223,7 +251,7 @@ img {
   transition: .25s;
 }
 
-.btnGold2 span, .surveyBox .btnActins .download span, .policyBox .btnActins .download span, .serBox .btnActins .download span,
+.btnGold2 span, .surveyBox .btnActins .download span, .policyBox .btnActins .download span, .serBox .btnActins .download span, .surveyResultRow .pollbtns input[type="submit"] span, .servey.gaft-card .pollbtns input[type="submit"] span,
 .btnGold span,
 .surveyBox .btnActins .showServ span,
 .policyBox .btnActins .showServ span,
@@ -232,7 +260,7 @@ img {
   font-family: "DINNextRegular";
 }
 
-.btnGold2 img, .surveyBox .btnActins .download img, .policyBox .btnActins .download img, .serBox .btnActins .download img,
+.btnGold2 img, .surveyBox .btnActins .download img, .policyBox .btnActins .download img, .serBox .btnActins .download img, .surveyResultRow .pollbtns input[type="submit"] img, .servey.gaft-card .pollbtns input[type="submit"] img,
 .btnGold img,
 .surveyBox .btnActins .showServ img,
 .policyBox .btnActins .showServ img,
@@ -240,15 +268,32 @@ img {
   margin-right: 10px;
 }
 
+
+.btnGold,
+.surveyBox .btnActins .showServ,
+.policyBox .btnActins .showServ,
+.serBox .btnActins .showServ {
+  color: #fff;
+}
+
+.btnGold:hover, .surveyBox .btnActins .showServ:hover,
+.policyBox .btnActins .showServ:hover,
+.serBox .btnActins .showServ:hover {
+  color: #fff;
+  background: #A98564;
+  border-color: #A98564;
+}
+
 .btnGold2, .surveyBox .btnActins .download,
 .policyBox .btnActins .download,
-.serBox .btnActins .download {
+.serBox .btnActins .download, .surveyResultRow .pollbtns input[type="submit"],
+.servey.gaft-card .pollbtns input[type="submit"] {
   border: 2px solid #fff;
   background: transparent;
   color: #CCA079;
 }
 
-.btnGold2 span, .surveyBox .btnActins .download span, .policyBox .btnActins .download span, .serBox .btnActins .download span {
+.btnGold2 span, .surveyBox .btnActins .download span, .policyBox .btnActins .download span, .serBox .btnActins .download span, .surveyResultRow .pollbtns input[type="submit"] span, .servey.gaft-card .pollbtns input[type="submit"] span {
   color: #CCA079;
 }
 
@@ -260,12 +305,14 @@ img {
 
 .btnGold2:hover, .surveyBox .btnActins .download:hover,
 .policyBox .btnActins .download:hover,
-.serBox .btnActins .download:hover {
+.serBox .btnActins .download:hover, .surveyResultRow .pollbtns input:hover[type="submit"],
+.servey.gaft-card .pollbtns input:hover[type="submit"] {
   background: #fff;
   border: 2px solid #fff;
 }
 
-.fixDir, select,
+.fixDir, .form-control,
+select,
 textarea,
 .date input[type=date],
 input[type=text] {
@@ -338,7 +385,7 @@ input[type="checkbox"] {
   right: 7px;
   width: 6px;
   height: 13px;
-  border: solid #007066;
+  border: solid #cca079;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -441,6 +488,7 @@ input[type=text]::placeholder {
   margin-bottom: 10px;
 }
 
+.form-control,
 select,
 textarea,
 .date input[type=date],
@@ -455,6 +503,7 @@ input[type=text] {
   background: #fff;
 }
 
+textarea.form-control,
 textarea {
   height: 150px;
   border-radius: 10px;
@@ -1625,7 +1674,10 @@ select::-ms-expand {
   margin-bottom: 34px;
 }
 
-.customContent .empGuide .btnMain {
+.customContent .empGuide .btnMain, .customContent .empGuide .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .empGuide input[type="submit"], .customContent .empGuide .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .empGuide .voteNow,
+.customContent .empGuide .surveyResultRow .form-submit .result, .surveyResultRow .form-submit .customContent .empGuide .result,
+.customContent .empGuide .servey.gaft-card .form-submit .voteNow, .servey.gaft-card .form-submit .customContent .empGuide .voteNow,
+.customContent .empGuide .servey.gaft-card .form-submit .result, .servey.gaft-card .form-submit .customContent .empGuide .result {
   width: 100%;
   margin-top: 50px;
 }
@@ -1658,7 +1710,10 @@ select::-ms-expand {
   padding-left: 27px;
 }
 
-.customContent .convertDate .btnMain {
+.customContent .convertDate .btnMain, .customContent .convertDate .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .convertDate input[type="submit"], .customContent .convertDate .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .convertDate .voteNow,
+.customContent .convertDate .surveyResultRow .form-submit .result, .surveyResultRow .form-submit .customContent .convertDate .result,
+.customContent .convertDate .servey.gaft-card .form-submit .voteNow, .servey.gaft-card .form-submit .customContent .convertDate .voteNow,
+.customContent .convertDate .servey.gaft-card .form-submit .result, .servey.gaft-card .form-submit .customContent .convertDate .result {
   width: 100%;
   margin-top: 35px;
 }
@@ -3040,7 +3095,10 @@ footer .left-footer p {
   margin-bottom: 45px;
 }
 
-.contentOffers .text-right .btnMain.withArrow {
+.contentOffers .text-right .btnMain.withArrow, .contentOffers .text-right .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"], .surveyContainer .btnsdiv.Acenter .contentOffers .text-right input.withArrow[type="submit"], .contentOffers .text-right .surveyResultRow .form-submit .withArrow.voteNow, .surveyResultRow .form-submit .contentOffers .text-right .withArrow.voteNow,
+.contentOffers .text-right .surveyResultRow .form-submit .withArrow.result, .surveyResultRow .form-submit .contentOffers .text-right .withArrow.result,
+.contentOffers .text-right .servey.gaft-card .form-submit .withArrow.voteNow, .servey.gaft-card .form-submit .contentOffers .text-right .withArrow.voteNow,
+.contentOffers .text-right .servey.gaft-card .form-submit .withArrow.result, .servey.gaft-card .form-submit .contentOffers .text-right .withArrow.result {
   margin-bottom: 45px;
 }
 
@@ -3868,16 +3926,24 @@ footer .left-footer p {
   height: 200px;
 }
 
+.serveyWrapper > div,
 .serveyWrapper .inputGroup {
   border-bottom: 1px solid #E4ECEB;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-.serveyWrapper .inputGroup p.p18, .serveyWrapper .inputGroup .boxEmpCm p.empName, .boxEmpCm .serveyWrapper .inputGroup p.empName {
+.serveyWrapper > div p.p18, .serveyWrapper > div .boxEmpCm p.empName, .boxEmpCm .serveyWrapper > div p.empName,
+.serveyWrapper .inputGroup p.p18,
+.serveyWrapper .inputGroup .boxEmpCm p.empName,
+.boxEmpCm .serveyWrapper .inputGroup p.empName {
   font-family: "DINNextMedium";
   margin-bottom: 15px;
   color: #1A1A1A;
+}
+
+.serveyWrapper > div {
+  padding-bottom: 0;
 }
 
 .Governor {
@@ -4059,4 +4125,162 @@ footer .left-footer p {
 .empContent .inputGroup.searchIcon input::placeholder {
   color: #A7B1B0;
   font-size: 16px;
+}
+
+.surveyContainer {
+  padding-bottom: 120px;
+}
+
+.surveyContainer .btnsdiv.Acenter input[type="submit"] {
+  min-width: 150px;
+  padding-left: 44px;
+  background-image: url(../images/promotions/arrowBtn.svg);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+
+.surveyContainer .tittel p {
+  font-family: "DINNextMedium";
+  margin-bottom: 15px;
+  color: #1A1A1A;
+}
+
+input[type=password]:hover, input[type=text]:hover, input[type=file]:hover, input:not([type]):hover, textarea:hover, .sp-peoplepicker-topLevel:hover, .ms-inputBox:hover {
+  border-color: #E4ECEB;
+}
+
+.form-control:focus {
+  border-color: #E4ECEB;
+  outline: 0;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.ui-icon {
+  background: none !important;
+  display: none;
+}
+
+.servHeading, .surveyResultRow .surveyQuestionTitle,
+.surveyResultRow .responsesCount,
+.surveyResultRow .pollQestion,
+.servey.gaft-card .surveyQuestionTitle,
+.servey.gaft-card .responsesCount,
+.servey.gaft-card .pollQestion, .surveyResultRow .pollWp .question span,
+.servey.gaft-card .pollWp .question span {
+  font-size: 18px;
+  color: #1A1A1A;
+  font-weight: bold;
+  font-family: "DINNextBold";
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.surveyResultRow,
+.servey.gaft-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 29px 19px;
+  height: 100%;
+}
+
+.surveyResultRow .poll-archive,
+.servey.gaft-card .poll-archive {
+  text-decoration: unset;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.surveyResultRow .responsesCount,
+.servey.gaft-card .responsesCount {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.surveyResultRow .pollInner label,
+.servey.gaft-card .pollInner label {
+  font-size: 16px;
+}
+
+.surveyResultRow .form-submit,
+.servey.gaft-card .form-submit {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.surveyResultRow .form-submit .result,
+.servey.gaft-card .form-submit .result {
+  background: #CCA079;
+  border-color: #CCA079;
+  margin-right: 10px;
+}
+
+.surveyResultRow .form-submit .result:hover,
+.servey.gaft-card .form-submit .result:hover {
+  background: #A98564;
+  border-color: #A98564;
+}
+
+.surveyResultRow .surveyBarBase span,
+.surveyResultRow .surveyOptionTitle,
+.surveyResultRow .poll-percent,
+.servey.gaft-card .surveyBarBase span,
+.servey.gaft-card .surveyOptionTitle,
+.servey.gaft-card .poll-percent {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  color: #1A1A1A;
+}
+
+.surveyResultRow .pollbtns,
+.servey.gaft-card .pollbtns {
+  padding-top: 15px;
+}
+
+.surveyResultRow .pollbtns input[type="submit"],
+.servey.gaft-card .pollbtns input[type="submit"] {
+  border-color: #cca079;
+  font-size: 16px;
+}
+
+.surveyResultRow .surveyBarBase,
+.surveyResultRow .resultbarbase,
+.servey.gaft-card .surveyBarBase,
+.servey.gaft-card .resultbarbase {
+  height: 4px !important;
+  background-color: #E4ECEB !important;
+}
+
+.surveyResultRow .surveyBarBase div,
+.surveyResultRow .resultbarbase div,
+.servey.gaft-card .surveyBarBase div,
+.servey.gaft-card .resultbarbase div {
+  height: 4px !important;
+  background-color: #53B7AE !important;
+}
+
+.surveyResultRow .singlePollResult,
+.servey.gaft-card .singlePollResult {
+  position: relative;
+}
+
+.surveyResultRow .singlePollResult .surveyBarBase span,
+.servey.gaft-card .singlePollResult .surveyBarBase span {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }

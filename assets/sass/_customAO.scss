@@ -37,7 +37,8 @@ img {
     }
 
     &:hover {
-        opacity: .9;
+        background: #53B7AE;
+        border-color: #53B7AE;
     }
 }
 
@@ -45,6 +46,11 @@ img {
     border: 1px solid #CCA079;
     color: #CCA079;
     background: #fff;
+    &:hover {
+        border: 1px solid #CCA079;
+        color: #fff;
+        background: #CCA079;
+    }
 }
 
 .btnGold2,
@@ -71,7 +77,14 @@ img {
     }
 
 }
-
+.btnGold {
+    color: #fff;
+    &:hover {
+        color: #fff;
+        background: #A98564;
+        border-color: #A98564;
+    }
+}
 .btnGold2 {
     border: 2px solid #fff;
     background: transparent;
@@ -164,7 +177,7 @@ input[type="checkbox"]  {
     right: 7px;
     width: 6px;
     height: 13px;
-    border: solid #007066;
+    border: solid #cca079;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
@@ -249,7 +262,7 @@ input[type=text]::placeholder {
         margin-bottom: 10px;
     }
 }
-
+.form-control,
 select,
 textarea,
 .date input[type=date],
@@ -264,7 +277,7 @@ input[type=text] {
     background: #fff;
     @extend .fixDir;
 }
-
+textarea.form-control,
 textarea {
     height: 150px;
     border-radius: 10px;
@@ -3539,6 +3552,7 @@ footer {
     textarea {
         height: 200px;
     }
+    > div,
     .inputGroup  {
         border-bottom: 1px solid #E4ECEB;
         margin-bottom: 20px;
@@ -3549,6 +3563,9 @@ footer {
             margin-bottom: 15px;
             color: #1A1A1A;
         }
+    }
+    > div {
+        padding-bottom: 0;
     }
 }
 
@@ -3684,3 +3701,138 @@ footer {
     }
 }
 
+.surveyContainer {
+    padding-bottom:120px;
+    .btnsdiv.Acenter {
+        input[type="submit"] {
+            @extend .btnMain;
+            min-width: 150px;
+            padding-left: 44px;
+            background-image: url(../images/promotions/arrowBtn.svg);
+            background-repeat: no-repeat;
+            background-position: 20px center;
+        }
+    }
+    .tittel {
+        p {
+            font-family: "DINNextMedium";
+            margin-bottom: 15px;
+            color: #1A1A1A;
+        }
+    }
+}
+input[type=password]:hover, input[type=text]:hover, input[type=file]:hover, input:not([type]):hover, textarea:hover, .sp-peoplepicker-topLevel:hover, .ms-inputBox:hover {
+    border-color: #E4ECEB;
+}
+.form-control:focus {
+    border-color: #E4ECEB;
+    outline: 0;
+    box-shadow: unset;
+}
+.ui-icon {
+    background: none !important;
+    display: none;
+}
+
+.servey-gaaft {
+
+}
+.servHeading  {
+    font-size: 18px;
+    color: #1A1A1A;
+    font-weight: bold;
+    font-family: "DINNextBold";
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.surveyResultRow,
+.servey.gaft-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 29px 19px;
+    height: 100%;
+    .poll-archive {
+        text-decoration: unset;
+        font-size: 16px;
+        color: #1A1A1A;
+    }
+    .surveyQuestionTitle,
+    .responsesCount,
+    .pollQestion {
+        @extend .servHeading ;
+    }
+    .responsesCount {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    .pollInner {
+        label {
+            font-size: 16px;
+        }
+    }  
+    .form-submit {
+        text-align: center;
+        padding-top: 24px;
+        .voteNow,
+        /*.poll-archive,*/
+        .result {
+            @extend .btnMain;
+        }
+        .result {
+            background: #CCA079;
+            border-color: #CCA079;
+            margin-right: 10px;
+            &:hover {
+                background: #A98564;
+                border-color: #A98564;
+            }
+        }
+
+    }
+
+    .pollWp .question span {
+        @extend .servHeading ;
+    }
+    .surveyBarBase span ,
+    .surveyOptionTitle,
+    .poll-percent {
+        font-size: 16px;
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+        justify-content: right;
+        color: #1A1A1A;
+        
+    }
+    .pollbtns {
+        padding-top: 15px;
+        input[type="submit"] {
+            @extend .btnGold2;
+            border-color: #cca079;
+            font-size: 16px;
+        }
+    }
+    .surveyBarBase,
+    .resultbarbase {
+        height: 4px !important;
+        background-color: #E4ECEB !important;
+        div {
+            height: 4px !important;
+            background-color: #53B7AE !important;
+        }
+    }
+    .singlePollResult {
+        position: relative;
+        .surveyBarBase {
+            span {
+                position: absolute;
+                right: 0;
+                top: -15px;
+                content: "";
+                display: inline-flex;
+                justify-content: left;
+            
+            }
+        }
+    }
+}
