@@ -12,7 +12,7 @@ $(document).ready(function () {
       },
     });
     // end slider
-    let servSwiper = new Swiper(".servSwiper", {
+    let servSwiper = new Swiper(".servSwiper0", {
       spaceBetween: 25,
       slidesPerView: 4,
       pagination: {
@@ -20,21 +20,21 @@ $(document).ready(function () {
         clickable: true,
       },
       navigation: {
-        nextEl: ".servSwiper .swiper-button-next",
-        prevEl: ".servSwiper .swiper-button-prev",
+        nextEl: ".servSwiper0 .swiper-button-next",
+        prevEl: ".servSwiper0 .swiper-button-prev",
       },
       
     });
-    let servSwiper2 = new Swiper(".servSwiper2", {
+    let servSwiper2 = new Swiper(".servSwiper1", {
       spaceBetween: 25,
       slidesPerView: 4,
       pagination: {
-        el: ".servSwiper2 .swiper-pagination",
+        el: ".servSwiper1 .swiper-pagination",
         clickable: true,
       },
       navigation: {
-        nextEl: ".servSwiper2 .swiper-button-next",
-        prevEl: ".servSwiper2 .swiper-button-prev",
+        nextEl: ".servSwiper1 .swiper-button-next",
+        prevEl: ".servSwiper1 .swiper-button-prev",
       },
       
     });

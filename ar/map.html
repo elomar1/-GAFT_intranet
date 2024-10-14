@@ -2273,28 +2273,16 @@ $(document).ready(function(){
 	});
 });
 
+
 $(document).ready(function(){
-
-    // $('#Path_125621').click(function(){
-    //     const area = $(this).attr("data-area");
-
-    //     $(this).addClass('activeArea').siblings().removeClass('activeArea')
-    //     // alert(area)
-
-    //     $(".pinsData .locate").each(function () {
-    //     const list = $(this).attr("data-list");
-    //     if (list.includes(area)) {
-    //         $(this).addClass("activeList").siblings().removeClass("activeList");
-    //     } else {
-    //         $(this).removeClass("activeList");
-    //     }
-    //     });
-    // })
 
     $(".mapDraggable path[fill='#cca079']").click(function () {
     const area = $(this).attr("id");
     $(this).addClass("activeArea").siblings().removeClass("activeArea hoverPin");
-        
+    $('.hideStateList').hide()
+    $('.countryUL').slideUp()
+    $('.pinsDataCountries .locate').removeClass('activeList')
+    $('.listCountries').delay(800 ).removeClass('expandListC')
     $(".pinsData .locate").each(function () {
         const list = $(this).attr("data-list");
         if (list.includes(area)) {
@@ -2306,7 +2294,10 @@ $(document).ready(function(){
   });
   $(".mapDraggable [data-name='pin']").click(function () {
     const pinArea = $(this).attr("data-area");
-    console.log(pinArea);
+    $('.hideStateList').hide()
+    $('.countryUL').slideUp()
+    $('.pinsDataCountries .locate').removeClass('activeList')
+    $('.listCountries').delay(800 ).removeClass('expandListC')
     
    $(`path#${pinArea}`).addClass("activeArea").siblings().removeClass("activeArea hoverPin")
     $(".pinsData .locate").each(function () {
@@ -2353,6 +2344,8 @@ $(".listCountries  .countryUL a").click(function () {
     $('.countryUL').slideToggle()
     $('.listCountries').delay(800 ).toggleClass('expandListC')
     $('.pinsDataCountries .locate').removeClass('activeList')
+    $('.pinsData .locate').removeClass('activeList')
+    $('svg path').removeClass('activeArea')
 
   });
   $(".listCountries .justClose").click(function () {
