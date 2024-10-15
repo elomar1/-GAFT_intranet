@@ -3971,6 +3971,27 @@ footer .left-footer p {
   background: #58d5ca;
   background: linear-gradient(306deg, #58d5ca 31%, #037268 100%);
   margin-bottom: 30px;
+  margin: 30px 0 55px;
+  position: relative;
+}
+
+.Governor.patter2 {
+  background: #9cccc8;
+  background: linear-gradient(309deg, #9cccc8 31%, #758d8b 100%);
+}
+
+.Governor.patter3 {
+  background: #cfb7a1;
+  background: linear-gradient(309deg, #cfb7a1 31%, #be926c 100%);
+}
+
+.Governor::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -42px;
+  border-left: 2px dashed #C7D9D8;
+  height: 30px;
 }
 
 .Governor .govImg {
@@ -3984,7 +4005,7 @@ footer .left-footer p {
 }
 
 .Governor .govTxt {
-  text-align: center;
+  text-align: right;
 }
 
 .Governor .govTxt .nameGov {
@@ -3999,6 +4020,13 @@ footer .left-footer p {
   font-size: 2.1rem;
   color: #fff;
   margin: 0;
+}
+
+.Governor .govTxt .font18 {
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 18px;
+  font-family: "DINNextMedium";
 }
 
 .editServ .btnActins .showServ {
@@ -4070,6 +4098,12 @@ footer .left-footer p {
 
 .empContent {
   position: relative;
+}
+
+.empContent .goBack {
+  position: absolute;
+  left: 38px;
+  top: -42px;
 }
 
 .empContent #nav-emp {
@@ -4322,4 +4356,89 @@ input[type=password]:hover, input[type=text]:hover, input[type=file]:hover, inpu
 
 .translate-textarea textarea {
   height: 80px;
+}
+
+.wrapperEmpBox .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapperEmpBox .col-md-3 {
+  padding: 0 12px 30px;
+}
+
+.goBack {
+  background: #FFFFFF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+  padding: 8px 19px;
+  border-radius: 18px;
+  font-size: 14px;
+  color: #007066;
+  text-decoration: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goBack img {
+  margin-right: 10px;
+}
+
+.mainBoxEmp {
+  background: #fff;
+  border-radius: 16px;
+  padding: 23px 20px;
+  text-align: center;
+  position: relative;
+  border: 2px solid #fff;
+  /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    */
+  height: 100%;
+}
+
+.mainBoxEmp.HeadDepart {
+  background: #DCEFED;
+}
+
+.mainBoxEmp .logoEm {
+  margin-bottom: 9px;
+}
+
+.mainBoxEmp .logoEm img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 2px solid #007066;
+  max-width: 85px;
+}
+
+.mainBoxEmp .logoEm.iconWk img {
+  width: auto;
+  height: auto;
+  border-radius: unset;
+  border: unset;
+}
+
+.mainBoxEmp .textEm .p16M {
+  color: #007066;
+  font-size: 1.8rem;
+}
+
+.mainBoxEmp .textEm .p16M:last-of-type {
+  margin-bottom: 20px;
+}
+
+.mainBoxEmp .textEm .telClass,
+.mainBoxEmp .textEm .emlClass {
+  color: #CCA079;
+  font-size: 1.4rem;
+  text-decoration: unset !important;
+  margin: 0;
 }
