@@ -3437,7 +3437,7 @@ footer {
                         margin-bottom: 7px;
 
                         strong {
-                            font-weight: $w-medium;
+                              font-family: "DINNextMedium";
                         }
                     }
 
@@ -3535,7 +3535,7 @@ footer {
 
                             a {
                                 font-size: 18px;
-                                font-weight: $w-medium;
+                                  font-family: "DINNextMedium";
                             }
 
                             &:last-child {
@@ -3956,6 +3956,7 @@ input[type=password]:hover, input[type=text]:hover, input[type=file]:hover, inpu
             font-size: 1.8rem;
             &:last-of-type {
                 margin-bottom: 20px;
+                margin-top: 2px;
             }
         }
         .telClass,
@@ -3965,7 +3966,162 @@ input[type=password]:hover, input[type=text]:hover, input[type=file]:hover, inpu
             text-decoration: unset !important;
             margin: 0;
         }
+        .emlClass {
+            color: #007066;
+        }
     }
 }
 
 
+.mediaCard {
+    border-radius: 22px;
+    background: #E4ECEB;
+
+    height: 100%;
+    &.videoIcon {
+   
+        .img-box {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+             
+                width: 100%;
+                height: 100%;
+                background: rgba(26, 26, 26, 0.2) url(../images/mediaAlbum/IconVideo.svg) no-repeat;
+                background-position: center;
+                border-radius: 22px;
+            }
+        }
+      
+    }
+    a {
+        text-decoration: unset;
+    }
+    .img-box {
+        img {
+            max-height: 220px;
+            border-radius: 22px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .txt {
+        display: flex;
+        padding: 15px 15px 20px;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+            font-size: 15px;
+            font-family: "DINNextBold";
+            color: #007066;
+        }
+        .p14M {
+            color: #000000;
+        }
+    }   
+}
+
+.eventWapper,
+.mediaImages {
+    padding-top: 44px;
+    .col-md-3 {
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-bottom: 24px;
+    }
+}
+.eventCard{
+    height: 260px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 16px;
+    .dates-box{
+      display: flex;
+      .date-circle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 10px;
+        width: 101px;
+        height: 101px;
+  
+        &.date-from{
+          background-color: #CCA079;
+  
+        }
+        &.date-to{
+          margin-#{$start-direction}:10px ;
+          background-color: #264C59;
+        
+        }
+        .day{
+          font-size: 20px;
+          line-height: 1;
+          font-family: "DINNextMedium";
+          color: #fff;
+        }
+        .month{
+          font-size: 16px;
+          color: #fff;
+        }
+        .year{
+          font-size: 16px;
+           color: #fff;
+        }
+      }
+    }
+    .content-box{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3{
+        font-size: 20px;
+          font-family: "DINNextMedium";
+        color: #135740;
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 27px;
+        @extend .ellipsis;
+        height: calc(27px *2);
+        overflow: hidden;
+      }
+      .location{
+        display: flex;
+        img{
+          max-width: 15px;
+          max-height: 22px;
+          margin-#{$end-direction}: 10px;
+        }
+        span{
+          font-size: 13px;
+            font-family: "DINNextMedium";
+          color: #000;
+        }
+      }
+    }
+  }
+
+.lastState {
+    .mainBoxEmp {
+        max-width: 321px;
+        margin: 0 auto;
+    }
+    .col-md-3,
+    .col-md-12 {
+        padding: 0 12px 30px;
+        text-align: center;
+    }
+  }

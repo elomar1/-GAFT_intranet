@@ -698,7 +698,7 @@ select::-ms-expand {
 .ellipsis, .parentEmpNews .empNewsBox .txtNs .p13, .notifications .notificationMenu .scroller .dropdown-item .p14M,
 .notifications .notificationMenu .scroller .dropdown-item .font20B, .surveyBox .SRContent .titleSer,
 .policyBox .SRContent .titleSer,
-.serBox .SRContent .titleSer, .surveyBox .dateP {
+.serBox .SRContent .titleSer, .surveyBox .dateP, .eventCard .content-box h3 {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -3831,7 +3831,7 @@ footer .left-footer p {
 }
 
 .accordion .accordion-item .accordion-body .content-sec .acc-sec p strong {
-  font-weight: 500;
+  font-family: "DINNextMedium";
 }
 
 .accordion .accordion-item .accordion-body .content-sec .acc-sec + .acc-sec {
@@ -3926,7 +3926,7 @@ footer .left-footer p {
 
 .accordion.sitemap-acc .accordion-item .accordion-body .acc-sec ul li a {
   font-size: 18px;
-  font-weight: 500;
+  font-family: "DINNextMedium";
 }
 
 .accordion.sitemap-acc .accordion-item .accordion-body .acc-sec ul li:last-child {
@@ -4433,6 +4433,7 @@ input[type=password]:hover, input[type=text]:hover, input[type=file]:hover, inpu
 
 .mainBoxEmp .textEm .p16M:last-of-type {
   margin-bottom: 20px;
+  margin-top: 2px;
 }
 
 .mainBoxEmp .textEm .telClass,
@@ -4441,4 +4442,207 @@ input[type=password]:hover, input[type=text]:hover, input[type=file]:hover, inpu
   font-size: 1.4rem;
   text-decoration: unset !important;
   margin: 0;
+}
+
+.mainBoxEmp .textEm .emlClass {
+  color: #007066;
+}
+
+.mediaCard {
+  border-radius: 22px;
+  background: #E4ECEB;
+  height: 100%;
+}
+
+.mediaCard.videoIcon .img-box {
+  position: relative;
+}
+
+.mediaCard.videoIcon .img-box::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.2) url(../images/mediaAlbum/IconVideo.svg) no-repeat;
+  background-position: center;
+  border-radius: 22px;
+}
+
+.mediaCard a {
+  text-decoration: unset;
+}
+
+.mediaCard .img-box img {
+  max-height: 220px;
+  border-radius: 22px;
+  width: 100%;
+  height: 100%;
+}
+
+.mediaCard .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 15px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mediaCard .txt .title {
+  font-size: 15px;
+  font-family: "DINNextBold";
+  color: #007066;
+}
+
+.mediaCard .txt .p14M {
+  color: #000000;
+}
+
+.eventWapper,
+.mediaImages {
+  padding-top: 44px;
+}
+
+.eventWapper .col-md-3,
+.mediaImages .col-md-3 {
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 24px;
+}
+
+.eventCard {
+  height: 260px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border-radius: 16px;
+}
+
+.eventCard .dates-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eventCard .dates-box .date-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  padding: 10px;
+  width: 101px;
+  height: 101px;
+}
+
+.eventCard .dates-box .date-circle.date-from {
+  background-color: #CCA079;
+}
+
+.eventCard .dates-box .date-circle.date-to {
+  margin-left: 10px;
+  background-color: #264C59;
+}
+
+.eventCard .dates-box .date-circle .day {
+  font-size: 20px;
+  line-height: 1;
+  font-family: "DINNextMedium";
+  color: #fff;
+}
+
+.eventCard .dates-box .date-circle .month {
+  font-size: 16px;
+  color: #fff;
+}
+
+.eventCard .dates-box .date-circle .year {
+  font-size: 16px;
+  color: #fff;
+}
+
+.eventCard .content-box {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eventCard .content-box h3 {
+  font-size: 20px;
+  font-family: "DINNextMedium";
+  color: #135740;
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 27px;
+  height: calc(27px *2);
+  overflow: hidden;
+}
+
+.eventCard .content-box .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eventCard .content-box .location img {
+  max-width: 15px;
+  max-height: 22px;
+  margin-right: 10px;
+}
+
+.eventCard .content-box .location span {
+  font-size: 13px;
+  font-family: "DINNextMedium";
+  color: #000;
+}
+
+.lastState .mainBoxEmp {
+  max-width: 321px;
+  margin: 0 auto;
+}
+
+.lastState .col-md-3,
+.lastState .col-md-12 {
+  padding: 0 12px 30px;
+  text-align: center;
 }
