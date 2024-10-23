@@ -35,10 +35,6 @@ body {
   text-align: right;
 }
 
-html[dir="rtl"] body {
-  font-family: "DINNextLT";
-}
-
 *,
 *:focus,
 *:active,
@@ -2540,11 +2536,21 @@ footer .left-footer p {
 }
 
 .breadcrumbBG {
+  position: relative;
   min-height: 120px;
   padding: 15px 35px;
   width: calc(100% + 70px);
   margin-right: -35px;
   margin-bottom: 40px;
+}
+
+.breadcrumbBG #ctl00_PlaceHolderMain_g_191def79_a423_47ac_a46a_38165832051e {
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+  top: 55px;
+  width: 50px;
+  height: 50px;
 }
 
 .breadcrumbBG .breadcrumb span {
@@ -2953,6 +2959,7 @@ footer .left-footer p {
 .policyBox .SRicon img,
 .serBox .SRicon img {
   max-width: 66px;
+  max-height: 60px;
 }
 
 .surveyBox .SRContent,
@@ -3155,10 +3162,12 @@ footer .left-footer p {
   max-height: 400px;
 }
 
+nav.nav-pager,
 .paginationCustom {
   padding-top: 50px;
 }
 
+nav.nav-pager .pagination,
 .paginationCustom .pagination {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -3168,6 +3177,7 @@ footer .left-footer p {
           justify-content: center;
 }
 
+nav.nav-pager .pagination > span,
 .paginationCustom .pagination > span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3180,6 +3190,7 @@ footer .left-footer p {
           justify-content: center;
 }
 
+nav.nav-pager .pagination a,
 .paginationCustom .pagination a {
   border: 1px solid #ecefff;
   font-size: 18px;
@@ -3198,10 +3209,13 @@ footer .left-footer p {
           justify-content: center;
 }
 
+nav.nav-pager .pagination a:hover,
 .paginationCustom .pagination a:hover {
   color: #007066;
 }
 
+nav.nav-pager .page-item.active a,
+nav.nav-pager span.active,
 .paginationCustom .page-item.active a,
 .paginationCustom span.active {
   border: 1px solid #007066;
@@ -3221,10 +3235,12 @@ footer .left-footer p {
           justify-content: center;
 }
 
+nav.nav-pager .pagination a.Previous,
 .paginationCustom .pagination a.Previous {
   position: relative;
 }
 
+nav.nav-pager .pagination a.Previous:before,
 .paginationCustom .pagination a.Previous:before {
   content: "";
   position: absolute;
@@ -3238,10 +3254,12 @@ footer .left-footer p {
   background-size: contain;
 }
 
+nav.nav-pager .pagination a.Next,
 .paginationCustom .pagination a.Next {
   position: relative;
 }
 
+nav.nav-pager .pagination a.Next:before,
 .paginationCustom .pagination a.Next:before {
   content: "";
   position: absolute;
@@ -3255,17 +3273,25 @@ footer .left-footer p {
   background-size: contain;
 }
 
+nav.nav-pager .pagination a.Last,
 .paginationCustom .pagination a.Last {
   display: none;
 }
 
+nav.nav-pager .pagination a.First,
 .paginationCustom .pagination a.First {
   display: none;
 }
 
+nav.nav-pager a.aspNetDisabled.Previous:before,
+nav.nav-pager a.aspNetDisabled.Next:before,
 .paginationCustom a.aspNetDisabled.Previous:before,
 .paginationCustom a.aspNetDisabled.Next:before {
   opacity: 0.5;
+}
+
+nav.nav-pager .pagination > span {
+  font-size: 0;
 }
 
 .mapDraggable img {
@@ -4138,12 +4164,6 @@ footer .left-footer p {
   position: relative;
 }
 
-.empContent .goBack {
-  position: absolute;
-  left: 38px;
-  top: -42px;
-}
-
 .empContent #nav-emp {
   padding-top: 30px;
 }
@@ -4464,8 +4484,8 @@ textarea:hover,
 }
 
 .mainBoxEmp .logoEm.iconWk img {
-  width: auto;
-  height: auto;
+  width: 60px;
+  height: 60px;
   border-radius: unset;
   border: unset;
 }

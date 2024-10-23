@@ -2181,7 +2181,15 @@ footer {
 
 .breadcrumbBG {
   // background: #E4ECEB;
-
+  position: relative;
+  #ctl00_PlaceHolderMain_g_191def79_a423_47ac_a46a_38165832051e {
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    top: 55px;
+    width: 50px;
+    height: 50px;
+  }
   .breadcrumb span {
     -webkit-padding-end: 40px;
     padding-inline-end: 30px;
@@ -2561,6 +2569,7 @@ footer {
 
     img {
       max-width: 66px;
+      max-height: 60px;
     }
   }
 
@@ -2736,6 +2745,7 @@ footer {
     }
   }
 }
+nav.nav-pager,
 .paginationCustom {
   padding-top: 50px;
 
@@ -2826,7 +2836,9 @@ footer {
     opacity: 0.5;
   }
 }
-
+nav.nav-pager .pagination > span {
+  font-size: 0;
+}
 .mapDraggable {
   img {
     max-width: unset;
@@ -3664,11 +3676,7 @@ footer {
 
 .empContent {
   position: relative;
-  .goBack {
-    position: absolute;
-    left: 38px;
-    top: -42px;
-  }
+
   #nav-emp {
     padding-top: 30px;
     .boxEmpCm {
@@ -3924,8 +3932,8 @@ textarea:hover,
     }
     &.iconWk {
       img {
-        width: auto;
-        height: auto;
+        width: 60px;
+        height: 60px;
         border-radius: unset;
         border: unset;
       }
@@ -4266,3 +4274,5 @@ textarea:hover,
   --bs-table-bg-type: unset !important;
   background-color: #f9f9f9;
 }
+
+
