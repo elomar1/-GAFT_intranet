@@ -556,7 +556,7 @@ select::-ms-expand {
   color: #007066;
 }
 
-.font25 {
+.font25, .agancy-inner-mainCard h3:first-of-type, .agancy-inner-mainCard h3:last-of-type {
   font-size: 2.5rem;
   color: #234e4b;
   font-family: "DINNextMedium";
@@ -2195,7 +2195,7 @@ footer .left-footer p {
   color: #cca079;
 }
 
-.headerClass .left .timeNav .font25 {
+.headerClass .left .timeNav .font25, .headerClass .left .timeNav .agancy-inner-mainCard h3:first-of-type, .agancy-inner-mainCard .headerClass .left .timeNav h3:first-of-type, .headerClass .left .timeNav .agancy-inner-mainCard h3:last-of-type, .agancy-inner-mainCard .headerClass .left .timeNav h3:last-of-type {
   font-size: 25px;
   color: #444444;
   font-family: "calibriRegular";
@@ -2844,7 +2844,7 @@ footer .left-footer p {
   font-family: "DINNextMedium";
 }
 
-.listWrap .font25 {
+.listWrap .font25, .listWrap .agancy-inner-mainCard h3:first-of-type, .agancy-inner-mainCard .listWrap h3:first-of-type, .listWrap .agancy-inner-mainCard h3:last-of-type, .agancy-inner-mainCard .listWrap h3:last-of-type {
   margin-bottom: 30px;
 }
 
@@ -4899,4 +4899,13 @@ textarea:hover,
 .requests .req-table .table-striped > tbody > tr:nth-of-type(odd) > * {
   --bs-table-bg-type: unset !important;
   background-color: #f9f9f9;
+}
+
+.agancy-inner-mainCard p {
+  margin: 20px 0;
+}
+
+.agancy-inner-mainCard h3:last-of-type {
+  font-size: 20px;
+  margin-bottom: 20px;
 }

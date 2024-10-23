@@ -20,10 +20,12 @@ body,#s4-workspace {
 }
 .servWrapTap .servBox img {
     max-width: 60px;
-    max-height: 60px;
+      max-height: 60px;
 }
 .layoutWrapper {
-    padding: 0 15px 0 15px;
+    height: 100vh;
+    overflow: hidden;
+    padding: 15px 15px 0 15px;
 }
 .breadcrumbBG .breadcrumb span:first-of-type span:first-of-type {
 display: none;
@@ -247,10 +249,6 @@ input[type=password]:hover, input[type=text]:hover, input[type=file]:hover, inpu
 }
 
 
-
-
-/*------------*/
-
 table.ms-listviewtable {
     width: 100%;
     direction: rtl;
@@ -259,7 +257,7 @@ table.ms-listviewtable {
 
 .ms-vh-div {
     text-align: right;
-    padding: 5px 0;
+        padding: 5px 0;
 }
 
 .ms-vh-icon a{
@@ -322,7 +320,7 @@ div#QCB1 .ms-qcb-leftzone{
 }
 .ms-metadata.ms-dragDropAttract-subtle.ms-hideWhenFileDrag {
     font-family: inherit;
-    font-size: 14px;
+      font-size: 14px;
 }
 
 .ms-vb, .ms-vb2, .ms-vb-user, .ms-vb-tall, .ms-pb, .ms-pb-selected {
@@ -330,9 +328,26 @@ div#QCB1 .ms-qcb-leftzone{
     color: #171717;
     padding:5px 3px 11px 6px !important;
 }
-
 .headerClass {
-    top: 34px;
+    top: 16px;
+   
+       width: calc(75% - 34px);
+    left: 23px;
+}
+
+.accordion.agancy-acc .accordion-body  li {
+    font-size: 15px;
+    font-weight: normal;
+    color: #58595B;
+    margin-bottom: 7px;
+}
+.breadcrumbBG #ctl00_PlaceHolderMain_g_191def79_a423_47ac_a46a_38165832051e {
+    top: 25px;
+}
+#s4-workspace {
+    overflow: hidden !important;
+        height: 100% !important;
+    width: 100% !important;
 }
 
 .wrapperEmpBox .goBack {
@@ -348,3 +363,8 @@ div#QCB1 .ms-qcb-leftzone{
 .eventCard .content-box h3 a {
     text-decoration: unset;
 }
+
+#s4-ribbonrow {
+    display: none;
+}
+

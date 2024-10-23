@@ -4276,3 +4276,21 @@ textarea:hover,
 }
 
 
+.agancy-inner-mainCard {
+  h3 {
+   &:first-of-type {
+    @extend .font25;
+   }
+  }
+  p {
+    margin: 20px 0;
+  }
+  h3 {
+    &:last-of-type {
+      @extend .font25;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+   }
+
+}
