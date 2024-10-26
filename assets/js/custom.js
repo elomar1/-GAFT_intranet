@@ -50,3 +50,40 @@ $(document).ready(function () {
 
 
 });
+
+
+
+
+// $('.eventActive1').each(function() {
+//   // Get the background color of the current td element
+//   var bgColor = $(this).css('background-color');
+//   console.log(bgColor);
+  
+//   // Check if the background color is #007066 (which is rgb(0, 112, 102) in RGB)
+//   if (bgColor === ' rgb(0, 112, 102)') {
+
+//       $(this).css('background-color', '').find('span').css('background-color',' rgb(0, 112, 102)'); 
+//   }else if(bgColor === 'rgb(204, 160, 121)') {
+//     $(this).css('background-color', '').find('span').css('background-color','rgb(204, 160, 121)'); 
+//   } 
+// });
+
+
+$('.dark-Mode').click(function() {
+  $('body').toggleClass('Dark');
+  var isDarkMode = $('body').hasClass('Dark');
+  
+  $('.socialMedia a img').each(function() {
+      var currentSrc = $(this).attr('src');
+      
+      var newSrc = currentSrc.replace(/(\.[\w\d_-]+)$/i, 'Dark$1'); 
+
+      if (isDarkMode) {
+          $(this).attr('src', newSrc); 
+      } else {
+          var lightSrc = currentSrc.replace('Dark', '');  
+          $(this).attr('src', lightSrc);  
+      }
+
+  });
+});

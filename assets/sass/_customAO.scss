@@ -1982,6 +1982,7 @@ footer {
       color: #fff;
       font-family: "RobotoRegular";
       overflow: hidden;
+      z-index: 2;
     }
   }
 
@@ -4275,6 +4276,11 @@ textarea:hover,
   background-color: #f9f9f9;
 }
 
+.profilePage {
+  .Governor::after {
+    display: none;
+  }
+}
 
 .agancy-inner-mainCard {
   h3 {
@@ -4294,3 +4300,426 @@ textarea:hover,
    }
 
 }
+.requests .req-table table tbody td:first-of-type,
+.requests .req-table table thead th:first-of-type {
+  padding-right: 20px;
+}
+.videoIcon.mediaCard  {
+  .txt {
+    justify-content: center;
+  }
+}
+nav.nav-pager .page-item.active a, nav.nav-pager span.active, .paginationCustom .page-item.active a, .paginationCustom span.active {
+  width: 60px;
+  height: 50px;
+}
+/* start dark */
+.Dark {
+  .layoutInnerContents {
+    border-top: unset;
+  }
+  .GaftModal .modal-content ,
+  .boxIconWithTitle, .asideClass .favoriteLinks .favBox, .servWrapTap .servBox {
+    background: #333D3C;
+  }
+  .GaftModal .modal-content .modal-header .modal-title {
+    background: #272e2d !important;
+  }
+  .GaftModal .linksHome .estBox .txt .goLink .ans .p16,
+  .boxIconWithTitle .font16R, .asideClass .favoriteLinks .favBox .font16R, .servWrapTap .servBox .font16R {
+    color: #53B7AE;
+  }
+  .swiper-pagination-bullet-active,
+  .swiper-pagination-bullet {
+    background: #57F8EA;
+  }
+  
+  .sliderFav .font16R {
+    color: #57F8EA;
+  }
+  .favoriteLinks .showMore ,
+  .favoriteLinks .showMore:visited ,
+  .headerClass .left .prayer .flex .p14 ,
+  .headerClass .left .weatherNav .p14:first-of-type ,
+  .headerClass .left .dayNav .p14M:first-of-type ,
+  .headerClass .left .timeNav .font25 ,
+  .homeOffers .boxOffer .offerTxt .font15 ,
+  .parentEmpNews .empNewsBox .txtNs .font18,
+  .GaftModal .linksHome .estBox .txt .font22B,
+  .parentEmpNews .empNewsBox .txtNs .p13,
+  .notifications .notificationMenu .scroller .dropdown-item .p14M,
+  .font20B {
+    color: #F4F8F7;
+  }
+  .searchMn .searchBTN img ,
+  .notifications .NTF img ,
+  .servWrapTap .servBox img,
+  .favoriteLinks .showMore.withArrow::after ,
+  .asideClass .profile .EmpDetails .linksEmpWrap .linksBox img,
+  .asideClass .logo img {
+    filter: brightness(0) invert(1)
+  }
+  .layoutWrapper .asideClass {
+    background: #27302F;
+  }
+  .asideClass .delegation .changeDelegation span,
+  .asideClass .delegation .alertD .p14M,
+  .asideClass .profile .EmpDetails .font20M {
+    color: #fff;
+  }
+  .title,
+  .breadcrumbBG .breadcrumb li a,
+  .font25, .agancy-inner-mainCard h3:first-of-type, .agancy-inner-mainCard h3:last-of-type,
+  .asideClass .profile .EmpDetails .p16M {
+    color: #5AEEE1;
+  }
+  
+  
+  .asideClass .profile .EmpDetails .p16L,
+  .asideClass .attendance .LeaveBalance .attend .p16L ,
+  .GaftModal .linksHome .estBox .txt .goLink .timeB .p16,
+  .asideClass .attendance .LeaveBalance .Leave .p16L {
+    color: #E4ECEB;
+  }
+  .asideClass .attendance .LeaveBalance .Leave .show,
+  .asideClass .attendance .LeaveBalance .attend .font22,
+  .asideClass .profile .EmpDetails .linksEmpWrap .linksBox .font16R {
+    color: #92E2DB;
+  }
+  .asideClass .delegation .alertD {
+    background: #323B3A;
+    border-color: #323B3A;
+    color: #fff;
+    }
+    .asideClass .delegation .changeDelegation {
+      background: #525A59;
+    }
+    .asideClass .attendance,
+    .asideClass .favoriteLinks {
+      border-top: 1px solid #525959;
+  }
+  .asideClass .socialMedia a span {
+    color: #58D5CA;
+  }
+  .layoutWrapper .container-fluid,
+  .layoutWrapper .col-md-9.paddingRight,
+  .layoutWrapper {
+    background: #142220;
+  }
+  .headerClass {
+    background: #27302f;
+  }
+  
+  .form-control, select.form-select, select, textarea, .date input[type="date"], input[type="text"],
+  .customMenu .openMenu {
+    background-color: #4A5553;
+    border-color: #4A5553;
+   
+    &::placeholder {
+      color: #A7B1B0;
+    }
+  
+  }
+  .tabsServ .searchIcon input,
+  .searchIcon input {
+    background-image: url(../images/shared//IconSearchSerWhite.svg);
+    background-color: #1F2D2B;
+    border-color:  #1F2D2B;
+  }
+  .parentEmpNews .empNewsBox .txtNs .font20B,
+  .headerClass .left .dayNav .p14M:last-of-type,
+  .notifications .notificationMenu .scroller .dropdown-item .font20B,
+  .newsBox .offerTxt .font16, .MainBox .offerTxt .font16, .homeOffers .boxOffer .offerTxt .font16,
+  .notifications .notificationMenu .text-center a,
+  .headerClass .left .prayer .p14.fontBold {
+    color: #58D5CA;
+  }
+  .customMenu .hamburger::before, .customMenu .hamburger::after {
+    color: #fff;
+  
+    }
+    .headerClass .left .prayer .flex img {
+      filter: invert(72%) sepia(71%) saturate(335%) hue-rotate(121deg) brightness(130%) contrast(81%);
+    }
+    .layoutWrapper .col-md-4.innerAsideBG {
+      background: #121F1D;
+  }
+  .flexSwiper .swiper-button-next, .flexSwiper .swiper-button-prev {
+    background-color: #1B2726;
+  
+  }
+  .homeOffers,
+  .parentEmpNews {
+    background: #0D1817;
+  }
+  .boxBalance.attendanceBox .flexBox p:not(:last-of-type),
+  .layoutInnerContents .tabsCustom .tab-content,
+  .asideClass .socialMedia,
+  .serveyWrapper > div, .serveyWrapper .inputGroup,
+  .parentEmpNews .swiper-slide-active {
+    border-color: rgba(228, 236, 235, 0.2);
+  }
+  .Questionnaires .QuestionSwiperParent {
+    background: #003E38;
+  }
+  footer {
+    background-color: #001F1C;
+  }
+  .customTabsServ .nav-item .nav-link.active,
+  .customContent,
+  .impFiles {
+    background: #0D1817;
+  }
+  .impFiles .ul li:nth-of-type(even) a {
+    background: #182221;
+  }
+  .impFiles .ul li a .p16M {
+    color: #369E95;
+  }
+  .impFiles .ul li a .p16M .subTitle {
+    color: #E4ECEB;
+  }
+  .btnMain {
+    background: #369E95;
+      border-color:  #369E95;
+  }
+  .customTabsServ .nav-item .nav-link {
+    background: #000A09;
+  }
+  .customContent .convertDate .radioBtn label::after {
+    background: #57F8EA;
+  }
+  .customContent .convertDate .radioBtn label::before {
+    border: 1px solid #57F8EA;
+    background: #020404;
+  }
+  .UlDecimal li::marker {
+    color: #5AEEE1;
+  }
+  .listWrap .font18,
+  .requests .req-table table tbody tr td,
+  .p18, .boxEmpCm .empName,
+  .breadcrumbBG .titleBCM,
+  .contentEvents .offerDesc, .contentOffers .offerDesc,
+  .contentImgWithTxt .CONTxt .p18, .contentImgWithTxt .CONTxt .boxEmpCm .empName, .boxEmpCm .contentImgWithTxt .CONTxt .empName {
+    color: #FFFFFF;
+  } 
+  .eventCard,
+  .boxBalance, .boxShadow, .requests {
+    background-color: #1F2D2B;
+  }
+  .font30,
+  .mainBoxEmp .textEm .p16M,
+  .mainBoxEmp .textEm .emlClass,
+  .mediaCard .txt .title,
+  .contentEvents .offerTitle, .contentOffers .offerTitle,
+  .eventCard .content-box h3,
+  .boxEmpCm .empName,
+  .boxBalance.rollBox a .p16, .boxBalance.rollBox p .p16, .boxBalance.contactBox a .p16, .boxBalance.contactBox p .p16,
+  .surveyBox .SRContent .titleSer, .policyBox .SRContent .titleSer, .serBox .SRContent .titleSer,
+  .boxBalance .flexBox .font50 {
+    color: #53B7AE;
+  }
+  .boxBalance.rollBox a .p14M, .boxBalance.rollBox p .p14M, .boxBalance.contactBox a .p14M, .boxBalance.contactBox p .p14M,
+  .boxBalance .flexBox .p16,
+  .requests h4,
+  .mediaCard .txt .p14M,
+  .policyBox .dateP,
+  .boxEmpCm .empToll,
+  .boxEmpCm .empWeqala,
+  .customNavTabs .nav-link,
+  .eventCard .content-box .location span,
+  .boxBalance.contactBox .font20B,
+  .boxBalance.rollBox .font20B,
+  .boxBalance .font20B {
+    color: #BBBBBB;
+  }
+  .serveyWrapper > div p.p18, .serveyWrapper > div .boxEmpCm p.empName, .boxEmpCm .serveyWrapper > div p.empName, .serveyWrapper .inputGroup p.p18, .serveyWrapper .inputGroup .boxEmpCm p.empName, .boxEmpCm .serveyWrapper .inputGroup p.empName {
+    color: #fff;
+  }
+  .requests .req-table table thead th {
+    background-color: #369E95;
+    color: #fff;
+  }
+  .requests .req-table .table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #2B3735;
+  }
+  .table>:not(caption)>*>* {
+    background-color: #364240;
+  }
+  .flagOffer {
+    background: #142220;
+    border: 1px solid #142220;
+  }
+  .flagOffer,
+  .fromTo .p18, .fromTo .boxEmpCm .empName, .boxEmpCm .fromTo .empName {
+    color: #B4C9C7;
+  }
+  .flagOffer img {
+    filter: invert(54%) sepia(12%) saturate(1461%) hue-rotate(125deg) brightness(181%) contrast(51%);
+  }
+  .goBack {
+    color: #fff;
+    background: #2B3836;
+  }
+  .accordion .accordion-item .accordion-header .accordion-button img,
+  .surveyBox .SRicon img, .policyBox .SRicon img, .serBox .SRicon img,
+  .mainBoxEmp .logoEm.iconWk img,
+  .page-item:first-child .page-link img ,
+  .page-item:last-child .page-link img ,
+  .goBack img {
+    filter: brightness(0) invert(1);
+  }
+  .newsBox,
+  .mediaCard,
+  .mainBoxEmp {
+    background: #1F2D2B;
+    border-color: #1F2D2B;
+  }
+  .mainBoxEmp.HeadDepart {
+    background: #465554;
+  }
+  .notifications .notificationMenu,
+  .customMenu ul.menu {
+    background: #0F1615;
+  }
+  .customMenu ul.menu li a {
+    color: #DEDBDB;
+  }
+  .customMenu ul.menu li .subUl {
+    background: #1A2120;
+  }
+  .customMenu ul.menu li .subUl a {
+    color: #8DACAA;
+  }
+  .customMenu ul.menu .subMenu .toggleSub::after {
+    background: transparent url(../images/shared/menuArrowDark.svg) no-repeat;
+  }
+  .notifications {
+    .scroller {
+  
+    
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #454A49;
+      }
+    
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #252C2B;
+      }
+    
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #252C2B;
+      }
+    }
+  }
+  [type="checkbox"] + label,
+  [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
+    color: #EBEBEB;
+  }
+  [type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+    background: #53B7AE;
+  }
+  [type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {
+    border: 1px solid #53B7AE;
+   
+  }
+  [type="checkbox"]:checked  + label:before {
+    background-color: #53B7AE;
+    border: 1px solid #53B7AE;
+  }
+  [type="checkbox"]:checked + label:after {
+    border-color:  #fff;
+  }
+  .surveyResultRow, .servey.gaft-card {
+    background: #1F2D2B;
+  }
+  .servHeading, .surveyResultRow .surveyQuestionTitle, .surveyResultRow .responsesCount, .surveyResultRow .pollQestion, .servey.gaft-card .surveyQuestionTitle, .servey.gaft-card .responsesCount, .servey.gaft-card .pollQestion, .surveyResultRow .pollWp .question span, .servey.gaft-card .pollWp .question span {
+    color: #fff;
+  }
+  .surveyResultRow .poll-archive, .servey.gaft-card .poll-archive{
+    color: #fff;
+  }
+  .servey.gaft-card .form-submit .result{
+    background: #CCA079;
+    border-color: #CCA079
+  }
+  .surveyResultRow .surveyBarBase span, .surveyResultRow .surveyOptionTitle, .surveyResultRow .poll-percent, .servey.gaft-card .surveyBarBase span, .servey.gaft-card .surveyOptionTitle, .servey.gaft-card .poll-percent {
+    color: #EBEBEB;
+  }
+  .surveyResultRow .surveyBarBase div, .surveyResultRow .resultbarbase div, .servey.gaft-card .surveyBarBase div, .servey.gaft-card .resultbarbase div {
+    background-color: #53B7AE !important; 
+  }
+  .surveyBox, .policyBox, .serBox {
+    background: #1F2D2B;
+  }
+  .accordion .accordion-item .accordion-body,
+  .accordion .accordion-item .accordion-header .accordion-button {
+    background-color: #1F2D2B;
+  }
+  .accordion .accordion-item .accordion-body .content-sec .acc-sec p {
+    color: #fff;
+  }
+  .filtring a {
+    background: #2C3937;
+    border: 1px solid #2C3937;
+    color: #AFC3C1;
+  }
+  .filtring a.activeFilter {
+    background: #7ED6CE;
+  }
+  nav.nav-pager .pagination a, .paginationCustom .pagination a {
+    border: 1px solid #202E2C;
+    color: #fff;
+    background-color: #202E2C;
+  }
+  nav.nav-pager .page-item.active a, nav.nav-pager span.active, .paginationCustom .page-item.active a, .paginationCustom span.active {
+    background: #53B7AE;
+  }
+  .offerTxt .font15 {
+    color: #B4C7C6;
+  }
+  .flagOffer {
+    background: #3E4847;
+    border: 1px solid #3E4847;
+  }
+  .boxEmpCm {
+    background: #1F2D2B;
+  }
+  .empContent .inputSelect select {
+    background-color: #1f2d2b;
+    background-image: url(../images/shared/ArrowEmpDark.svg);
+  }
+  .fc-toolbar .fc-left .fc-button-group .fc-button:before,
+  .boxEmpCm .empLinks img {
+   filter: invert(91%) sepia(13%) saturate(1344%) hue-rotate(137deg) brightness(152%) contrast(91%);
+  }
+  .mapDraggable {
+    background: #2B3036;
+  }
+  .fc-toolbar.fc-header-toolbar h2 {
+    color: #58D5CA;
+  }
+  .fc .fc-row .fc-content-skeleton table, .fc .fc-row .fc-content-skeleton td, .fc .fc-row .fc-helper-skeleton td,
+  .calender  .table>:not(caption)>*>*,
+  .calender {
+    background-color: #0D1716;
+  }
+  .calender .calender-indicator .indicator p,
+  .fc-view-container .table * ,
+  .date-dropdowns p ,
+  .date-dropdowns .conversionResult ,
+  .month-events .table td.fc-day-top {
+    color: #fff;
+
+  }
+  .translate-textarea textarea {
+    height: 80px;
+    background: #26302F;
+    border-color: #26302F;
+  }
+}
+
+/* end dark */

@@ -2338,6 +2338,7 @@ footer .left-footer p {
   color: #fff;
   font-family: "RobotoRegular";
   overflow: hidden;
+  z-index: 2;
 }
 
 .notifications .notificationMenu {
@@ -4901,6 +4902,10 @@ textarea:hover,
   background-color: #f9f9f9;
 }
 
+.profilePage .Governor::after {
+  display: none;
+}
+
 .agancy-inner-mainCard p {
   margin: 20px 0;
 }
@@ -4909,3 +4914,562 @@ textarea:hover,
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+.requests .req-table table tbody td:first-of-type,
+.requests .req-table table thead th:first-of-type {
+  padding-right: 20px;
+}
+
+.videoIcon.mediaCard .txt {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav.nav-pager .page-item.active a,
+nav.nav-pager span.active,
+.paginationCustom .page-item.active a,
+.paginationCustom span.active {
+  width: 60px;
+  height: 50px;
+}
+
+/* start dark */
+.Dark .layoutInnerContents {
+  border-top: unset;
+}
+
+.Dark .GaftModal .modal-content,
+.Dark .boxIconWithTitle,
+.Dark .asideClass .favoriteLinks .favBox,
+.asideClass .favoriteLinks .Dark .favBox,
+.Dark .servWrapTap .servBox,
+.servWrapTap .Dark .servBox, .Dark .asideClass .favoriteLinks .favBox, .Dark .servWrapTap .servBox {
+  background: #333D3C;
+}
+
+.Dark .GaftModal .modal-content .modal-header .modal-title {
+  background: #272e2d !important;
+}
+
+.Dark .GaftModal .linksHome .estBox .txt .goLink .ans .p16,
+.Dark .boxIconWithTitle .font16R,
+.Dark .asideClass .favoriteLinks .favBox .font16R,
+.asideClass .favoriteLinks .Dark .favBox .font16R,
+.Dark .servWrapTap .servBox .font16R,
+.servWrapTap .Dark .servBox .font16R, .Dark .asideClass .favoriteLinks .favBox .font16R, .Dark .servWrapTap .servBox .font16R {
+  color: #53B7AE;
+}
+
+.Dark .swiper-pagination-bullet-active,
+.Dark .swiper-pagination-bullet {
+  background: #57F8EA;
+}
+
+.Dark .sliderFav .font16R {
+  color: #57F8EA;
+}
+
+.Dark .favoriteLinks .showMore,
+.Dark .favoriteLinks .showMore:visited,
+.Dark .headerClass .left .prayer .flex .p14,
+.Dark .headerClass .left .weatherNav .p14:first-of-type,
+.Dark .headerClass .left .dayNav .p14M:first-of-type,
+.Dark .headerClass .left .timeNav .font25,
+.Dark .headerClass .left .timeNav .agancy-inner-mainCard h3:first-of-type,
+.agancy-inner-mainCard .Dark .headerClass .left .timeNav h3:first-of-type,
+.Dark .headerClass .left .timeNav .agancy-inner-mainCard h3:last-of-type,
+.agancy-inner-mainCard .Dark .headerClass .left .timeNav h3:last-of-type,
+.Dark .homeOffers .boxOffer .offerTxt .font15,
+.Dark .parentEmpNews .empNewsBox .txtNs .font18,
+.Dark .GaftModal .linksHome .estBox .txt .font22B,
+.Dark .parentEmpNews .empNewsBox .txtNs .p13,
+.Dark .notifications .notificationMenu .scroller .dropdown-item .p14M,
+.Dark .font20B {
+  color: #F4F8F7;
+}
+
+.Dark .searchMn .searchBTN img,
+.Dark .notifications .NTF img,
+.Dark .servWrapTap .servBox img,
+.Dark .favoriteLinks .showMore.withArrow::after,
+.Dark .asideClass .profile .EmpDetails .linksEmpWrap .linksBox img,
+.Dark .asideClass .logo img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.Dark .layoutWrapper .asideClass {
+  background: #27302F;
+}
+
+.Dark .asideClass .delegation .changeDelegation span,
+.Dark .asideClass .delegation .alertD .p14M,
+.Dark .asideClass .profile .EmpDetails .font20M {
+  color: #fff;
+}
+
+.Dark .title,
+.Dark .breadcrumbBG .breadcrumb li a,
+.Dark .font25,
+.Dark .agancy-inner-mainCard h3:first-of-type,
+.agancy-inner-mainCard .Dark h3:first-of-type,
+.Dark .agancy-inner-mainCard h3:last-of-type,
+.agancy-inner-mainCard .Dark h3:last-of-type, .Dark .agancy-inner-mainCard h3:first-of-type, .Dark .agancy-inner-mainCard h3:last-of-type,
+.Dark .asideClass .profile .EmpDetails .p16M {
+  color: #5AEEE1;
+}
+
+.Dark .asideClass .profile .EmpDetails .p16L,
+.Dark .asideClass .attendance .LeaveBalance .attend .p16L,
+.Dark .GaftModal .linksHome .estBox .txt .goLink .timeB .p16,
+.Dark .asideClass .attendance .LeaveBalance .Leave .p16L {
+  color: #E4ECEB;
+}
+
+.Dark .asideClass .attendance .LeaveBalance .Leave .show,
+.Dark .asideClass .attendance .LeaveBalance .attend .font22,
+.Dark .asideClass .profile .EmpDetails .linksEmpWrap .linksBox .font16R {
+  color: #92E2DB;
+}
+
+.Dark .asideClass .delegation .alertD {
+  background: #323B3A;
+  border-color: #323B3A;
+  color: #fff;
+}
+
+.Dark .asideClass .delegation .changeDelegation {
+  background: #525A59;
+}
+
+.Dark .asideClass .attendance,
+.Dark .asideClass .favoriteLinks {
+  border-top: 1px solid #525959;
+}
+
+.Dark .asideClass .socialMedia a span {
+  color: #58D5CA;
+}
+
+.Dark .layoutWrapper .container-fluid,
+.Dark .layoutWrapper .col-md-9.paddingRight,
+.Dark .layoutWrapper {
+  background: #142220;
+}
+
+.Dark .headerClass {
+  background: #27302f;
+}
+
+.Dark .form-control, .Dark select.form-select, .Dark select, .Dark textarea, .Dark .date input[type="date"], .Dark input[type="text"],
+.Dark .customMenu .openMenu {
+  background-color: #4A5553;
+  border-color: #4A5553;
+}
+
+.Dark .form-control::-webkit-input-placeholder, .Dark select.form-select::-webkit-input-placeholder, .Dark select::-webkit-input-placeholder, .Dark textarea::-webkit-input-placeholder, .Dark .date input[type="date"]::-webkit-input-placeholder, .Dark input[type="text"]::-webkit-input-placeholder,
+.Dark .customMenu .openMenu::-webkit-input-placeholder {
+  color: #A7B1B0;
+}
+
+.Dark .form-control:-ms-input-placeholder, .Dark select.form-select:-ms-input-placeholder, .Dark select:-ms-input-placeholder, .Dark textarea:-ms-input-placeholder, .Dark .date input[type="date"]:-ms-input-placeholder, .Dark input[type="text"]:-ms-input-placeholder,
+.Dark .customMenu .openMenu:-ms-input-placeholder {
+  color: #A7B1B0;
+}
+
+.Dark .form-control::-ms-input-placeholder, .Dark select.form-select::-ms-input-placeholder, .Dark select::-ms-input-placeholder, .Dark textarea::-ms-input-placeholder, .Dark .date input[type="date"]::-ms-input-placeholder, .Dark input[type="text"]::-ms-input-placeholder,
+.Dark .customMenu .openMenu::-ms-input-placeholder {
+  color: #A7B1B0;
+}
+
+.Dark .form-control::placeholder, .Dark select.form-select::placeholder, .Dark select::placeholder, .Dark textarea::placeholder, .Dark .date input[type="date"]::placeholder, .Dark input[type="text"]::placeholder,
+.Dark .customMenu .openMenu::placeholder {
+  color: #A7B1B0;
+}
+
+.Dark .tabsServ .searchIcon input,
+.Dark .searchIcon input {
+  background-image: url(../images/shared//IconSearchSerWhite.svg);
+  background-color: #1F2D2B;
+  border-color: #1F2D2B;
+}
+
+.Dark .parentEmpNews .empNewsBox .txtNs .font20B,
+.Dark .headerClass .left .dayNav .p14M:last-of-type,
+.Dark .notifications .notificationMenu .scroller .dropdown-item .font20B,
+.Dark .newsBox .offerTxt .font16, .Dark .MainBox .offerTxt .font16, .Dark .homeOffers .boxOffer .offerTxt .font16, .homeOffers .Dark .boxOffer .offerTxt .font16, .Dark .homeOffers .boxOffer .offerTxt .font16,
+.Dark .notifications .notificationMenu .text-center a,
+.Dark .headerClass .left .prayer .p14.fontBold,
+.Dark .headerClass .left .prayer .contentEvents .p14.offerTitle,
+.contentEvents .Dark .headerClass .left .prayer .p14.offerTitle,
+.Dark .headerClass .left .prayer .contentOffers .p14.offerTitle,
+.contentOffers .Dark .headerClass .left .prayer .p14.offerTitle {
+  color: #58D5CA;
+}
+
+.Dark .customMenu .hamburger::before, .Dark .customMenu .hamburger::after {
+  color: #fff;
+}
+
+.Dark .headerClass .left .prayer .flex img {
+  -webkit-filter: invert(72%) sepia(71%) saturate(335%) hue-rotate(121deg) brightness(130%) contrast(81%);
+          filter: invert(72%) sepia(71%) saturate(335%) hue-rotate(121deg) brightness(130%) contrast(81%);
+}
+
+.Dark .layoutWrapper .col-md-4.innerAsideBG {
+  background: #121F1D;
+}
+
+.Dark .flexSwiper .swiper-button-next, .Dark .flexSwiper .swiper-button-prev {
+  background-color: #1B2726;
+}
+
+.Dark .homeOffers,
+.Dark .parentEmpNews {
+  background: #0D1817;
+}
+
+.Dark .boxBalance.attendanceBox .flexBox p:not(:last-of-type),
+.Dark .layoutInnerContents .tabsCustom .tab-content,
+.Dark .asideClass .socialMedia,
+.Dark .serveyWrapper > div, .Dark .serveyWrapper .inputGroup,
+.Dark .parentEmpNews .swiper-slide-active {
+  border-color: rgba(228, 236, 235, 0.2);
+}
+
+.Dark .Questionnaires .QuestionSwiperParent {
+  background: #003E38;
+}
+
+.Dark footer {
+  background-color: #001F1C;
+}
+
+.Dark .customTabsServ .nav-item .nav-link.active,
+.Dark .customContent,
+.Dark .impFiles {
+  background: #0D1817;
+}
+
+.Dark .impFiles .ul li:nth-of-type(even) a {
+  background: #182221;
+}
+
+.Dark .impFiles .ul li a .p16M {
+  color: #369E95;
+}
+
+.Dark .impFiles .ul li a .p16M .subTitle {
+  color: #E4ECEB;
+}
+
+.Dark .btnMain, .Dark .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .Dark input[type="submit"], .Dark .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .Dark .voteNow,
+.Dark .surveyResultRow .form-submit .result, .surveyResultRow .form-submit .Dark .result,
+.Dark .servey.gaft-card .form-submit .voteNow, .servey.gaft-card .form-submit .Dark .voteNow,
+.Dark .servey.gaft-card .form-submit .result, .servey.gaft-card .form-submit .Dark .result, .Dark .currency-converter .btn.btn-primary, .currency-converter .Dark .btn.btn-primary, .Dark .empGuide .result, .empGuide .Dark .result {
+  background: #369E95;
+  border-color: #369E95;
+}
+
+.Dark .customTabsServ .nav-item .nav-link {
+  background: #000A09;
+}
+
+.Dark .customContent .convertDate .radioBtn label::after {
+  background: #57F8EA;
+}
+
+.Dark .customContent .convertDate .radioBtn label::before {
+  border: 1px solid #57F8EA;
+  background: #020404;
+}
+
+.Dark .UlDecimal li::marker {
+  color: #5AEEE1;
+}
+
+.Dark .listWrap .font18,
+.Dark .requests .req-table table tbody tr td,
+.Dark .p18,
+.Dark .boxEmpCm .empName,
+.boxEmpCm .Dark .empName, .Dark .boxEmpCm .empName,
+.Dark .breadcrumbBG .titleBCM,
+.Dark .contentEvents .offerDesc, .Dark .contentOffers .offerDesc,
+.Dark .contentImgWithTxt .CONTxt .p18,
+.Dark .contentImgWithTxt .CONTxt .boxEmpCm .empName,
+.boxEmpCm .Dark .contentImgWithTxt .CONTxt .empName, .Dark .contentImgWithTxt .CONTxt .boxEmpCm .empName, .Dark .boxEmpCm .contentImgWithTxt .CONTxt .empName {
+  color: #FFFFFF;
+}
+
+.Dark .eventCard,
+.Dark .boxBalance, .Dark .boxShadow, .Dark .requests, .Dark .requests {
+  background-color: #1F2D2B;
+}
+
+.Dark .font30,
+.Dark .mainBoxEmp .textEm .p16M,
+.Dark .mainBoxEmp .textEm .emlClass,
+.Dark .mediaCard .txt .title,
+.Dark .contentEvents .offerTitle, .Dark .contentOffers .offerTitle,
+.Dark .eventCard .content-box h3,
+.Dark .boxEmpCm .empName,
+.Dark .boxBalance.rollBox a .p16, .Dark .boxBalance.rollBox p .p16, .Dark .boxBalance.contactBox a .p16, .Dark .boxBalance.contactBox p .p16,
+.Dark .surveyBox .SRContent .titleSer, .Dark .policyBox .SRContent .titleSer, .Dark .serBox .SRContent .titleSer,
+.Dark .boxBalance .flexBox .font50 {
+  color: #53B7AE;
+}
+
+.Dark .boxBalance.rollBox a .p14M, .Dark .boxBalance.rollBox p .p14M, .Dark .boxBalance.contactBox a .p14M, .Dark .boxBalance.contactBox p .p14M,
+.Dark .boxBalance .flexBox .p16,
+.Dark .requests h4,
+.Dark .mediaCard .txt .p14M,
+.Dark .policyBox .dateP,
+.Dark .boxEmpCm .empToll,
+.Dark .boxEmpCm .empWeqala,
+.Dark .customNavTabs .nav-link,
+.Dark .eventCard .content-box .location span,
+.Dark .boxBalance.contactBox .font20B,
+.Dark .boxBalance.rollBox .font20B,
+.Dark .boxBalance .font20B {
+  color: #BBBBBB;
+}
+
+.Dark .serveyWrapper > div p.p18, .Dark .serveyWrapper > div .boxEmpCm p.empName, .boxEmpCm .Dark .serveyWrapper > div p.empName, .Dark .serveyWrapper > div .boxEmpCm p.empName, .Dark .boxEmpCm .serveyWrapper > div p.empName, .Dark .serveyWrapper .inputGroup p.p18, .Dark .serveyWrapper .inputGroup .boxEmpCm p.empName, .boxEmpCm .Dark .serveyWrapper .inputGroup p.empName, .Dark .serveyWrapper .inputGroup .boxEmpCm p.empName, .Dark .boxEmpCm .serveyWrapper .inputGroup p.empName {
+  color: #fff;
+}
+
+.Dark .requests .req-table table thead th {
+  background-color: #369E95;
+  color: #fff;
+}
+
+.Dark .requests .req-table .table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #2B3735;
+}
+
+.Dark .table > :not(caption) > * > * {
+  background-color: #364240;
+}
+
+.Dark .flagOffer {
+  background: #142220;
+  border: 1px solid #142220;
+}
+
+.Dark .flagOffer,
+.Dark .fromTo .p18,
+.Dark .fromTo .boxEmpCm .empName,
+.boxEmpCm .Dark .fromTo .empName, .Dark .fromTo .boxEmpCm .empName, .Dark .boxEmpCm .fromTo .empName {
+  color: #B4C9C7;
+}
+
+.Dark .flagOffer img {
+  -webkit-filter: invert(54%) sepia(12%) saturate(1461%) hue-rotate(125deg) brightness(181%) contrast(51%);
+          filter: invert(54%) sepia(12%) saturate(1461%) hue-rotate(125deg) brightness(181%) contrast(51%);
+}
+
+.Dark .goBack {
+  color: #fff;
+  background: #2B3836;
+}
+
+.Dark .accordion .accordion-item .accordion-header .accordion-button img,
+.Dark .surveyBox .SRicon img, .Dark .policyBox .SRicon img, .Dark .serBox .SRicon img,
+.Dark .mainBoxEmp .logoEm.iconWk img,
+.Dark .page-item:first-child .page-link img,
+.Dark .page-item:last-child .page-link img,
+.Dark .goBack img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.Dark .newsBox,
+.Dark .mediaCard,
+.Dark .mainBoxEmp {
+  background: #1F2D2B;
+  border-color: #1F2D2B;
+}
+
+.Dark .mainBoxEmp.HeadDepart {
+  background: #465554;
+}
+
+.Dark .notifications .notificationMenu,
+.Dark .customMenu ul.menu {
+  background: #0F1615;
+}
+
+.Dark .customMenu ul.menu li a {
+  color: #DEDBDB;
+}
+
+.Dark .customMenu ul.menu li .subUl {
+  background: #1A2120;
+}
+
+.Dark .customMenu ul.menu li .subUl a {
+  color: #8DACAA;
+}
+
+.Dark .customMenu ul.menu .subMenu .toggleSub::after {
+  background: transparent url(../images/shared/menuArrowDark.svg) no-repeat;
+}
+
+.Dark .notifications .scroller {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.Dark .notifications .scroller::-webkit-scrollbar-track {
+  background: #454A49;
+}
+
+.Dark .notifications .scroller::-webkit-scrollbar-thumb {
+  background: #252C2B;
+}
+
+.Dark .notifications .scroller::-webkit-scrollbar-thumb:hover {
+  background: #252C2B;
+}
+
+.Dark [type="checkbox"] + label,
+.Dark [type="radio"]:checked + label, .Dark [type="radio"]:not(:checked) + label {
+  color: #EBEBEB;
+}
+
+.Dark [type="radio"]:checked + label:after, .Dark [type="radio"]:not(:checked) + label:after {
+  background: #53B7AE;
+}
+
+.Dark [type="radio"]:checked + label:before, .Dark [type="radio"]:not(:checked) + label:before {
+  border: 1px solid #53B7AE;
+}
+
+.Dark [type="checkbox"]:checked + label:before {
+  background-color: #53B7AE;
+  border: 1px solid #53B7AE;
+}
+
+.Dark [type="checkbox"]:checked + label:after {
+  border-color: #fff;
+}
+
+.Dark .surveyResultRow, .Dark .servey.gaft-card {
+  background: #1F2D2B;
+}
+
+.Dark .servHeading, .Dark .surveyResultRow .surveyQuestionTitle, .surveyResultRow .Dark .surveyQuestionTitle,
+.Dark .surveyResultRow .responsesCount, .surveyResultRow .Dark .responsesCount,
+.Dark .surveyResultRow .pollQestion, .surveyResultRow .Dark .pollQestion,
+.Dark .servey.gaft-card .surveyQuestionTitle, .servey.gaft-card .Dark .surveyQuestionTitle,
+.Dark .servey.gaft-card .responsesCount, .servey.gaft-card .Dark .responsesCount,
+.Dark .servey.gaft-card .pollQestion, .servey.gaft-card .Dark .pollQestion, .Dark .surveyResultRow .pollWp .question span, .surveyResultRow .pollWp .question .Dark span,
+.Dark .servey.gaft-card .pollWp .question span, .servey.gaft-card .pollWp .question .Dark span, .Dark .surveyResultRow .surveyQuestionTitle, .Dark .surveyResultRow .responsesCount, .Dark .surveyResultRow .pollQestion, .Dark .servey.gaft-card .surveyQuestionTitle, .Dark .servey.gaft-card .responsesCount, .Dark .servey.gaft-card .pollQestion, .Dark .surveyResultRow .pollWp .question span, .Dark .servey.gaft-card .pollWp .question span {
+  color: #fff;
+}
+
+.Dark .surveyResultRow .poll-archive, .Dark .servey.gaft-card .poll-archive {
+  color: #fff;
+}
+
+.Dark .servey.gaft-card .form-submit .result {
+  background: #CCA079;
+  border-color: #CCA079;
+}
+
+.Dark .surveyResultRow .surveyBarBase span, .Dark .surveyResultRow .surveyOptionTitle, .Dark .surveyResultRow .poll-percent, .Dark .servey.gaft-card .surveyBarBase span, .Dark .servey.gaft-card .surveyOptionTitle, .Dark .servey.gaft-card .poll-percent {
+  color: #EBEBEB;
+}
+
+.Dark .surveyResultRow .surveyBarBase div, .Dark .surveyResultRow .resultbarbase div, .Dark .servey.gaft-card .surveyBarBase div, .Dark .servey.gaft-card .resultbarbase div {
+  background-color: #53B7AE !important;
+}
+
+.Dark .surveyBox, .Dark .policyBox, .Dark .serBox {
+  background: #1F2D2B;
+}
+
+.Dark .accordion .accordion-item .accordion-body,
+.Dark .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #1F2D2B;
+}
+
+.Dark .accordion .accordion-item .accordion-body .content-sec .acc-sec p {
+  color: #fff;
+}
+
+.Dark .filtring a {
+  background: #2C3937;
+  border: 1px solid #2C3937;
+  color: #AFC3C1;
+}
+
+.Dark .filtring a.activeFilter {
+  background: #7ED6CE;
+}
+
+.Dark nav.nav-pager .pagination a, .Dark .paginationCustom .pagination a {
+  border: 1px solid #202E2C;
+  color: #fff;
+  background-color: #202E2C;
+}
+
+.Dark nav.nav-pager .page-item.active a, .Dark nav.nav-pager span.active, .Dark .paginationCustom .page-item.active a, .Dark .paginationCustom span.active {
+  background: #53B7AE;
+}
+
+.Dark .offerTxt .font15 {
+  color: #B4C7C6;
+}
+
+.Dark .flagOffer {
+  background: #3E4847;
+  border: 1px solid #3E4847;
+}
+
+.Dark .boxEmpCm {
+  background: #1F2D2B;
+}
+
+.Dark .empContent .inputSelect select {
+  background-color: #1f2d2b;
+  background-image: url(../images/shared/ArrowEmpDark.svg);
+}
+
+.Dark .fc-toolbar .fc-left .fc-button-group .fc-button:before,
+.Dark .boxEmpCm .empLinks img {
+  -webkit-filter: invert(91%) sepia(13%) saturate(1344%) hue-rotate(137deg) brightness(152%) contrast(91%);
+          filter: invert(91%) sepia(13%) saturate(1344%) hue-rotate(137deg) brightness(152%) contrast(91%);
+}
+
+.Dark .mapDraggable {
+  background: #2B3036;
+}
+
+.Dark .fc-toolbar.fc-header-toolbar h2 {
+  color: #58D5CA;
+}
+
+.Dark .fc .fc-row .fc-content-skeleton table, .Dark .fc .fc-row .fc-content-skeleton td, .Dark .fc .fc-row .fc-helper-skeleton td,
+.Dark .calender .table > :not(caption) > * > *,
+.Dark .calender {
+  background-color: #0D1716;
+}
+
+.Dark .calender .calender-indicator .indicator p,
+.Dark .fc-view-container .table *,
+.Dark .date-dropdowns p,
+.Dark .date-dropdowns .conversionResult,
+.Dark .month-events .table td.fc-day-top {
+  color: #fff;
+}
+
+.Dark .translate-textarea textarea {
+  height: 80px;
+  background: #26302F;
+  border-color: #26302F;
+}
+
+/* end dark */
