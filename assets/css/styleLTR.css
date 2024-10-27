@@ -3369,7 +3369,7 @@ nav.nav-pager .pagination > span {
 }
 
 .calender .calender-indicator .indicator.indic-1 span {
-  background-color: #007066 !important;
+  background-color: #007066;
 }
 
 .XBoxGaft {
@@ -4934,9 +4934,21 @@ nav.nav-pager span.active,
   height: 50px;
 }
 
+.Dark.OrgStructureWrapper {
+  display: none;
+}
+
 /* start dark */
 .Dark .layoutInnerContents {
   border-top: unset;
+}
+
+.Dark .Dark.OrgStructureWrapper {
+  display: block;
+}
+
+.Dark .OrgStructureWrapper:not(.Dark) {
+  display: none;
 }
 
 .Dark .GaftModal .modal-content,
@@ -5470,6 +5482,33 @@ nav.nav-pager span.active,
   height: 80px;
   background: #26302F;
   border-color: #26302F;
+}
+
+.Dark table.ms-listviewtable thead tr {
+  background-color: #369E95 !important;
+  color: #fff;
+}
+
+.Dark table.ms-listviewtable thead tr a {
+  color: #fff;
+}
+
+.Dark .ms-listviewtable tr:nth-child(odd) {
+  background-color: #2B3735;
+}
+
+.Dark .ms-listviewtable tr:nth-child(even) {
+  background-color: #364240;
+}
+
+.Dark .ms-core-form-heading,
+.Dark .ms-qcb-button,
+.Dark .ms-listview-manage-glyph,
+.Dark .ms-metadata, .Dark .ms-descriptiontext,
+.Dark .ms-vb a.ms-listlink, .Dark .ms-vb2 a.ms-listlink, .Dark .ms-vb-user a.ms-listlink, .Dark .ms-vb a.ms-listlink:visited, .Dark .ms-vb a.ms-listlink:visited:hover,
+.Dark .ms-subtleLink:link, .Dark .ms-subtleLink:visited, .Dark .ms-atMention:link, .Dark .ms-atMention:visited, .Dark .ms-hashTag:link, .Dark .ms-hashTag:visited,
+.Dark .ms-vb, .Dark .ms-vb2, .Dark .ms-vb-user, .Dark .ms-vb-tall, .Dark .ms-pb, .Dark .ms-pb-selected {
+  color: #fff  !important;
 }
 
 /* end dark */

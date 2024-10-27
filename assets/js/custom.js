@@ -68,22 +68,26 @@ $(document).ready(function () {
 //   } 
 // });
 
+if( $("#RibbonContainer").length === 0 ) {
+  $('#s4-ribbonrow').css('display','none')
+}
 
 $('.dark-Mode').click(function() {
-  $('body').toggleClass('Dark');
-  var isDarkMode = $('body').hasClass('Dark');
+  // $('body').toggleClass('Dark');
+  let isDarkMode = $('body').hasClass('Dark');
   
   $('.socialMedia a img').each(function() {
-      var currentSrc = $(this).attr('src');
-      
-      var newSrc = currentSrc.replace(/(\.[\w\d_-]+)$/i, 'Dark$1'); 
+    let currentSrc = $(this).attr('src');
 
+    let newSrc = currentSrc.replace(/(\.[\w\d_-]+)$/i, 'Dark$1'); 
+  
       if (isDarkMode) {
           $(this).attr('src', newSrc); 
       } else {
-          var lightSrc = currentSrc.replace('Dark', '');  
+        let lightSrc = currentSrc.replace('Dark', '');  
           $(this).attr('src', lightSrc);  
       }
 
   });
+
 });
