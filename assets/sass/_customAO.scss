@@ -1674,6 +1674,8 @@ footer {
       .modal-title {
         width: 100%;
         border-radius: 16px 16px 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 20px 40px;
         display: flex;
         justify-content: space-between;
@@ -4316,6 +4318,18 @@ nav.nav-pager .page-item.active a, nav.nav-pager span.active, .paginationCustom 
 .Dark.OrgStructureWrapper {
   display: none;
 }
+
+
+.FullWidthDash {
+  > .col-md-3.paddingLeft {
+    width: 0;
+  }
+  > .col-md-9.paddingRight {
+     width: 99%;
+  }
+
+}
+
 /* start dark */
 .Dark {
   .layoutInnerContents {
@@ -4714,7 +4728,7 @@ nav.nav-pager .page-item.active a, nav.nav-pager span.active, .paginationCustom 
   .fc .fc-row .fc-content-skeleton table, .fc .fc-row .fc-content-skeleton td, .fc .fc-row .fc-helper-skeleton td,
   .calender  .table>:not(caption)>*>*,
   .calender {
-    background-color: #0D1716;
+    background-color: #0D1716 !important;
   }
   .calender .calender-indicator .indicator p,
   .fc-view-container .table * ,
@@ -4757,4 +4771,7 @@ nav.nav-pager .page-item.active a, nav.nav-pager span.active, .paginationCustom 
 }
 
 /* end dark */
+
+
+
 

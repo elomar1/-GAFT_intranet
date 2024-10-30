@@ -1978,6 +1978,8 @@ footer .left-footer p {
 .GaftModal .modal-content .modal-header .modal-title {
   width: 100%;
   border-radius: 16px 16px 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4938,6 +4940,14 @@ nav.nav-pager span.active,
   display: none;
 }
 
+.FullWidthDash > .col-md-3.paddingLeft {
+  width: 0;
+}
+
+.FullWidthDash > .col-md-9.paddingRight {
+  width: 99%;
+}
+
 /* start dark */
 .Dark .layoutInnerContents {
   border-top: unset;
@@ -5467,7 +5477,7 @@ nav.nav-pager span.active,
 .Dark .fc .fc-row .fc-content-skeleton table, .Dark .fc .fc-row .fc-content-skeleton td, .Dark .fc .fc-row .fc-helper-skeleton td,
 .Dark .calender .table > :not(caption) > * > *,
 .Dark .calender {
-  background-color: #0D1716;
+  background-color: #0D1716 !important;
 }
 
 .Dark .calender .calender-indicator .indicator p,
@@ -5512,3 +5522,163 @@ nav.nav-pager span.active,
 }
 
 /* end dark */
+@media (max-width: 1672px) {
+  @supports not (zoom: 1) {
+    body {
+      border: 3px solid #ff0000;
+    }
+    .layoutInnerContents,
+    .layoutWrapper .asideClass {
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+      -webkit-transform-origin: 100% 0;
+              transform-origin: 100% 0;
+      width: 125%;
+      height: 100%;
+    }
+    .layoutWrapper .asideClass {
+      height: 125vh;
+    }
+    .customMenu ul.menu,
+    .GaftModal .modal-content,
+    .notifications .notificationMenu {
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+    }
+    .customMenu ul.menu {
+      right: -35px;
+      top: 15px;
+    }
+    .notifications .notificationMenu {
+      right: -45px;
+      top: -2px;
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+    }
+  }
+  @supports (zoom: 1) {
+    body {
+      border: 3px solid #1500ff;
+    }
+    .layoutInnerContents,
+    .customMenu ul.menu,
+    .GaftModal .modal-content,
+    .notifications .notificationMenu,
+    .notifications .notificationMenu,
+    .layoutWrapper .asideClass {
+      zoom: .8;
+    }
+    .layoutWrapper .col-md-3.paddingLeft {
+      height: 100vh;
+      overflow-x: hidden;
+    }
+    .layoutWrapper .asideClass {
+      padding: 24px 15px;
+      height: unset;
+      overflow-x: unset;
+    }
+    .layoutWrapper .col-md-9.paddingRight {
+      overflow: scroll;
+      height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .layoutWrapper,
+    body {
+      height: unset;
+    }
+    .customMenu ul.menu {
+      top: 60px;
+    }
+    .notifications .notificationMenu {
+      top: 50px;
+    }
+  }
+}
+
+/* end 170000 */
+@media (max-width: 1500px) {
+  .mainBanner .boxBanner {
+    height: 430px;
+    position: relative;
+    border-radius: 16px;
+  }
+  .headerClass .left .timeNav,
+  .headerClass .left .dayNav,
+  .headerClass .left .weatherNav {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .mainBanner .boxBanner .txtBNR {
+    right: 30px;
+    max-width: 86%;
+  }
+  @supports not (zoom: 1) {
+    .layoutInnerContents,
+    .layoutWrapper .asideClass {
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+      width: 143%;
+    }
+    .layoutWrapper .asideClass {
+      height: 137vh;
+    }
+    .headerClass .right,
+    .headerClass .left {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+      -webkit-transform-origin: 100% 0;
+              transform-origin: 100% 0;
+    }
+  }
+  @supports (zoom: 1) {
+    .layoutInnerContents,
+    .customMenu ul.menu,
+    .GaftModal .modal-content,
+    .notifications .notificationMenu,
+    .notifications .notificationMenu,
+    .layoutWrapper .asideClass {
+      zoom: .7;
+    }
+    .customMenu ul.menu {
+      top: 70px;
+    }
+    .notifications .notificationMenu {
+      top: 60px;
+    }
+    .headerClass .right,
+    .headerClass .left {
+      zoom: .9;
+    }
+  }
+  .mainBanner .boxBanner .txtBNR .font24B {
+    font-size: 2rem;
+  }
+  .mainBanner .boxBanner .txtBNR .p18, .mainBanner .boxBanner .txtBNR .boxEmpCm .empName, .boxEmpCm .mainBanner .boxBanner .txtBNR .empName, .mainBanner .boxBanner .txtBNR .boxEmpCm .empName, .boxEmpCm .mainBanner .boxBanner .txtBNR .empName {
+    font-size: 1.4rem;
+  }
+  .headerClass .left .prayer .flex img,
+  .headerClass .left .weatherNav .flex img {
+    max-width: 20px;
+  }
+  .headerClass .left .timeNav span h3 {
+    font-size: 20px;
+  }
+  .headerClass .left .prayer .p14, .headerClass .left .weatherNav .p14,
+  .headerClass .left .dayNav .p14M {
+    font-size: 1.1rem;
+  }
+}
+
+/* end 140000000000000 */
+/* end 1200000000000 */
+/* end 9922222 */
+/* end 7677777777 */
+/* end 5000000000 */

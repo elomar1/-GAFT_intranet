@@ -14,9 +14,21 @@ $(document).ready(function () {
       $(this).toggleClass('subOpen').next().slideToggle('fast').parent().siblings().find('.subUl').slideUp('fast')
     })
     // open notifications
-    $('.NTF').click(function(){
-      $(this).next().toggle()
-    })
+    $('.NTF').click(function(event) {
+      event.stopPropagation(); 
+      $(this).next('.notificationMenu').toggle(); 
+  });
+
+  $(document).click(function(event) {
+ 
+      if (!$(event.target).closest('.notificationMenu').length && !$(event.target).is('.NTF')) {
+          $('.notificationMenu').hide();  
+      }
+  });
+  
+  $('.notificationMenu').click(function(event) {
+      event.stopPropagation(); 
+  });
     
   // end  delegation online
   $('.changeDelegation').click(function(){
@@ -54,40 +66,15 @@ $(document).ready(function () {
 
 
 
-// $('.eventActive1').each(function() {
-//   // Get the background color of the current td element
-//   var bgColor = $(this).css('background-color');
-//   console.log(bgColor);
-  
-//   // Check if the background color is #007066 (which is rgb(0, 112, 102) in RGB)
-//   if (bgColor === ' rgb(0, 112, 102)') {
-
-//       $(this).css('background-color', '').find('span').css('background-color',' rgb(0, 112, 102)'); 
-//   }else if(bgColor === 'rgb(204, 160, 121)') {
-//     $(this).css('background-color', '').find('span').css('background-color','rgb(204, 160, 121)'); 
-//   } 
-// });
 
 if( $("#RibbonContainer").length === 0 ) {
   $('#s4-ribbonrow').css('display','none')
 }
 
-$('.dark-Mode').click(function() {
-  // $('body').toggleClass('Dark');
-  let isDarkMode = $('body').hasClass('Dark');
-  
-  $('.socialMedia a img').each(function() {
-    let currentSrc = $(this).attr('src');
+if (window.matchMedia("(max-width: 1800px)").matches) {
+  $('.sideMenuToggle').click(function() {
+    $(".container-fluid .row").toggleClass('FullWidthDash')
+  })
+ 
+} 
 
-    let newSrc = currentSrc.replace(/(\.[\w\d_-]+)$/i, 'Dark$1'); 
-  
-      if (isDarkMode) {
-          $(this).attr('src', newSrc); 
-      } else {
-        let lightSrc = currentSrc.replace('Dark', '');  
-          $(this).attr('src', lightSrc);  
-      }
-
-  });
-
-});
