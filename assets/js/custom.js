@@ -71,10 +71,24 @@ if( $("#RibbonContainer").length === 0 ) {
   $('#s4-ribbonrow').css('display','none')
 }
 
-if (window.matchMedia("(max-width: 1800px)").matches) {
+if (window.matchMedia("(max-width: 1200px) and (min-width: 991px)").matches) {
+    $(".container-fluid .row").addClass('FullWidthDash')
   $('.sideMenuToggle').click(function() {
-    $(".container-fluid .row").toggleClass('FullWidthDash')
+    $(".container-fluid .row").toggleClass('FullWidthDash');
+  });
+}
+
+if (window.matchMedia("(max-width: 992px)").matches) {
+  $('.sideMenuToggle').click(function() {
+    $('.layoutWrapper .col-md-3.paddingLeft').addClass('openMenu')
   })
- 
+  let closeButton = $('<a href="#!" class="closeBtnMenu">X</a>');
+  $('.layoutWrapper .col-md-3.paddingLeft').append(closeButton);
+  closeButton.click(function() {
+    $('.layoutWrapper .col-md-3.paddingLeft').removeClass('openMenu')
+  });
 } 
 
+if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
+  document.body.classList.add('iosAO');
+}

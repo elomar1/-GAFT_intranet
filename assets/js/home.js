@@ -23,8 +23,25 @@ $(document).ready(function () {
         nextEl: ".servSwiper0 .swiper-button-next",
         prevEl: ".servSwiper0 .swiper-button-prev",
       },
-      
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 40
+        }
+      }
     });
+
     let servSwiper2 = new Swiper(".servSwiper1", {
       spaceBetween: 25,
       slidesPerView: 4,
@@ -36,7 +53,23 @@ $(document).ready(function () {
         nextEl: ".servSwiper1 .swiper-button-next",
         prevEl: ".servSwiper1 .swiper-button-prev",
       },
-      
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 40
+        }
+      }
     });
   
     let offerSwiper = new Swiper(".offerSwiper", {
@@ -80,10 +113,12 @@ $(document).ready(function () {
       
     });
   
-    if( $('.mainBanner').length ) {
-      $('.col-md-9.paddingRight').addClass('home')
+  
+    if (window.matchMedia("(min-width: 1400px)").matches) {
+      if( $('.mainBanner').length ) {
+        $('.col-md-9.paddingRight').addClass('home')
+      }
     }
-
   
   
   
