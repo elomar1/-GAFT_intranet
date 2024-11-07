@@ -568,14 +568,14 @@ nav.nav-pager .pagination a,
   .empContent .empFilter {
     width: 70%;
   }
-  .asideClass .profile .EmpDetails .linksEmpWrap a:first-of-type {
-    padding-left: 20px;
-  }
   .empContent .inputSelect select {
     min-width: 200px;
     font-size: 14px;
     padding-left: 38px !important;
     direction: rtl;
+  }
+  .asideClass .profile .EmpDetails .linksEmpWrap a:first-of-type {
+    padding-left: 20px;
   }
 }
 
@@ -593,8 +593,6 @@ nav.nav-pager .pagination a,
 @media (max-width: 1100px) {
   .empContent {
     padding-top: 0;
-  }
-  .empContent {
     padding-top: 50px;
   }
   .empContent .empFilter {

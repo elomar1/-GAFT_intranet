@@ -467,30 +467,48 @@ nav.nav-pager .pagination a,
         filter: brightness(0) invert(1); 
     }
 }
-.fc-toolbar.fc-header-toolbar {
-    height: 30px;
+.fc-toolbar {
+	&.fc-header-toolbar {
+		height: 30px;
+	}
+	.fc-center {
+		transform: unset;
+		position: absolute;
+		left: 42px;
+		top: 1px;
+		width: 95px;
+		height: 25px;
+	}
 }
-.fc-toolbar .fc-center {
-    transform: unset;
-    position: absolute;
-    left: 42px;
-    top: 1px;
-    width: 95px;
-    height: 25px;
-}
+
 @media(min-width:1100px) {
-    .empContent .empFilter {
-        width: 70%;
+    .empContent {
+        .empFilter {
+            width: 70%;
+        }
+        .inputSelect {
+            select {
+                min-width: 200px;
+                font-size: 14px;
+                padding-left: 38px !important;
+                direction: rtl;
+            }
+        }
     }
-    .asideClass .profile .EmpDetails .linksEmpWrap a:first-of-type  {
-        padding-left: 20px;
+    .asideClass {
+        .profile {
+            .EmpDetails {
+                .linksEmpWrap {
+                    a {
+                        &:first-of-type {
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
-    .empContent .inputSelect select {
-        min-width: 200px;
-        font-size: 14px;
-        padding-left: 38px !important;
-        direction: rtl;
-    }
+    
 }
 
 @media(max-width:1100px) {
@@ -507,18 +525,16 @@ nav.nav-pager .pagination a,
 @media(max-width:1100px) {
     .empContent {
         padding-top: 0;
-    }
-    .empContent {
         padding-top: 50px;
-    }
-    .empContent .empFilter {
-        position: unset;
-        padding-bottom: 20px;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .empContent .empFilter .inputSelect {
-        margin-bottom: 20px;
+        .empFilter {
+            position: unset;
+            padding-bottom: 20px;
+            flex-wrap: wrap;
+            width: 100%;
+            .inputSelect {
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 
