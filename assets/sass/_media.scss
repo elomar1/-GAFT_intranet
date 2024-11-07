@@ -40,7 +40,7 @@
         .notifications .notificationMenu,
         .notifications .notificationMenu,
         .layoutWrapper .asideClass {
-            zoom: .8;
+            zoom: .65;
         }
         .layoutWrapper .col-md-3.paddingLeft {
             height: 100vh;
@@ -233,7 +233,7 @@
 @media (max-width: 991.98px) { 
     .closeBtnMenu {
         background: #ea775b;
-        color: #fff;
+        color: #fff !important;
         border: 1px solid #ea775b;
         position: absolute;
         left: 20px;
@@ -285,6 +285,7 @@
     }
     .OrgStructureWrapper svg {
         height: auto;
+        width: 100%;
     }
     .customPaddingBox, .servWrapper .col-md-3, .wrapOffers .col-md-4, .wrapNews .col-md-4 {
         width: 33.333%;
@@ -297,6 +298,10 @@
             // height: 500px;
         }
     }
+    .GaftModal .modal-dialog {
+        min-width: unset !important;
+    }
+    
 }
 /* end 9922222 */
 
@@ -304,6 +309,37 @@
     .customPaddingBox, .servWrapper .col-md-3, .wrapOffers .col-md-4, .wrapNews .col-md-4 {
         width: 100%;
     }
+    .newsBox .font16 {
+        height: auto;
+    }
+
+    .accordion .accordion-item .accordion-header .accordion-button {
+        height: auto;
+        padding-left: 55px;
+        text-align: right;
+    }
+    .accordion .accordion-item .accordion-header .accordion-button img {
+        max-width: 35px;
+    }
+    .policyBox .SRContent .titleSer {
+        line-height: 1.6;
+    }
+    .fc-toolbar .fc-center {
+        transform: translateX(-131px);
+    }
+    .accordion.sitemap-acc .accordion-item .accordion-header .accordion-button {
+        font-size: 18px;
+    }
+    .accordion.sitemap-acc .accordion-item .accordion-header .accordion-button img {
+        max-width: 28px;
+    }
+    .iosAO .accordion.sitemap-acc .accordion-item .accordion-header .accordion-button {
+        font-size: 16px;
+    }
+    .iosAO .breadcrumbBG .breadcrumb span:not(:last-of-type)::before {
+        top: 11px;
+    }
+    
 }
 /* end 7677777777 */
 
@@ -356,6 +392,11 @@
     }
     .boxBalance {
         min-height: auto;
+    }
+    .wrapperEmpBox .col-md-3 {
+        padding-left: 0;
+        padding-right: 0;
+        transform: translateX(-7px);
     }
     @supports  (zoom: 1) {
         .headerClass {
@@ -473,7 +514,7 @@
 
 /* end 5000000000 */
 
-@media (min-width: 2400px ) {
+@media (min-width: 3000px ) {
     body {
         zoom: 1.2;
     }

@@ -71,8 +71,14 @@ $(document).ready(function () {
         }
       }
     });
-  
+
     let offerSwiper = new Swiper(".offerSwiper", {
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      
       spaceBetween: 0,
       slidesPerView: 1,
       navigation: {
@@ -82,6 +88,11 @@ $(document).ready(function () {
       
     });
     let newsHome = new Swiper(".newsHome", {
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
       spaceBetween: 0,
       slidesPerView: 1,
       navigation: {
@@ -124,3 +135,4 @@ $(document).ready(function () {
   
   });
   
+

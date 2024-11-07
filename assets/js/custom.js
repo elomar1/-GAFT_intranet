@@ -79,6 +79,7 @@ if (window.matchMedia("(max-width: 1200px) and (min-width: 991px)").matches) {
 }
 
 if (window.matchMedia("(max-width: 992px)").matches) {
+
   $('.sideMenuToggle').click(function() {
     $('.layoutWrapper .col-md-3.paddingLeft').addClass('openMenu')
   })
@@ -87,6 +88,14 @@ if (window.matchMedia("(max-width: 992px)").matches) {
   closeButton.click(function() {
     $('.layoutWrapper .col-md-3.paddingLeft').removeClass('openMenu')
   });
+
+
+  if('.ms-qcb-zone.ms-qcb-leftzone .ms-qcb-button.js-listview-qcbNewButton') {
+    $('.ms-webpart-zone.ms-fullWidth').addClass('table-responsive')
+  }
+
+  
+
 } 
 
 if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
