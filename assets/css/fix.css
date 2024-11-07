@@ -607,6 +607,28 @@ nav.nav-pager .pagination a,
   }
 }
 
+.tabsServ nav .customddl select {
+  background: #fff url(../images/promotions/arrowSelect.svg) no-repeat !important;
+  background-position: 10px center !important;
+}
+
+@media (max-width: 600px) {
+  footer {
+    margin-top: 0;
+  }
+  .iosAO .tabsServ nav .customddl + .searchIcon
+.iosAO .tabsServ nav .customddl select {
+    height: 50px;
+    text-align: right;
+  }
+  .iosAO .tabsServ nav .customddl select {
+    background: #fff url(../images/promotions/arrowSelect.svg) no-repeat !important;
+  }
+  .iosAO .tabsServ nav .customddl + .searchIcon {
+    min-width: 280px;
+  }
+}
+
 /*
 .ms-welcome-hover, .ms-siteactions-hover {
     background-color: inherit;
