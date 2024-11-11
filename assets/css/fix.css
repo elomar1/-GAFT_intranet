@@ -650,3 +650,7 @@ nav.nav-pager .pagination a,
   color: #fff;
   background: #cca079;
 }
+
+.anchorNoClick {
+  pointer-events: none;
+}

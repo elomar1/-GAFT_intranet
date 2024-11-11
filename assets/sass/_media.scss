@@ -40,7 +40,7 @@
         .notifications .notificationMenu,
         .notifications .notificationMenu,
         .layoutWrapper .asideClass {
-            zoom: .65;
+            zoom: .56;
         }
         .layoutWrapper .col-md-3.paddingLeft {
             height: 100vh;
@@ -512,7 +512,43 @@
 }
 
 
+.layoutInnerContents {
+    border-top: unset;
+}
+.fc .fc-button-group > * {
+    border-radius: unset !important;
+}
+.impFiles {
+    height: calc(100% - 43px);
+}
+.impFiles .ul {
+    padding: 0;
+    list-style: none;
+    overflow: auto;
+    max-height: 320px;
+}
 /* end 5000000000 */
+@media (min-width: 1200px ) and  (max-width: 1600px ) {
+    .mainBanner .boxBanner .txtBNR,
+    .headerClass .right, .headerClass .left {
+        zoom: .8;
+    }
+    .customMenu ul.menu {
+        top: 80px;
+    }
+    .customMenu ul.menu {
+        top: 80px;
+    }
+    .mainBanner .boxBanner {
+        height: 350px;
+        position: relative;
+        border-radius: 16px;
+    }
+    .translate-textarea textarea::placeholder {
+        font-size: 14px;
+    }
+
+}
 
 @media (min-width: 3000px ) {
     body {
