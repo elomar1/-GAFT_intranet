@@ -477,7 +477,7 @@ nav.nav-pager .pagination a,
 
 .empContent .inputSelect select,
 .translate-dropdown .form-select {
-  text-align: right;
+  text-align: right !important;
 }
 
 .asideClass .profile {
@@ -492,7 +492,7 @@ nav.nav-pager .pagination a,
 }
 
 .homeOffers {
-  padding-bottom: 33px;
+  padding-bottom: 26px;
 }
 
 .parentEmpNews .empNewsBox .txtNs .font20B {
@@ -635,6 +635,10 @@ nav.nav-pager .pagination a,
     border-left-color: unset;
 }
 */
+.newsBox .offerTxt .font16, .MainBox .offerTxt .font16, .homeOffers .boxOffer .offerTxt .font16 {
+  line-height: 1.6;
+}
+
 .modal-footer .btnSecondary {
   border: 1px solid #cca079;
   color: #cca079;

@@ -704,6 +704,13 @@ select::-ms-expand {
   text-overflow: ellipsis;
   white-space: normal;
   word-break: break-word;
+  line-height: 1.4;
+}
+
+#employeesContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* end global */
@@ -5608,7 +5615,7 @@ nav.nav-pager span.active,
     .notifications .notificationMenu,
     .notifications .notificationMenu,
     .layoutWrapper .asideClass {
-      zoom: .56;
+      zoom: .6;
     }
     .layoutWrapper .col-md-3.paddingLeft {
       height: 100vh;
@@ -6102,12 +6109,18 @@ nav.nav-pager span.active,
   }
 }
 
+.fc-toolbar.fc-header-toolbar h2 {
+  font-size: 13px;
+}
+
 .layoutInnerContents {
   border-top: unset;
 }
 
 .fc .fc-button-group > * {
   border-radius: unset !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
 }
 
 .impFiles {
@@ -6134,7 +6147,7 @@ nav.nav-pager span.active,
     top: 80px;
   }
   .mainBanner .boxBanner {
-    height: 350px;
+    height: 300px;
     position: relative;
     border-radius: 16px;
   }
