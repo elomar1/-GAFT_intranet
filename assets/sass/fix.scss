@@ -474,10 +474,17 @@ nav.nav-pager .pagination a,
 	.fc-center {
 		transform: unset;
 		position: absolute;
-		left: 42px;
+		left: 29px;
 		top: 1px;
 		width: 95px;
 		height: 25px;
+        justify-content: center;
+        text-align: center;
+        display: inline-flex !important;
+        h2 {
+            margin: unset !important;
+
+        }
 	}
 }
 

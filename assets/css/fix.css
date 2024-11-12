@@ -558,10 +558,21 @@ nav.nav-pager .pagination a,
   -webkit-transform: unset;
           transform: unset;
   position: absolute;
-  left: 42px;
+  left: 29px;
   top: 1px;
   width: 95px;
   height: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+.fc-toolbar .fc-center h2 {
+  margin: unset !important;
 }
 
 @media (min-width: 1100px) {
