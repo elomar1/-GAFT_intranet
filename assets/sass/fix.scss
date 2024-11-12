@@ -548,12 +548,16 @@ nav.nav-pager .pagination a,
     background: #fff url(../images/promotions/arrowSelect.svg) no-repeat !important;
     background-position: 10px center !important;
 }
-.GaftModal .modal-content .modal-header .modal-title {
-    background-attachment: fixed;
-}
+
 @media(max-width:600px) {
     footer {
         margin-top: 0;
+    }
+    .headerClass {
+        padding: 5px !important;
+        border: 7px solid #007066;
+        border-bottom: unset;
+        border-radius: 16px 16px 0 0;
     }
     .tabsServ .searchIcon input,
     .tabsServ nav .customddl select {
