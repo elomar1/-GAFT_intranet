@@ -40,7 +40,7 @@
         .notifications .notificationMenu,
         .notifications .notificationMenu,
         .layoutWrapper .asideClass {
-            zoom: .6;
+            zoom: .65;
         }
         .layoutWrapper .col-md-3.paddingLeft {
             height: 100vh;
@@ -149,6 +149,7 @@
 @media (max-width: 1199.98px) {
     .headerClass .sideMenuToggle {
         display: flex;
+        flex-shrink: 0;
     }
     .headerClass {
         padding-left: 10px;
@@ -531,6 +532,14 @@
     overflow: auto;
     max-height: 320px;
 }
+.fixDir, .form-control, select.form-select, select, textarea, .date input[type="date"], input[type="text"] {
+     direction: unset;
+    text-align: end;
+    text-align: right;
+}
+#divServicesContainer .tabsWithSearchWarpper .tabsServ .customNavTabs {
+    width: 95%;
+}
 /* end 5000000000 */
 @media (min-width: 1200px ) and  (max-width: 1600px ) {
     .mainBanner .boxBanner .txtBNR,
@@ -550,6 +559,18 @@
     }
     .translate-textarea textarea::placeholder {
         font-size: 14px;
+    }
+    .calender .calender-indicator .indicator p,
+    .currency-converter [type="radio"]:checked + label, .currency-converter [type="radio"]:not(:checked) + label {
+        font-size: 14px !important;
+
+    }
+    footer {
+        padding: 15px;
+    }
+    footer .left-footer p ,
+    footer .served .linkR a {
+        font-size: 1.4rem;
     }
 
 }

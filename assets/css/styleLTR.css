@@ -1740,8 +1740,8 @@ footer {
   margin-top: 25px;
   border-radius: 16px;
   width: calc(100% + 40px);
-  margin-right: -19px;
-  margin-bottom: 25px;
+  margin-right: -25px;
+  margin-bottom: 10px;
 }
 
 footer .served .linkR {
@@ -1784,9 +1784,9 @@ footer .left-footer p {
 }
 
 .home footer {
-  width: calc(100% + 40px);
-  margin-right: -35px;
-  margin-bottom: 0;
+  width: calc(100% + 28px);
+  margin-right: -31px;
+  margin-bottom: 5px;
 }
 
 .home .headerClass {
@@ -5615,7 +5615,7 @@ nav.nav-pager span.active,
     .notifications .notificationMenu,
     .notifications .notificationMenu,
     .layoutWrapper .asideClass {
-      zoom: .6;
+      zoom: .65;
     }
     .layoutWrapper .col-md-3.paddingLeft {
       height: 100vh;
@@ -5732,6 +5732,8 @@ nav.nav-pager span.active,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .headerClass {
     padding-left: 10px;
@@ -6134,6 +6136,21 @@ nav.nav-pager span.active,
   max-height: 320px;
 }
 
+.fixDir, .form-control,
+select.form-select,
+select,
+textarea,
+.date input[type="date"],
+input[type="text"], .form-control, select.form-select, select, textarea, .date input[type="date"], input[type="text"] {
+  direction: unset;
+  text-align: end;
+  text-align: right;
+}
+
+#divServicesContainer .tabsWithSearchWarpper .tabsServ .customNavTabs {
+  width: 95%;
+}
+
 /* end 5000000000 */
 @media (min-width: 1200px) and (max-width: 1600px) {
   .mainBanner .boxBanner .txtBNR,
@@ -6162,6 +6179,17 @@ nav.nav-pager span.active,
   }
   .translate-textarea textarea::placeholder {
     font-size: 14px;
+  }
+  .calender .calender-indicator .indicator p,
+  .currency-converter [type="radio"]:checked + label, .currency-converter [type="radio"]:not(:checked) + label {
+    font-size: 14px !important;
+  }
+  footer {
+    padding: 15px;
+  }
+  footer .left-footer p,
+  footer .served .linkR a {
+    font-size: 1.4rem;
   }
 }
 

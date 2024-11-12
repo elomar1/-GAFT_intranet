@@ -124,7 +124,7 @@ th.fc-day-header.fc-widget-header {
 
 .fc-toolbar .fc-left .fc-button-group .fc-next-button{
     position: absolute;
-       left: 115px;
+   left: 130px;
     top: 0;
     float: none;
     border: 0;
@@ -475,15 +475,15 @@ nav.nav-pager .pagination a,
 		transform: unset;
 		position: absolute;
 		left: 29px;
-		top: 1px;
-		width: 95px;
+		top: 3px;
+		width: 110px;
 		height: 25px;
         justify-content: center;
         text-align: center;
         display: inline-flex !important;
         h2 {
             margin: unset !important;
-
+            font-size: 13px;
         }
 	}
 }
@@ -548,21 +548,81 @@ nav.nav-pager .pagination a,
     background: #fff url(../images/promotions/arrowSelect.svg) no-repeat !important;
     background-position: 10px center !important;
 }
+.GaftModal .modal-content .modal-header .modal-title {
+    background-attachment: fixed;
+}
 @media(max-width:600px) {
     footer {
         margin-top: 0;
     }
+    .tabsServ .searchIcon input,
+    .tabsServ nav .customddl select {
+        height: 50px;
+        min-height: 70px;
+    }
+    .iosAO .tabsServ nav .customddl select {
+       
 
+    }
     .iosAO .tabsServ nav .customddl + .searchIcon
     .iosAO .tabsServ nav .customddl select {
-        height: 50px;
-        text-align: right;
+        min-height: 70px;
+        // text-align: right;
     }
     .iosAO .tabsServ nav .customddl select {
         background: #fff url(../images/promotions/arrowSelect.svg) no-repeat !important;
+        background-position: 10px center !important;
     }
     .iosAO .tabsServ nav .customddl + .searchIcon {
         min-width: 280px;
+    }
+    .XBoxGaft {
+        overflow-x: scroll;
+        margin-bottom: 30px;
+    }
+    .customTabsServ .nav-item .nav-link .font18 {
+        font-size: 1.4rem;
+    }
+    .translate-dropdown .form-select {
+        height: 50px;
+    }
+    .policyBox {
+        height: auto;
+    }
+    footer {
+        margin-bottom: 15px;
+    }
+    .translate-dropdown label {
+        margin-bottom: 10px;
+    }
+    .GaftModal .modal-content .modal-header .modal-title span {
+        font-size: 25px;
+    }
+    .GaftModal .linksHome .estBox .txt .font22B {
+        font-size: 20px;
+    }
+    .GaftModal .linksHome .estBox .iconEs {
+        margin-left: 20px;
+        max-width: 35px;
+    }
+    .asideClass .profile .EmpDetails .linksEmpWrap .linksBox {
+        margin-left: 15px;
+    }
+    .mainBanner .boxBanner {
+        position: relative;
+        height: 250px;
+    }
+    .GaftModal .modal-content .modal-header .modal-title {
+        background-size: 190%;
+        background-position: center;
+    }
+    .GaftModal .modal-content .modal-header .modal-title span img {
+        max-width: 50px;
+    }
+    .GaftModal .modal-content {
+        border-radius: 16px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 /*
@@ -595,3 +655,4 @@ nav.nav-pager .pagination a,
 .anchorNoClick {
     pointer-events: none;
 }
+

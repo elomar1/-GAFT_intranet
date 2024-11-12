@@ -79,7 +79,10 @@ if (window.matchMedia("(max-width: 1200px) and (min-width: 991px)").matches) {
 }
 
 if (window.matchMedia("(max-width: 992px)").matches) {
-
+  
+  if( $('.servWrapper .editServ.serBox').length === 0 ) {
+    $('.tabsServ').addClass('fullWidthSevTab')
+  }
   $('.sideMenuToggle').click(function() {
     $('.layoutWrapper .col-md-3.paddingLeft').addClass('openMenu')
   })
