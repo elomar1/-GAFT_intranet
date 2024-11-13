@@ -158,6 +158,7 @@ img {
 
 .btnSecondary,
 .btnMain,
+.inputSubmit input[type="submit"],
 .surveyContainer .btnsdiv.Acenter input[type="submit"],
 .surveyResultRow .form-submit .voteNow,
 .surveyResultRow .form-submit .result,
@@ -181,6 +182,7 @@ img {
 
 .btnSecondary.withArrow,
 .btnMain.withArrow,
+.inputSubmit input.withArrow[type="submit"],
 .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"],
 .surveyResultRow .form-submit .withArrow.voteNow,
 .surveyResultRow .form-submit .withArrow.result,
@@ -193,6 +195,7 @@ img {
 
 .btnSecondary.withArrow img,
 .btnMain.withArrow img,
+.inputSubmit input.withArrow[type="submit"] img,
 .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"] img,
 .surveyResultRow .form-submit .withArrow.voteNow img,
 .surveyResultRow .form-submit .withArrow.result img,
@@ -205,6 +208,7 @@ img {
 
 .btnSecondary:hover,
 .btnMain:hover,
+.inputSubmit input:hover[type="submit"],
 .surveyContainer .btnsdiv.Acenter input:hover[type="submit"],
 .surveyResultRow .form-submit .voteNow:hover,
 .surveyResultRow .form-submit .result:hover,
@@ -321,6 +325,7 @@ select.form-select,
 select,
 textarea,
 .date input[type="date"],
+input[type="email"],
 input[type="text"] {
   direction: ltr;
   text-align: end;
@@ -455,24 +460,28 @@ input[type="checkbox"] {
           transform: scale(1);
 }
 
+input[type="email"]::-webkit-input-placeholder,
 .date input[type="date"],
 input[type="text"]::-webkit-input-placeholder {
   font-size: 16px;
   color: #758d8b;
 }
 
+input[type="email"]:-ms-input-placeholder,
 .date input[type="date"],
 input[type="text"]:-ms-input-placeholder {
   font-size: 16px;
   color: #758d8b;
 }
 
+input[type="email"]::-ms-input-placeholder,
 .date input[type="date"],
 input[type="text"]::-ms-input-placeholder {
   font-size: 16px;
   color: #758d8b;
 }
 
+input[type="email"]::placeholder,
 .date input[type="date"],
 input[type="text"]::placeholder {
   font-size: 16px;
@@ -499,6 +508,7 @@ select.form-select,
 select,
 textarea,
 .date input[type="date"],
+input[type="email"],
 input[type="text"] {
   height: 48px;
   border: 1px solid #e4eceb;
@@ -1691,7 +1701,7 @@ select::-ms-expand {
   margin-bottom: 34px;
 }
 
-.customContent .empGuide .btnMain, .customContent .empGuide .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .empGuide input[type="submit"], .customContent .empGuide .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .empGuide .voteNow,
+.customContent .empGuide .btnMain, .customContent .empGuide .inputSubmit input[type="submit"], .inputSubmit .customContent .empGuide input[type="submit"], .customContent .empGuide .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .empGuide input[type="submit"], .customContent .empGuide .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .empGuide .voteNow,
 .customContent .empGuide .servey.gaft-card .form-submit .voteNow, .servey.gaft-card .form-submit .customContent .empGuide .voteNow,
 .customContent .empGuide .servey.gaft-card .form-submit .result, .servey.gaft-card .form-submit .customContent .empGuide .result, .customContent .empGuide .currency-converter .btn.btn-primary, .currency-converter .customContent .empGuide .btn.btn-primary, .customContent .empGuide .result {
   width: 100%;
@@ -1726,7 +1736,7 @@ select::-ms-expand {
   padding-left: 27px;
 }
 
-.customContent .convertDate .btnMain, .customContent .convertDate .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .convertDate input[type="submit"], .customContent .convertDate .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .convertDate .voteNow,
+.customContent .convertDate .btnMain, .customContent .convertDate .inputSubmit input[type="submit"], .inputSubmit .customContent .convertDate input[type="submit"], .customContent .convertDate .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .convertDate input[type="submit"], .customContent .convertDate .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .convertDate .voteNow,
 .customContent .convertDate .surveyResultRow .form-submit .result, .surveyResultRow .form-submit .customContent .convertDate .result,
 .customContent .convertDate .servey.gaft-card .form-submit .voteNow, .servey.gaft-card .form-submit .customContent .convertDate .voteNow,
 .customContent .convertDate .servey.gaft-card .form-submit .result, .servey.gaft-card .form-submit .customContent .convertDate .result, .customContent .convertDate .currency-converter .btn.btn-primary, .currency-converter .customContent .convertDate .btn.btn-primary, .customContent .convertDate .empGuide .result, .empGuide .customContent .convertDate .result {
@@ -3132,11 +3142,13 @@ footer .left-footer p {
   margin-bottom: 45px;
 }
 
-.contentEvents .text-right .btnMain.withArrow, .contentEvents .text-right .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"], .surveyContainer .btnsdiv.Acenter .contentEvents .text-right input.withArrow[type="submit"], .contentEvents .text-right .surveyResultRow .form-submit .withArrow.voteNow, .surveyResultRow .form-submit .contentEvents .text-right .withArrow.voteNow,
+.contentEvents .text-right .btnMain.withArrow, .contentEvents .text-right .inputSubmit input.withArrow[type="submit"], .inputSubmit .contentEvents .text-right input.withArrow[type="submit"], .contentEvents .text-right .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"], .surveyContainer .btnsdiv.Acenter .contentEvents .text-right input.withArrow[type="submit"], .contentEvents .text-right .surveyResultRow .form-submit .withArrow.voteNow, .surveyResultRow .form-submit .contentEvents .text-right .withArrow.voteNow,
 .contentEvents .text-right .surveyResultRow .form-submit .withArrow.result, .surveyResultRow .form-submit .contentEvents .text-right .withArrow.result,
 .contentEvents .text-right .servey.gaft-card .form-submit .withArrow.voteNow, .servey.gaft-card .form-submit .contentEvents .text-right .withArrow.voteNow,
 .contentEvents .text-right .servey.gaft-card .form-submit .withArrow.result, .servey.gaft-card .form-submit .contentEvents .text-right .withArrow.result, .contentEvents .text-right .currency-converter .withArrow.btn.btn-primary, .currency-converter .contentEvents .text-right .withArrow.btn.btn-primary, .contentEvents .text-right .empGuide .withArrow.result, .empGuide .contentEvents .text-right .withArrow.result,
 .contentOffers .text-right .btnMain.withArrow,
+.contentOffers .text-right .inputSubmit input.withArrow[type="submit"],
+.inputSubmit .contentOffers .text-right input.withArrow[type="submit"],
 .contentOffers .text-right .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"],
 .surveyContainer .btnsdiv.Acenter .contentOffers .text-right input.withArrow[type="submit"],
 .contentOffers .text-right .surveyResultRow .form-submit .withArrow.voteNow,
@@ -4241,6 +4253,10 @@ nav.nav-pager .pagination > span {
   font-size: 16px;
 }
 
+.inputSubmit input[type="submit"] {
+  min-width: 150px;
+}
+
 .surveyContainer {
   padding-bottom: 120px;
 }
@@ -4260,6 +4276,7 @@ nav.nav-pager .pagination > span {
 }
 
 input[type="password"]:hover,
+input[type="email"]:hover,
 input[type="text"]:hover,
 input[type="file"]:hover,
 input:not([type]):hover,
@@ -5003,6 +5020,24 @@ nav.nav-pager span.active,
   max-width: 29px;
 }
 
+.SignatureWrapper {
+  margin-bottom: 70px;
+}
+
+.sinnattureForm {
+  max-width: 730px;
+  margin-bottom: 70px;
+}
+
+.sinnattureForm input[type="text"],
+.sinnattureForm input[type="email"] {
+  direction: ltr;
+}
+
+.sinnattureForm .inputGroup {
+  margin-bottom: 15px;
+}
+
 /* start dark */
 .Dark .layoutInnerContents {
   border-top: unset;
@@ -5241,7 +5276,7 @@ nav.nav-pager span.active,
   color: #E4ECEB;
 }
 
-.Dark .btnMain, .Dark .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .Dark input[type="submit"], .Dark .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .Dark .voteNow,
+.Dark .btnMain, .Dark .inputSubmit input[type="submit"], .inputSubmit .Dark input[type="submit"], .Dark .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .Dark input[type="submit"], .Dark .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .Dark .voteNow,
 .Dark .surveyResultRow .form-submit .result, .surveyResultRow .form-submit .Dark .result,
 .Dark .servey.gaft-card .form-submit .voteNow, .servey.gaft-card .form-submit .Dark .voteNow,
 .Dark .servey.gaft-card .form-submit .result, .servey.gaft-card .form-submit .Dark .result, .Dark .currency-converter .btn.btn-primary, .currency-converter .Dark .btn.btn-primary, .Dark .empGuide .result, .empGuide .Dark .result {
@@ -6109,6 +6144,9 @@ nav.nav-pager span.active,
   .pinsData .locate {
     top: 100px;
   }
+  .SignatureWrapper .workCard2 {
+    zoom: .6;
+  }
 }
 
 .fc-toolbar.fc-header-toolbar h2 {
@@ -6141,6 +6179,7 @@ select.form-select,
 select,
 textarea,
 .date input[type="date"],
+input[type="email"],
 input[type="text"], .form-control, select.form-select, select, textarea, .date input[type="date"], input[type="text"] {
   direction: unset;
   text-align: end;

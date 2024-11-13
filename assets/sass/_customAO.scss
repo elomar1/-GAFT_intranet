@@ -235,7 +235,7 @@ input[type="checkbox"] {
   opacity: 1;
   transform: scale(1);
 }
-
+input[type="email"]::placeholder,
 .date input[type="date"],
 input[type="text"]::placeholder {
   font-size: 16px;
@@ -264,6 +264,7 @@ select.form-select,
 select,
 textarea,
 .date input[type="date"],
+input[type="email"],
 input[type="text"] {
   height: 48px;
   border: 1px solid #e4eceb;
@@ -3724,7 +3725,12 @@ nav.nav-pager .pagination > span {
     }
   }
 }
-
+.inputSubmit {
+  input[type="submit"] {
+    @extend .btnMain;
+    min-width: 150px;
+  }
+}
 .surveyContainer {
   padding-bottom: 120px;
   .btnsdiv.Acenter {
@@ -3746,6 +3752,7 @@ nav.nav-pager .pagination > span {
   }
 }
 input[type="password"]:hover,
+input[type="email"]:hover,
 input[type="text"]:hover,
 input[type="file"]:hover,
 input:not([type]):hover,
@@ -4364,7 +4371,23 @@ nav.nav-pager .page-item.active a, nav.nav-pager span.active, .paginationCustom 
     }
   }
 }
+.SignatureWrapper {
+  margin-bottom: 70px;
+}
+.sinnattureForm {
+   max-width:730px;
+   margin-bottom: 70px;
+   
+   input[type="text"],
+   input[type="email"] {
+    direction: ltr;
+   }
+   .inputGroup  {
+    margin-bottom: 15px;
 
+   }
+
+}
 /* start dark */
 .Dark {
   .layoutInnerContents {
