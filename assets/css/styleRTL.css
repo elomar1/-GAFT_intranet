@@ -159,6 +159,7 @@ img {
 .btnSecondary,
 .btnMain,
 .inputSubmit input[type="submit"],
+.inputSubmit input[type="button"],
 .surveyContainer .btnsdiv.Acenter input[type="submit"],
 .surveyResultRow .form-submit .voteNow,
 .surveyResultRow .form-submit .result,
@@ -183,6 +184,7 @@ img {
 .btnSecondary.withArrow,
 .btnMain.withArrow,
 .inputSubmit input.withArrow[type="submit"],
+.inputSubmit input.withArrow[type="button"],
 .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"],
 .surveyResultRow .form-submit .withArrow.voteNow,
 .surveyResultRow .form-submit .withArrow.result,
@@ -196,6 +198,7 @@ img {
 .btnSecondary.withArrow img,
 .btnMain.withArrow img,
 .inputSubmit input.withArrow[type="submit"] img,
+.inputSubmit input.withArrow[type="button"] img,
 .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"] img,
 .surveyResultRow .form-submit .withArrow.voteNow img,
 .surveyResultRow .form-submit .withArrow.result img,
@@ -209,6 +212,7 @@ img {
 .btnSecondary:hover,
 .btnMain:hover,
 .inputSubmit input:hover[type="submit"],
+.inputSubmit input:hover[type="button"],
 .surveyContainer .btnsdiv.Acenter input:hover[type="submit"],
 .surveyResultRow .form-submit .voteNow:hover,
 .surveyResultRow .form-submit .result:hover,
@@ -1701,7 +1705,8 @@ select::-ms-expand {
   margin-bottom: 34px;
 }
 
-.customContent .empGuide .btnMain, .customContent .empGuide .inputSubmit input[type="submit"], .inputSubmit .customContent .empGuide input[type="submit"], .customContent .empGuide .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .empGuide input[type="submit"], .customContent .empGuide .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .empGuide .voteNow,
+.customContent .empGuide .btnMain, .customContent .empGuide .inputSubmit input[type="submit"], .inputSubmit .customContent .empGuide input[type="submit"],
+.customContent .empGuide .inputSubmit input[type="button"], .inputSubmit .customContent .empGuide input[type="button"], .customContent .empGuide .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .empGuide input[type="submit"], .customContent .empGuide .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .empGuide .voteNow,
 .customContent .empGuide .servey.gaft-card .form-submit .voteNow, .servey.gaft-card .form-submit .customContent .empGuide .voteNow,
 .customContent .empGuide .servey.gaft-card .form-submit .result, .servey.gaft-card .form-submit .customContent .empGuide .result, .customContent .empGuide .currency-converter .btn.btn-primary, .currency-converter .customContent .empGuide .btn.btn-primary, .customContent .empGuide .result {
   width: 100%;
@@ -1736,7 +1741,8 @@ select::-ms-expand {
   padding-left: 27px;
 }
 
-.customContent .convertDate .btnMain, .customContent .convertDate .inputSubmit input[type="submit"], .inputSubmit .customContent .convertDate input[type="submit"], .customContent .convertDate .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .convertDate input[type="submit"], .customContent .convertDate .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .convertDate .voteNow,
+.customContent .convertDate .btnMain, .customContent .convertDate .inputSubmit input[type="submit"], .inputSubmit .customContent .convertDate input[type="submit"],
+.customContent .convertDate .inputSubmit input[type="button"], .inputSubmit .customContent .convertDate input[type="button"], .customContent .convertDate .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .customContent .convertDate input[type="submit"], .customContent .convertDate .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .customContent .convertDate .voteNow,
 .customContent .convertDate .surveyResultRow .form-submit .result, .surveyResultRow .form-submit .customContent .convertDate .result,
 .customContent .convertDate .servey.gaft-card .form-submit .voteNow, .servey.gaft-card .form-submit .customContent .convertDate .voteNow,
 .customContent .convertDate .servey.gaft-card .form-submit .result, .servey.gaft-card .form-submit .customContent .convertDate .result, .customContent .convertDate .currency-converter .btn.btn-primary, .currency-converter .customContent .convertDate .btn.btn-primary, .customContent .convertDate .empGuide .result, .empGuide .customContent .convertDate .result {
@@ -3142,13 +3148,16 @@ footer .left-footer p {
   margin-bottom: 45px;
 }
 
-.contentEvents .text-right .btnMain.withArrow, .contentEvents .text-right .inputSubmit input.withArrow[type="submit"], .inputSubmit .contentEvents .text-right input.withArrow[type="submit"], .contentEvents .text-right .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"], .surveyContainer .btnsdiv.Acenter .contentEvents .text-right input.withArrow[type="submit"], .contentEvents .text-right .surveyResultRow .form-submit .withArrow.voteNow, .surveyResultRow .form-submit .contentEvents .text-right .withArrow.voteNow,
+.contentEvents .text-right .btnMain.withArrow, .contentEvents .text-right .inputSubmit input.withArrow[type="submit"], .inputSubmit .contentEvents .text-right input.withArrow[type="submit"],
+.contentEvents .text-right .inputSubmit input.withArrow[type="button"], .inputSubmit .contentEvents .text-right input.withArrow[type="button"], .contentEvents .text-right .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"], .surveyContainer .btnsdiv.Acenter .contentEvents .text-right input.withArrow[type="submit"], .contentEvents .text-right .surveyResultRow .form-submit .withArrow.voteNow, .surveyResultRow .form-submit .contentEvents .text-right .withArrow.voteNow,
 .contentEvents .text-right .surveyResultRow .form-submit .withArrow.result, .surveyResultRow .form-submit .contentEvents .text-right .withArrow.result,
 .contentEvents .text-right .servey.gaft-card .form-submit .withArrow.voteNow, .servey.gaft-card .form-submit .contentEvents .text-right .withArrow.voteNow,
 .contentEvents .text-right .servey.gaft-card .form-submit .withArrow.result, .servey.gaft-card .form-submit .contentEvents .text-right .withArrow.result, .contentEvents .text-right .currency-converter .withArrow.btn.btn-primary, .currency-converter .contentEvents .text-right .withArrow.btn.btn-primary, .contentEvents .text-right .empGuide .withArrow.result, .empGuide .contentEvents .text-right .withArrow.result,
 .contentOffers .text-right .btnMain.withArrow,
 .contentOffers .text-right .inputSubmit input.withArrow[type="submit"],
 .inputSubmit .contentOffers .text-right input.withArrow[type="submit"],
+.contentOffers .text-right .inputSubmit input.withArrow[type="button"],
+.inputSubmit .contentOffers .text-right input.withArrow[type="button"],
 .contentOffers .text-right .surveyContainer .btnsdiv.Acenter input.withArrow[type="submit"],
 .surveyContainer .btnsdiv.Acenter .contentOffers .text-right input.withArrow[type="submit"],
 .contentOffers .text-right .surveyResultRow .form-submit .withArrow.voteNow,
@@ -4253,7 +4262,8 @@ nav.nav-pager .pagination > span {
   font-size: 16px;
 }
 
-.inputSubmit input[type="submit"] {
+.inputSubmit input[type="submit"],
+.inputSubmit input[type="button"] {
   min-width: 150px;
 }
 
@@ -5280,7 +5290,8 @@ nav.nav-pager span.active,
   color: #E4ECEB;
 }
 
-.Dark .btnMain, .Dark .inputSubmit input[type="submit"], .inputSubmit .Dark input[type="submit"], .Dark .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .Dark input[type="submit"], .Dark .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .Dark .voteNow,
+.Dark .btnMain, .Dark .inputSubmit input[type="submit"], .inputSubmit .Dark input[type="submit"],
+.Dark .inputSubmit input[type="button"], .inputSubmit .Dark input[type="button"], .Dark .surveyContainer .btnsdiv.Acenter input[type="submit"], .surveyContainer .btnsdiv.Acenter .Dark input[type="submit"], .Dark .surveyResultRow .form-submit .voteNow, .surveyResultRow .form-submit .Dark .voteNow,
 .Dark .surveyResultRow .form-submit .result, .surveyResultRow .form-submit .Dark .result,
 .Dark .servey.gaft-card .form-submit .voteNow, .servey.gaft-card .form-submit .Dark .voteNow,
 .Dark .servey.gaft-card .form-submit .result, .servey.gaft-card .form-submit .Dark .result, .Dark .currency-converter .btn.btn-primary, .currency-converter .Dark .btn.btn-primary, .Dark .empGuide .result, .empGuide .Dark .result {

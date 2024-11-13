@@ -3726,7 +3726,8 @@ nav.nav-pager .pagination > span {
   }
 }
 .inputSubmit {
-  input[type="submit"] {
+  input[type="submit"],
+  input[type="button"] {
     @extend .btnMain;
     min-width: 150px;
   }
