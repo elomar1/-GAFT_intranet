@@ -4377,13 +4377,17 @@ nav.nav-pager .page-item.active a, nav.nav-pager span.active, .paginationCustom 
 .sinnattureForm {
    max-width:730px;
    margin-bottom: 70px;
-   
+
    input[type="text"],
    input[type="email"] {
     direction: ltr;
    }
    .inputGroup  {
     margin-bottom: 15px;
+
+   }
+   textarea {
+    height: 80px;
 
    }
 

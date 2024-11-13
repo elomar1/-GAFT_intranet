@@ -5038,6 +5038,10 @@ nav.nav-pager span.active,
   margin-bottom: 15px;
 }
 
+.sinnattureForm textarea {
+  height: 80px;
+}
+
 /* start dark */
 .Dark .layoutInnerContents {
   border-top: unset;
@@ -6145,7 +6149,7 @@ nav.nav-pager span.active,
     top: 100px;
   }
   .SignatureWrapper .workCard2 {
-    zoom: .6;
+    zoom: .5;
   }
 }
 
