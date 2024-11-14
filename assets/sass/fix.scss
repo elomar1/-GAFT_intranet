@@ -18,10 +18,40 @@ body,#s4-workspace {
     direction: rtl;
     text-align: right;
 }
+.sinnattureForm .inputGroup {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
 .servWrapTap .servBox img {
     max-width: 60px;
       max-height: 60px;
 }
+// #capture {
+//     position: absolute !important;
+//     right: -2200px;
+// }
+
+@media (max-width: 1672px) {
+    .SignatureWrapper .workCard2 {
+        zoom: 1.4 !important;
+        transform: scale(.8);
+        transform-origin: 100% 0;
+    }
+    .sinnattureForm .inputGroup #btnExport  {
+        margin-top: -70px;
+    }
+}
+@media (max-width: 575.98px) {
+    .SignatureWrapper .workCard2 {
+        zoom: 1.4 !important;
+        transform: scale(.4);
+        transform-origin: 100% 0;
+    }
+    .sinnattureForm .inputGroup #btnExport  {
+        margin-top: -550px;
+    }
+}
+
 .layoutWrapper {
     height: 100vh;
     overflow: hidden;
