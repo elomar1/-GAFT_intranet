@@ -31,26 +31,7 @@ body,#s4-workspace {
 //     right: -2200px;
 // }
 
-@media (max-width: 1672px) {
-    .SignatureWrapper .workCard2 {
-        zoom: 1.4 !important;
-        transform: scale(.8);
-        transform-origin: 100% 0;
-    }
-    .sinnattureForm .inputGroup #btnExport  {
-        margin-top: -70px;
-    }
-}
-@media (max-width: 575.98px) {
-    .SignatureWrapper .workCard2 {
-        zoom: 1.4 !important;
-        transform: scale(.4);
-        transform-origin: 100% 0;
-    }
-    .sinnattureForm .inputGroup #btnExport  {
-        margin-top: -550px;
-    }
-}
+
 
 .layoutWrapper {
     height: 100vh;
@@ -686,7 +667,48 @@ nav.nav-pager .pagination a,
     }
 }
 
+
+@media (max-width: 1672px) {
+    .SignatureWrapper .workCard2 {
+        zoom: 1.4 !important;
+        transform: scale(.8);
+        transform-origin: 100% 0;
+    }
+    .sinnattureForm .inputGroup #btnExport  {
+        margin-top: -70px;
+    }
+}
+@media (max-width: 575.98px) {
+    .SignatureWrapper .workCard2 {
+        zoom: 1.4 !important;
+        transform: scale(.4);
+        transform-origin: 100% 0;
+    }
+    .sinnattureForm .inputGroup #btnExport  {
+        margin-top: -550px;
+    }
+}
+
+.Dark .empBottomData a:hover,
+.Dark .empBottomData a {
+    text-decoration: underline;
+}
+.Dark .ms-formfieldcontainer *,
+.Dark .surveyContainer .tittel p,
+.Dark .empBottomData * {
+    color: #BBBBBB;
+}
+.ms-formfieldvaluecontainer input {
+    display: block;
+}
 .anchorNoClick {
     pointer-events: none;
 }
-
+@media(min-width:1200px) {
+    .survey_wrapper .hasDatepicker {
+        width: 30% !important;
+    } 
+}
+.survey_wrapper .hasDatepicker {
+    background: #ffffff url(../images/home/calendar.svg) no-repeat 15px  center !important;
+}
