@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="42" viewBox="0 0 56 42">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_15697" data-name="Rectangle 15697" width="56" height="42" rx="4" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Japan" clip-path="url(#clip-path)">
+    <rect id="Rectangle_15696" data-name="Rectangle 15696" width="56" height="42" fill="#fff"/>
+    <path id="Path_126327" data-name="Path 126327" d="M0,0V42H56V0Z" fill="#f7fcff" fill-rule="evenodd"/>
+    <g id="Group_125327" data-name="Group 125327" transform="translate(14.875 7.875)">
+      <path id="Path_126328" data-name="Path 126328" d="M21.625,30.75A13.125,13.125,0,1,0,8.5,17.625,13.125,13.125,0,0,0,21.625,30.75Z" transform="translate(-8.5 -4.5)" fill="#e31d1c" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

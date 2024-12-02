@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="42" viewBox="0 0 56 42">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_15693" data-name="Rectangle 15693" width="56" height="42" rx="4" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Italy" clip-path="url(#clip-path)">
+    <rect id="Rectangle_15692" data-name="Rectangle 15692" width="56" height="42" fill="#fff"/>
+    <path id="Path_126321" data-name="Path 126321" d="M22,0H39.574V42.178H22Z" transform="translate(16.663)" fill="#c51918" fill-rule="evenodd"/>
+    <path id="Path_126322" data-name="Path 126322" d="M0,0H21.089V42.178H0Z" fill="#5eaa22" fill-rule="evenodd"/>
+    <path id="Path_126323" data-name="Path 126323" d="M10,0H31.089V42.178H10Z" transform="translate(7.574)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
