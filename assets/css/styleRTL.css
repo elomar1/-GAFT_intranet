@@ -4672,7 +4672,7 @@ textarea:hover,
 
 .eventCard .dates-box .date-circle.date-to {
   margin-right: 10px;
-  background-color: #264c59;
+  background-color: #007066;
 }
 
 .eventCard .dates-box .date-circle .day {
@@ -4718,6 +4718,11 @@ textarea:hover,
   line-height: 27px;
   height: calc(27px * 2);
   overflow: hidden;
+}
+
+.eventCard .content-box h3 a {
+  font-size: inherit;
+  color: inherit !important;
 }
 
 .eventCard .content-box .location {
@@ -6252,3 +6257,4 @@ input[type="text"], .form-control, select.form-select, select, textarea, .date i
     zoom: 1.2;
   }
 }
+/*# sourceMappingURL=styleRTL.css.map */

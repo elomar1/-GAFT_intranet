@@ -631,6 +631,51 @@ nav.nav-pager .pagination a,
   font-size: 13px;
 }
 
+.content-box .ms-rtestate-field p,
+.content-box p.ms-rteElement-P,
+.content-box ul li,
+.content-box ol li {
+  color: #1a1a1a;
+  font-size: 16px;
+}
+
+.Dark .content-box .ms-rtestate-field p,
+.Dark .content-box p.ms-rteElement-P,
+.Dark .content-box ul li,
+.Dark .content-box ol li {
+  color: #F4F8F7;
+}
+
+h3.gold-text {
+  color: #007066;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+span.ms-formfieldlabel {
+  font-family: "DINNextMedium";
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+}
+
+.surveyContainer .btnsdiv.Acenter input:hover[type="submit"] {
+  background-color: #53b7ae;
+  background-image: url(../images/promotions/arrowBtn.svg);
+}
+
+.newsWrapper .swiper-button-next, .newsWrapper .swiper-button-prev {
+  background-color: unset;
+  background-color: #007066;
+}
+
+.slideme {
+  left: 0 !important;
+}
+
 @media (min-width: 1100px) {
   .empContent .empFilter {
     width: 70%;
@@ -902,3 +947,4 @@ select {
   background: #53b7ae;
   border-color: #53b7ae;
 }
+/*# sourceMappingURL=fix.css.map */

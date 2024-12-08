@@ -2700,6 +2700,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
+   
     $(".mapDraggable path[fill='#cca079']").click(function () {
     const area = $(this).attr("id");
     // $(this).addClass("activeArea").siblings().removeClass("activeArea hoverPin");
@@ -2751,6 +2752,8 @@ $(document).ready(function(){
 $(".listCountries  .countryUL a").click(function () {
     const countryId = $(this).attr("data-country");
     // console.log(countryId);
+    $(".mapDraggable .post_tags.draggable .post_tags_inner").removeClass("slideme")
+
     $(".pinsData .locate").each(function () {
         const coundryDetails = $(this).attr("data-list");
         if (coundryDetails.includes(countryId)) {
@@ -2761,8 +2764,15 @@ $(".listCountries  .countryUL a").click(function () {
         });
         $('.hideStateList').hide()
         $('.countryUL').slideUp()
+        $('.pinsDataCountries .locate').removeClass('activeList')
         $('.listCountries').delay(800 ).removeClass('expandListC')
-  
+        $(`path#${countryId}`).addClass("activeArea")
+
+        if ( $("#Path_125855").hasClass("activeArea")){
+           $(".mapDraggable .post_tags.draggable .post_tags_inner").css("left", "0")
+            console.log("scrollMe");
+    }
+
   });
   $(".locate .closeBtn").click(function () {
     // const closeAttr = $(this).closest('.locate').attr("data-list");
@@ -2789,7 +2799,11 @@ $(".listCountries  .countryUL a").click(function () {
   });
 
 
+
+
+
 });
+
     </script>
 
 </body>
