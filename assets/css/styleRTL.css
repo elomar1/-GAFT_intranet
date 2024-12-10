@@ -5665,12 +5665,15 @@ nav.nav-pager span.active,
   }
   @supports (zoom: 1) {
     .layoutInnerContents,
-    .customMenu ul.menu,
     .GaftModal .modal-content,
     .notifications .notificationMenu,
     .notifications .notificationMenu,
     .layoutWrapper .asideClass {
       zoom: .65;
+    }
+    .customMenu ul.menu {
+      zoom: inherit;
+      top: 50px !important;
     }
     .layoutWrapper .col-md-3.paddingLeft {
       height: 100vh;
@@ -5744,7 +5747,6 @@ nav.nav-pager span.active,
   }
   @supports (zoom: 1) {
     .layoutInnerContents,
-    .customMenu ul.menu,
     .GaftModal .modal-content,
     .notifications .notificationMenu,
     .notifications .notificationMenu,
@@ -5752,7 +5754,8 @@ nav.nav-pager span.active,
       zoom: .7;
     }
     .customMenu ul.menu {
-      top: 70px;
+      zoom: .85;
+      top: 55px !important;
     }
     .notifications .notificationMenu {
       top: 60px;

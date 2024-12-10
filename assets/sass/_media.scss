@@ -35,12 +35,16 @@
     @supports (zoom: 1) {
  
         .layoutInnerContents,
-        .customMenu ul.menu,
+        // .customMenu ul.menu,
         .GaftModal .modal-content,
         .notifications .notificationMenu,
         .notifications .notificationMenu,
         .layoutWrapper .asideClass {
             zoom: .65;
+        }
+        .customMenu ul.menu{
+            zoom: inherit;
+            top: 50px !important;
         }
         .layoutWrapper .col-md-3.paddingLeft {
             height: 100vh;
@@ -108,16 +112,20 @@
     }
     @supports (zoom: 1)  {
         .layoutInnerContents,
-        .customMenu ul.menu,
+        // .customMenu ul.menu,
         .GaftModal .modal-content,
         .notifications .notificationMenu,
         .notifications .notificationMenu,
         .layoutWrapper .asideClass {
             zoom: .7;
         }
-        .customMenu ul.menu {
-            top: 70px;
+        .customMenu ul.menu{
+            zoom: .85;
+            top: 55px !important;
         }
+        // .customMenu ul.menu {
+        //     top: 70px;
+        // }
         .notifications .notificationMenu {
             top: 60px;
         }
